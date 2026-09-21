@@ -1,0 +1,44 @@
+# ===========================================================================
+# Coastal Sentinel Backend API & Models .gitignore
+# ===========================================================================
+
+# Python virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Large Raw Datasets (Exclude uncompressed 100MB+ files; keep .csv.gz)
+data/S1_S2_GEDI_Imputed_Monthly.csv
+*.csv.raw
+
+# Secrets & Environment Variables (STRICT)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*firebase-adminsdk*.json
+*mangroove-startup*.json
+*serviceAccount*.json
+service_account*.json
+
+# Runtime tracking & logs
+last_run.txt
+*.log
+*.sqlite3
+
+# IDE & OS Artifacts
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+ehthumbs.db

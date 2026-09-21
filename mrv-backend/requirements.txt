@@ -1,0 +1,9 @@
+numpy==1.26.4
+pandas==2.2.2
+earthengine-api==0.1.411
+earthaccess==0.11.0
+h5py==3.11.0
+tensorflow==2.16.2
+firebase-admin==6.5.0
+scikit-learn==1.5.1
+python-dotenv==1.0.1

@@ -1,0 +1,94 @@
+# ===========================================================================
+# MCIP Academic Master Repository .gitignore
+# ===========================================================================
+
+# --- Secrets, API Keys & Credentials (STRICT) ---
+*.json.key
+*.key
+*.pem
+*firebase-adminsdk*.json
+*mangroove-startup*.json
+*serviceAccount*.json
+service_account*.json
+.env
+.env.*
+!.env.example
+
+# --- Large Raw Datasets (Exclude uncompressed 100MB+ files; keep .csv.gz) ---
+mrv-backend/data/S1_S2_GEDI_Imputed_Monthly.csv
+*.csv.raw
+
+# --- Python Virtual Environments & Caches ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+mrv-backend/venv/
+mrv-backend/.venv/
+mrv-backend/__pycache__/
+mrv-backend/**/__pycache__/
+mrv-backend/last_run.txt
+
+# --- Node.js & Next.js Caches ---
+node_modules/
+mrv/node_modules/
+.next/
+mrv/.next/
+out/
+mrv/out/
+*.tsbuildinfo
+
+# --- Generating Scripts & Scratch Utilities (Requested by User) ---
+combine_submission.py
+fill_ethics.py
+generate_chapter3.py
+generate_lit_db.py
+generate_litreview_v3.py
+generate_proposal.py
+generate_submission.py
+thesis_chapters_*.py
+thesis_front_matter.py
+thesis_references_appendices.py
+verify_submission.py
+scratch/
+test_*.py
+test_*.ps1
+test_*.mjs
+posters/test_export.ps1
+posters/analyze_repaired.py
+posters/verify_poster.py
+posters/ppt/test_*.png
+posters/ppt/test_*.pptx
+posters/ppt/fig2_*.png
+
+# --- Personal & Internal Files (Requested by User) ---
+My MCIP Files/
+Proffesor Teams Channel/
+RUN FD and BD
+legacy-prototype-backend/
+Thesis_Submission_Code_Data.zip
+
+# --- IDE & OS Artifacts ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Testing & Code Quality ---
+.coverage*
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/

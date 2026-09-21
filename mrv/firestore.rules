@@ -1,0 +1,56 @@
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    /**
+     * COASTAL SENTINEL SECURITY RULES
+     * Global Read / Administrative Write
+     */
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && (
+        exists(/databases/$(database)/documents/roles_admin/$(request.auth.uid)) ||
+        request.auth.token.email == "mangroovestartup@gmail.com"
+      );
+    }
+
+    function isExistingAdmin() {
+      return isAdmin() && resource != null;
+    }
+
+    function pathMatchesId(id) {
+      return request.resource.data.id == id;
+    }
+
+    // --- COLLECTION RULES ---
+
+    match /roles_admin/{userId} {
+      allow get: if isSignedIn();
+      allow list: if false;
+      allow create, update: if isAdmin() && pathMatchesId(userId);
+      allow delete: if isAdmin();
+    }
+
+    match /Registry/{id} {
+      allow get, list: if true;
+      allow create: if isAdmin() && pathMatchesId(id);
+      allow update: if isExistingAdmin() && pathMatchesId(id);
+      allow delete: if isAdmin();
+    }
+
+    match /MCIP_Intelligence_Reports/{id} {
+      allow read, write: if true;
+    }
+
+    // Default fallback
+    match /{path=**} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+  }
+}

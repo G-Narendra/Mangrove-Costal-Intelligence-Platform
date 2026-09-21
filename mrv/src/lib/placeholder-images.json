@@ -1,0 +1,28 @@
+{
+  "placeholderImages": [
+    {
+      "id": "mangrove-aerial",
+      "description": "Aerial view of a lush mangrove forest meeting the ocean",
+      "imageUrl": "https://images.unsplash.com/photo-1628767185287-72c0d486a468?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYW5ncm92ZSUyMG9jZWFufGVufDB8fHx8MTc3MTU0MzU3OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mangrove ocean"
+    },
+    {
+      "id": "seagrass-underwater",
+      "description": "Vibrant seagrass meadow underwater",
+      "imageUrl": "https://images.unsplash.com/photo-1654524931798-23dd508bcdd9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzZWFncmFzcyUyMG1lYWRvd3xlbnwwfHx8fDE3NzE1NDM1Nzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "seagrass meadow"
+    },
+    {
+      "id": "coastal-community",
+      "description": "Small sustainable coastal village",
+      "imageUrl": "https://images.unsplash.com/photo-1718295437514-f685ad7513f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjb2FzdGFsJTIwdmlsbGFnZXxlbnwwfHx8fDE3NzE1NDM1Nzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coastal village"
+    },
+    {
+      "id": "uae-satellite-map",
+      "description": "Satellite view of UAE coast and Abu Dhabi islands",
+      "imageUrl": "https://images.unsplash.com/photo-1548345680-f5475ee511d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzYXRlbGxpdGUlMjBjb2FzdHxlbnwwfHx8fDE3MzE1NDM1Nzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "satellite coast"
+    }
+  ]
+}

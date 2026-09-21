@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 10% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 10% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 10% 10%;
+    --primary: 210 100% 20%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 210 100% 20%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 10% 40%;
+    --accent: 180 100% 25%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 210 100% 20%;
+    --radius: 0.75rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 13%;
+    --foreground: 210 20% 98%;
+    --card: 0 0% 16%;
+    --card-foreground: 210 20% 98%;
+    --popover: 0 0% 13%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 210 100% 25%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 210 30% 20%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 210 30% 18%;
+    --muted-foreground: 210 20% 70%;
+    --accent: 180 100% 25%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 210 100% 30%;
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 210 100% 25%;
+    --sidebar-primary-foreground: 210 20% 98%;
+    --sidebar-accent: 180 100% 20%;
+    --sidebar-accent-foreground: 210 20% 98%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 210 100% 30%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #report-content, #report-content * {
+    visibility: visible;
+  }
+  #report-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: black !important;
+    background: white !important;
+  }
+  .dark #report-content {
+    color: black !important;
+    background: white !important;
+  }
+}
+
+.shap-bar-container {
+  @apply relative h-3 w-full bg-muted rounded-full overflow-hidden;
+}
+
+.shap-bar-positive {
+  @apply h-full bg-accent transition-all duration-1000 ease-out;
+}
+
+.shap-bar-negative {
+  @apply h-full bg-destructive transition-all duration-1000 ease-out;
+}
