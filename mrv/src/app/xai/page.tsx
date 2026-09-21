@@ -103,8 +103,11 @@ function renderFormattedMarkdown(text: string, isStreaming?: boolean) {
   );
 }
 
-export default function XAIPage() {
+import { useSearchParams } from "next/navigation"
+
+function XAIContent() {
   const firestore = useFirestore()
+  const searchParams = useSearchParams()
   const patchesQuery = useMemoFirebase(() => {
     if (!firestore) return null
     return collection(firestore, "Patches")
@@ -125,6 +128,35 @@ export default function XAIPage() {
   const [loadingChat, setLoadingChat] = React.useState(false)
   const chatEndRef = React.useRef<HTMLDivElement>(null)
 
+  // Parse URL search parameters from registry links (e.g. ?patch=patch_0&month=2026-09&prompt=...)
+  React.useEffect(() => {
+    if (!searchParams) return
+    const patchParam = searchParams.get("patch")
+    const monthParam = searchParams.get("month")
+    const promptParam = searchParams.get("prompt")
+
+    if (patchParam) {
+      setSelectedIds([patchParam])
+    }
+    if (promptParam) {
+      setChatInput(promptParam)
+    } else if (patchParam && monthParam) {
+      const [y, m] = monthParam.split("-")
+      const targetYear = parseInt(y, 10) || 2026
+      const targetMonth = parseInt(m, 10) || 9
+      let startM = targetMonth - 12
+      let startY = targetYear
+      while (startM <= 0) {
+        startM += 12
+        startY -= 1
+      }
+      const startStr = `${startY}-${String(startM).padStart(2, "0")}`
+      setChatInput(`Audit Patch ${patchParam} for UAE Registry commitment in cycle ${monthParam}: evaluate the trailing 12-month trajectory from ${startStr} to ${monthParam}, verifying whether active absorption, NDVI health, and biomass canopy align with historical seasonality and certified benchmarks.`)
+    } else if (patchParam) {
+      setChatInput(`Analyze telemetry, carbon stock, and vegetation index for Patch ${patchParam}.`)
+    }
+  }, [searchParams])
+
   // Show snapshot for the "primary" (most recently selected) patch
   const primaryId = selectedIds.length > 0 ? selectedIds[selectedIds.length - 1] : null
   const primaryPatch = React.useMemo(() => {
@@ -142,10 +174,12 @@ export default function XAIPage() {
         
         if (!snapshot.empty) {
           const sortedDocs = snapshot.docs.sort((a, b) => b.id.localeCompare(a.id));
-          const latestDoc = sortedDocs[0];
-          setLatestDate(latestDoc.id);
+          const monthParam = searchParams?.get("month");
+          const targetDoc = monthParam ? snapshot.docs.find(d => d.id === monthParam) : null;
+          const activeDoc = targetDoc || sortedDocs[0];
+          setLatestDate(activeDoc.id);
           
-          const d = latestDoc.data();
+          const d = activeDoc.data();
           if (d) {
             setPixelMetrics({
               carbon_stock_tCO2e_ha: d.total_absorption_tCO2e_ha ?? d.carbon_stock_tCO2e_ha ?? 0,
@@ -193,13 +227,24 @@ export default function XAIPage() {
     setLoadingChat(true);
 
     try {
-      // Build compact patch summaries — last 12 months only, no raw pixels
+      // Build compact patch summaries — trailing 12 months + active month (13 months total)
+      const targetMonth = searchParams?.get("month") || latestDate;
       const patchDataPromises = selectedIds.map(async (id) => {
         const tsRef = collection(firestore, "Patches", id, "TimeSeries");
         const snapshot = await getDocs(tsRef);
         const sortedDocs = snapshot.docs.sort((a, b) => a.id.localeCompare(b.id));
         
-        const history = sortedDocs.slice(-12).map((tsDoc) => {
+        // Filter up to target active month, then take the trailing 12 months + active month (13 months)
+        let targetDocs = sortedDocs;
+        if (targetMonth && targetMonth !== "No data") {
+          const upToTarget = sortedDocs.filter(d => d.id <= targetMonth);
+          if (upToTarget.length > 0) {
+            targetDocs = upToTarget;
+          }
+        }
+        const rollingDocs = targetDocs.slice(-13);
+        
+        const history = rollingDocs.map((tsDoc) => {
           const d = tsDoc.data();
           const pixelCount = d.mangrove_pixels ? Object.keys(d.mangrove_pixels).length : 1;
           return {
@@ -265,22 +310,42 @@ export default function XAIPage() {
     }
   }
 
+  const targetMonth = searchParams?.get("month") || latestDate;
+  const auditRange = React.useMemo(() => {
+    if (!targetMonth || targetMonth === "No data") return null;
+    const [y, m] = targetMonth.split("-");
+    const targetYear = parseInt(y, 10) || 2026;
+    const targetM = parseInt(m, 10) || 9;
+    let startM = targetM - 12;
+    let startY = targetYear;
+    while (startM <= 0) {
+      startM += 12;
+      startY -= 1;
+    }
+    return {
+      startDate: `${startY}-${String(startM).padStart(2, "0")}`,
+      endDate: targetMonth
+    };
+  }, [targetMonth]);
+
   const suggestedQuestions = React.useMemo(() => {
     if (selectedIds.length === 1) {
+      const id = selectedIds[0];
+      const rangeText = auditRange ? ` across ${auditRange.startDate} to ${auditRange.endDate}` : '';
       return [
-        `Analyze the carbon sequestration trend for ${selectedIds[0]}.`,
-        `Explain the structural growth and canopy height of ${selectedIds[0]}.`,
-        `Identify potential field stressors or anomalies in ${selectedIds[0]}.`
+        `Evaluate 12-month longitudinal carbon trajectory for ${id}${rangeText}.`,
+        `Assess seasonal NDVI health and GEDI canopy height stability for ${id}.`,
+        `Verify UAE Carbon Registry compliance and pre-commitment confidence for ${id}.`
       ];
     } else if (selectedIds.length > 1) {
       return [
-        "Compare the carbon absorption performance across these patches.",
-        "Which of these patches is showing the highest spectral vitality (NDVI)?",
-        "Provide a landscape-scale audit and identify priority intervention nodes."
+        "Compare the 12-month longitudinal trajectory and seasonality across these patches.",
+        "Which of these patches shows the most consistent carbon sequestration and canopy stability?",
+        "Provide a landscape-scale pre-commit audit and highlight any seasonal anomaly."
       ];
     }
     return [];
-  }, [selectedIds]);
+  }, [selectedIds, auditRange]);
 
   return (
     <SidebarProvider>
@@ -394,8 +459,13 @@ export default function XAIPage() {
                       <Bot className="size-5 text-accent" />
                       Landscape Intelligence Assistant
                     </CardTitle>
-                    <CardDescription className="text-xs font-medium flex items-center gap-1">
+                    <CardDescription className="text-xs font-medium flex items-center gap-2">
                       <Layers className="size-3" /> Auditing {selectedIds.length} Patches • Multi-TimeSeries Repository Active
+                      {auditRange && (
+                        <Badge variant="outline" className="text-[9px] font-mono border-accent/40 text-accent bg-accent/5 ml-1">
+                          13M Window ({auditRange.startDate} → {auditRange.endDate})
+                        </Badge>
+                      )}
                     </CardDescription>
                   </div>
                   {chatHistory.length > 0 && (
@@ -495,5 +565,17 @@ export default function XAIPage() {
         </main>
       </SidebarInset>
     </SidebarProvider>
+  )
+}
+
+export default function XAIPage() {
+  return (
+    <React.Suspense fallback={
+      <div className="flex h-screen w-full items-center justify-center">
+        <Loader2 className="size-8 animate-spin text-accent" />
+      </div>
+    }>
+      <XAIContent />
+    </React.Suspense>
   )
 }

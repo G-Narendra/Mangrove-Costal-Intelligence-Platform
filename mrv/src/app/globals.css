@@ -109,3 +109,32 @@
 .shap-bar-negative {
   @apply h-full bg-destructive transition-all duration-1000 ease-out;
 }
+
+/* Completely hide Next.js dev indicator badge, compilation toasts, and portals */
+nextjs-portal,
+[data-nextjs-dev-indicator],
+[data-nextjs-toast],
+[data-nextjs-toast-wrapper],
+[data-nextjs-dialog-overlay],
+#nextjs-dev-indicator,
+div[data-nextjs-portal],
+div[data-next-badge],
+div:has(> svg[data-next-badge]),
+#next-logo,
+[class*="next-dev-badge"],
+[class*="nextjs-static-indicator"],
+[data-nextjs-router-announcer],
+aside[aria-label="Turbopack"],
+button[aria-label*="Next.js"],
+button[aria-label*="Turbopack"],
+div[data-issues] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+}

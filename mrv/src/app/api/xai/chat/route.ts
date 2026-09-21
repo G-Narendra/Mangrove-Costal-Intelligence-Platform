@@ -116,25 +116,37 @@ Current User Query: ${query}
 Guidelines:
 - If the current query is a conversational follow-up, clarification, check, or meta-question (e.g. asking "that's not my query right?", "did you understand?", or referencing prior points):
   Address the user directly and conversationally in light of the conversation history and ecosystem data. Clarify or answer their specific question without repeating rigid boilerplate.
-- If the current query asks for patch performance evaluation or landscape audit:
-  1. Compare patches if multiple — identify best performers and stressed nodes using actual numbers from the data.
-  2. Accurately report Carbon (tCO₂e/ha), NDVI vitality (0-1 scale), and canopy height.
-  3. Link any notable changes to coastal weather or environmental conditions.
-  4. For stressed patches, explain possible causes and specify field actions.
-  5. End with 2–3 concise actionable recommendations prefixed with "→".`;
+- If the current query asks for patch performance evaluation, longitudinal audit, or UAE Registry pre-commitment verification:
+  1. Evaluate the trailing 12-month trajectory leading into the active target month: cite actual figures for Carbon Sequestration (tCO₂e/ha), NDVI vitality (0–1 scale), and GEDI canopy height (m).
+  2. Compare the active month's performance against the preceding 12-month baseline — assess whether values reflect normal coastal seasonality, growth accretion, or environmental stress.
+  3. Provide a clear regulatory certification verdict (e.g., whether the telemetry validates commitment to the UAE National Carbon Register and Verra VCS standards).
+  4. Compare patches if multiple — highlight top performers and vulnerable nodes using exact figures.
+  5. End with 2–3 concise actionable recommendations or verification conclusions prefixed with "→".`;
 
+    // Per-model timeout wrapper — prevents a single stuck model from blocking the fallback chain
+    async function generateWithTimeout(model: string, prompt: string, timeoutMs: number) {
+      return new Promise<{ text?: string }>((resolve, reject) => {
+        const timer = setTimeout(() => reject(new Error(`Timeout after ${timeoutMs}ms`)), timeoutMs);
+        ai.generate({ model, prompt })
+          .then(r => { clearTimeout(timer); resolve(r); })
+          .catch(e => { clearTimeout(timer); reject(e); });
+      });
+    }
+
+    // Models ordered: fastest/most available first → stable fallbacks
+    // IDs sourced directly from Google API 404 redirect hints (Sep 2026)
     const models = [
-      'googleai/gemini-3.1-flash-lite',
-      'googleai/gemini-3.5-flash-lite',
-      'googleai/gemini-2.5-flash',
-      'googleai/gemini-flash-latest',
-      'googleai/gemini-3.7-flash',
+      'googleai/gemini-3.5-flash-lite', // replaces retired gemini-2.0-flash-lite
+      'googleai/gemini-3.6-flash',       // replaces retired gemini-2.0-flash
+      'googleai/gemini-2.5-flash',       // available, may 503 under load
+      'googleai/gemini-2.5-flash-lite',  // lighter variant fallback
+      'googleai/gemini-2.5-pro',         // heavyweight last resort
     ];
     let lastError: unknown;
     for (const model of models) {
       try {
-        const response = await ai.generate({ model, prompt: fullPrompt });
-        const text = response.text?.trim();
+        const response = await generateWithTimeout(model, fullPrompt, 8000);
+        const text = (response as any).text?.trim();
         if (text) {
           return Response.json({ text }, {
             headers: {
@@ -143,10 +155,11 @@ Guidelines:
             },
           });
         }
-      } catch (aiError) {
+      } catch (aiError: any) {
         lastError = aiError;
-        console.warn(`[XAI] Model ${model} failed; trying next fallback.`);
-        await new Promise(resolve => setTimeout(resolve, 300));
+        const isTransient = aiError?.status === 'UNAVAILABLE' || aiError?.code === 503 || /503|timeout|unavailable/i.test(aiError?.message || '');
+        console.warn(`[XAI] Model ${model} failed (${isTransient ? 'transient' : 'error'}); trying next fallback.`);
+        await new Promise(resolve => setTimeout(resolve, isTransient ? 150 : 300));
       }
     }
 

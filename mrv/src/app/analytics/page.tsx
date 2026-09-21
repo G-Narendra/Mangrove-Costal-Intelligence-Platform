@@ -69,7 +69,12 @@ const QUARTERS = [
   { id: "Q4", name: "Q4 (Oct-Dec)", months: ["10", "11", "12"] }
 ]
 
-const YEARS = ["2021", "2022", "2023", "2024", "2025", "2026"]
+const BASE_START_YEAR = 2021
+const CURRENT_HORIZON_YEAR = 2030
+const YEARS = Array.from(
+  { length: CURRENT_HORIZON_YEAR - BASE_START_YEAR + 1 },
+  (_, i) => String(BASE_START_YEAR + i)
+)
 
 const COLORS = [
   "hsl(var(--accent))",
@@ -82,8 +87,31 @@ const COLORS = [
   "#f43f5e"
 ]
 
-export default function AnalyticsDashboard() {
+export function getTrailing12MonthsRange(yearStr: string, monthStr: string) {
+  const targetYear = parseInt(yearStr, 10) || 2026
+  const targetMonth = parseInt(monthStr, 10) || 9
+  const dates: string[] = []
+  for (let i = 12; i >= 0; i--) {
+    let m = targetMonth - i
+    let y = targetYear
+    while (m <= 0) {
+      m += 12
+      y -= 1
+    }
+    dates.push(`${y}-${String(m).padStart(2, "0")}`)
+  }
+  return {
+    dates,
+    startDate: dates[0],
+    endDate: dates[dates.length - 1],
+  }
+}
+
+import { useSearchParams } from "next/navigation"
+
+function AnalyticsContent() {
   const firestore = useFirestore()
+  const searchParams = useSearchParams()
   const patchesQuery = useMemoFirebase(() => {
     if (!firestore) return null
     return collection(firestore, "Patches")
@@ -95,13 +123,55 @@ export default function AnalyticsDashboard() {
   const [selectedPatches, setSelectedPatches] = React.useState<string[]>([])
   
   // Temporal States
-  const [rangeType, setRangeType] = React.useState<"Yearly" | "Quarterly" | "Monthly">("Yearly")
+  const [rangeType, setRangeType] = React.useState<"Rolling12M" | "Yearly" | "Quarterly" | "Monthly">("Yearly")
   const [year, setYear] = React.useState("2024")
   const [quarter, setQuarter] = React.useState("Q1")
   const [month, setMonth] = React.useState("01")
 
   const [timeData, setTimeData] = React.useState<any[]>([])
   const [loadingData, setLoadingData] = React.useState(false)
+
+  // Compute active rolling range and label
+  const rollingRange = React.useMemo(() => getTrailing12MonthsRange(year, month), [year, month])
+  const rangeDescription = React.useMemo(() => {
+    if (rangeType === "Rolling12M") {
+      return `${rollingRange.startDate} → ${rollingRange.endDate} (13M Trailing Audit)`
+    }
+    if (rangeType === "Yearly") return `Calendar Year ${year}`
+    if (rangeType === "Quarterly") return `${year} ${quarter}`
+    return `${year}-${month}`
+  }, [rangeType, year, quarter, month, rollingRange])
+
+  // Parse URL search parameters from registry links (e.g. ?patch=patch_0&mode=single&range=Rolling12M&year=2026&month=09)
+  React.useEffect(() => {
+    if (!searchParams) return
+    const patchParam = searchParams.get("patch")
+    const modeParam = searchParams.get("mode")
+    const rangeParam = searchParams.get("range")
+    const yearParam = searchParams.get("year")
+    const monthParam = searchParams.get("month")
+
+    if (patchParam) {
+      setSelectedPatches([patchParam])
+      setPatchMode(modeParam === "multi" ? "multi" : "single")
+    }
+    if (rangeParam && ["Rolling12M", "Yearly", "Quarterly", "Monthly"].includes(rangeParam)) {
+      setRangeType(rangeParam as any)
+    }
+    if (yearParam && /^\d{4}$/.test(yearParam)) {
+      if (!YEARS.includes(yearParam)) {
+        YEARS.push(yearParam)
+        YEARS.sort()
+      }
+      setYear(yearParam)
+    }
+    if (monthParam) {
+      const padded = monthParam.padStart(2, "0")
+      if (MONTHS_LIST.some(m => m.id === padded)) {
+        setMonth(padded)
+      }
+    }
+  }, [searchParams])
 
   // Fetch and structure data for multi-series comparison
   React.useEffect(() => {
@@ -114,61 +184,67 @@ export default function AnalyticsDashboard() {
       setLoadingData(true);
       const dataByDate: Record<string, any> = {};
 
-      // Determine which months to target
-      let targetMonths: string[] = []
-      if (rangeType === "Yearly") {
-        targetMonths = MONTHS_LIST.map(m => m.id)
+      // Determine which dates to target
+      let targetDates: string[] = []
+      if (rangeType === "Rolling12M") {
+        const { dates } = getTrailing12MonthsRange(year, month)
+        targetDates = dates
+      } else if (rangeType === "Yearly") {
+        targetDates = MONTHS_LIST.map(m => `${year}-${m.id}`)
       } else if (rangeType === "Quarterly") {
-        targetMonths = QUARTERS.find(q => q.id === quarter)?.months || []
+        const qMonths = QUARTERS.find(q => q.id === quarter)?.months || []
+        targetDates = qMonths.map(m => `${year}-${m}`)
       } else {
-        targetMonths = [month]
+        targetDates = [`${year}-${month}`]
       }
 
-      // Initialize monthly slots
-      targetMonths.forEach(m => {
-        dataByDate[`${year}-${m}`] = { 
-          month: MONTHS_LIST.find(ml => ml.id === m)?.name || m,
-          rawDate: `${year}-${m}`
+      // Initialize chronological slots
+      targetDates.forEach(dateStr => {
+        const [y, m] = dateStr.split("-")
+        const monthObj = MONTHS_LIST.find(ml => ml.id === m)
+        const shortName = monthObj ? monthObj.name.slice(0, 3) : m
+
+        let label = monthObj?.name || m
+        if (rangeType === "Rolling12M") {
+          label = `${shortName} '${y.slice(2)}`
+        } else if (rangeType === "Quarterly") {
+          label = shortName
+        } else if (rangeType === "Monthly") {
+          label = `${shortName} ${y}`
+        }
+
+        dataByDate[dateStr] = { 
+          month: label,
+          rawDate: dateStr
         };
       });
 
       try {
-        for (const patchId of selectedPatches) {
+        // Fetch all patches in parallel — one getDocs per patch (no subcollection reads)
+        await Promise.all(selectedPatches.map(async (patchId) => {
           const tsRef = collection(firestore, "Patches", patchId, "TimeSeries");
           const q = query(tsRef, orderBy("__name__", "asc"));
           const snapshot = await getDocs(q);
-          
+
           for (const tsDoc of snapshot.docs) {
             const dateId = tsDoc.id; // YYYY-MM
-            if (dateId.startsWith(year) && targetMonths.includes(dateId.split('-')[1])) {
-              // Use top-level TimeSeries fields for carbon
-              const tsData = tsDoc.data();
-              const totalAbsorption = tsData.total_absorption_tCO2e_ha || 0;
-              
-              // Fetch Pixels subcollection for detailed metrics
-              const pixelsRef = collection(firestore, "Patches", patchId, "TimeSeries", dateId, "Pixels");
-              const pixelsSnap = await getDocs(pixelsRef);
-              
-              let totalNDVI = 0, totalHeight = 0, totalBiomass = 0;
-              let pixelCount = 0;
-              
-              pixelsSnap.forEach((pDoc) => {
-                const px = pDoc.data();
-                totalNDVI += px.NDVI || 0;
-                totalHeight += px.GEDI_canopy_height_rh100 || 0;
-                totalBiomass += px.GEDI_biomass_Mg_ha || 0;
-                pixelCount++;
-              });
+            if (targetDates.includes(dateId)) {
+              // Read directly from top-level TimeSeries doc — no subcollection round-trips
+              const d = tsDoc.data();
+              const carbon  = d.total_absorption_tCO2e_ha ?? d.carbon_stock_tCO2e_ha ?? 0;
+              const ndvi    = d.average_NDVI    ?? d.NDVI    ?? 0;
+              const height  = d.average_GEDI_canopy_height_rh100 ?? d.GEDI_canopy_height_rh100 ?? 0;
+              const biomass = d.average_GEDI_biomass_Mg_ha       ?? d.biomass_Mg_ha ?? 0;
 
               if (dataByDate[dateId]) {
-                dataByDate[dateId][`${patchId}_carbon`] = totalAbsorption;
-                dataByDate[dateId][`${patchId}_ndvi`] = pixelCount > 0 ? totalNDVI / pixelCount : 0;
-                dataByDate[dateId][`${patchId}_height`] = pixelCount > 0 ? totalHeight / pixelCount : 0;
-                dataByDate[dateId][`${patchId}_biomass`] = pixelCount > 0 ? totalBiomass / pixelCount : 0;
+                dataByDate[dateId][`${patchId}_carbon`]  = carbon;
+                dataByDate[dateId][`${patchId}_ndvi`]    = ndvi;
+                dataByDate[dateId][`${patchId}_height`]  = height;
+                dataByDate[dateId][`${patchId}_biomass`] = biomass;
               }
             }
           }
-        }
+        }));
 
         const sortedData = Object.values(dataByDate).sort((a, b) => a.rawDate.localeCompare(b.rawDate));
         setTimeData(sortedData);
@@ -282,6 +358,7 @@ export default function AnalyticsDashboard() {
                       <SelectValue placeholder="Range Type" />
                     </SelectTrigger>
                     <SelectContent>
+                      <SelectItem value="Rolling12M">Trailing 12M + Active (Audit)</SelectItem>
                       <SelectItem value="Yearly">Yearly Analysis</SelectItem>
                       <SelectItem value="Quarterly">Quarterly Analysis</SelectItem>
                       <SelectItem value="Monthly">Monthly Analysis</SelectItem>
@@ -291,7 +368,7 @@ export default function AnalyticsDashboard() {
 
                 <div className="space-y-2">
                   <Label className="text-[10px] font-bold uppercase text-muted-foreground flex items-center gap-1">
-                    <Calendar className="size-3" /> Temporal Sub-Range
+                    <Calendar className="size-3" /> {rangeType === "Rolling12M" ? "Active / Target Cycle" : "Temporal Sub-Range"}
                   </Label>
                   <div className="flex gap-2">
                     <Select value={year} onValueChange={setYear}>
@@ -318,14 +395,14 @@ export default function AnalyticsDashboard() {
                       </Select>
                     )}
 
-                    {rangeType === "Monthly" && (
+                    {(rangeType === "Monthly" || rangeType === "Rolling12M") && (
                       <Select value={month} onValueChange={setMonth}>
                         <SelectTrigger className="bg-background/50 h-10 flex-1">
                           <SelectValue placeholder="Month" />
                         </SelectTrigger>
                         <SelectContent>
                           {MONTHS_LIST.map(m => (
-                            <SelectItem key={m.id} value={m.id}>{m.id}</SelectItem>
+                            <SelectItem key={m.id} value={m.id}>{m.name}</SelectItem>
                           ))}
                         </SelectContent>
                       </Select>
@@ -335,7 +412,13 @@ export default function AnalyticsDashboard() {
 
                 <div className="flex gap-2">
                   <Badge className="h-10 px-4 bg-primary text-primary-foreground font-bold shadow-lg shadow-primary/20 uppercase tracking-widest text-[10px] flex items-center justify-center text-center">
-                    {rangeType === "Yearly" ? year : rangeType === "Quarterly" ? `${year} ${quarter}` : `${year}-${month}`}
+                    {rangeType === "Rolling12M" 
+                      ? `${rollingRange.startDate} → ${rollingRange.endDate} (13M)` 
+                      : rangeType === "Yearly" 
+                        ? year 
+                        : rangeType === "Quarterly" 
+                          ? `${year} ${quarter}` 
+                          : `${year}-${month}`}
                   </Badge>
                 </div>
               </div>
@@ -381,7 +464,7 @@ export default function AnalyticsDashboard() {
                         <Waves className="size-4 text-accent" />
                         Patch Carbon Sequestration (tCO₂e/ha)
                       </CardTitle>
-                      <CardDescription>Multi-series comparison for {rangeType === "Yearly" ? year : rangeType === "Quarterly" ? `${year} ${quarter}` : `${year}-${month}`}</CardDescription>
+                      <CardDescription>Multi-series comparison for {rangeDescription}</CardDescription>
                     </CardHeader>
                     <CardContent>
                       <ChartContainer config={chartConfig} className="min-h-[450px] w-full">
@@ -416,7 +499,7 @@ export default function AnalyticsDashboard() {
                         <TrendingUp className="size-4 text-green-500" />
                         Patch Spectral Vitality (NDVI)
                       </CardTitle>
-                      <CardDescription>Vegetation health comparison across selected range</CardDescription>
+                      <CardDescription>Vegetation health comparison across {rangeDescription}</CardDescription>
                     </CardHeader>
                     <CardContent>
                       <ChartContainer config={chartConfig} className="min-h-[450px] w-full">
@@ -508,5 +591,17 @@ export default function AnalyticsDashboard() {
         </main>
       </SidebarInset>
     </SidebarProvider>
+  )
+}
+
+export default function AnalyticsDashboard() {
+  return (
+    <React.Suspense fallback={
+      <div className="flex h-screen w-full items-center justify-center">
+        <Loader2 className="size-8 animate-spin text-accent" />
+      </div>
+    }>
+      <AnalyticsContent />
+    </React.Suspense>
   )
 }

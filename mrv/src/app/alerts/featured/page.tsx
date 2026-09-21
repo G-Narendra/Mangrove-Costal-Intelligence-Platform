@@ -28,7 +28,7 @@ import {
   Info,
 } from "lucide-react"
 import { useCollection, useFirestore, useMemoFirebase } from "@/firebase"
-import { collection, query, limit, doc, setDoc, deleteDoc, where } from "firebase/firestore"
+import { collection, query, limit, doc, setDoc, updateDoc, where } from "firebase/firestore"
 import { Button } from "@/components/ui/button"
 import { useToast } from "@/hooks/use-toast"
 
@@ -70,7 +70,7 @@ export default function FeaturedAlertsPage() {
 
   const { data: featuredAlerts, isLoading } = useCollection<FeaturedAlert>(alertsQuery)
 
-  const alerts = featuredAlerts || []
+  const alerts = (featuredAlerts || []).filter(a => a.status !== 'RESOLVED' && !(a as any).cleared)
 
   const handleManualScan = async () => {
     if (isTriggering || !firestore) return
@@ -127,7 +127,16 @@ export default function FeaturedAlertsPage() {
 
     setClearingIds(prev => ({ ...prev, [alertId]: true }))
     try {
-      await deleteDoc(doc(firestore, "MCIP_Featured_Alerts", alertId))
+      await updateDoc(doc(firestore, "MCIP_Featured_Alerts", alertId), {
+        status: "RESOLVED",
+        cleared: true,
+        clearedAt: new Date().toISOString(),
+        resolvedAt: new Date().toISOString()
+      })
+      toast({
+        title: "Alert Resolved & Cleared",
+        description: "Alert cleared from active feed. Retained permanently in database.",
+      })
     } catch (err: any) {
       toast({
         title: "Failed to Clear Alert",

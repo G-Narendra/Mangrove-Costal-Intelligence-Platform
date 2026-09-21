@@ -42,8 +42,6 @@ import {
 import { useFirestore, useCollection, useMemoFirebase } from "@/firebase"
 import { collection, getDocs, query, limit, where, doc, onSnapshot } from "firebase/firestore"
 import { calculateDynamicMonths, getArchiveMonthLabel } from "@/lib/temporal"
-import { generateSystemAudit } from "@/ai/flows/system-audit-report-flow"
-import { askSpecialist } from "@/ai/flows/patch-intelligence-flow"
 import {
   Dialog,
   DialogContent,
@@ -1041,15 +1039,25 @@ export default function ReportsPage() {
         setReportMetrics(finalMetrics)
 
         try {
-          resultText = await generateSystemAudit({
-            totalPatches: patchesSnapshot.size,
-            avgCarbon: totalCarbonSum / (sampledDocs.length || 1),
-            dateRange: `${startDate} to ${endDate}`,
-            topPatches: topPerformers,
+          const genRes = await fetch("/api/reports/generate", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              type: "Global",
+              startDate,
+              endDate,
+              totalPatches: patchesSnapshot.size,
+              avgCarbon: totalCarbonSum / (sampledDocs.length || 1),
+              metrics: finalMetrics,
+            }),
           })
+          const genData = await genRes.json()
+          if (genData.narrative) {
+            resultText = genData.narrative
+          } else {
+            throw new Error(genData.error || "Empty narrative")
+          }
         } catch (error) {
-          const message = error instanceof Error ? error.message : String(error)
-          if (!/503|UNAVAILABLE|high demand|temporar|rate limit|429/i.test(message)) throw error
           resultText = buildEvidenceFallback(
             finalMetrics,
             `${startDate} to ${endDate}`,
@@ -1164,14 +1172,23 @@ export default function ReportsPage() {
           : `Prepare an agency-grade comparative MRV narrative for these patches: ${targetIds.join(', ')} from ${startDate} through ${endDate}. Include a clear ranking, convergence/divergence of carbon and NDVI trends, data limitations, uncertainty, and prioritized actions. Do not discuss patches not supplied.`
 
         try {
-          const result = await askSpecialist({
-            patches: auditedPatches,
-            query: promptQuery,
+          const genRes = await fetch("/api/reports/generate", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              type: reportType === "Single" ? "Single" : "Comparative",
+              startDate,
+              endDate,
+              metrics: finalMetrics,
+            }),
           })
-          resultText = result.response
+          const genData = await genRes.json()
+          if (genData.narrative) {
+            resultText = genData.narrative
+          } else {
+            throw new Error(genData.error || "Empty narrative")
+          }
         } catch (error) {
-          const message = error instanceof Error ? error.message : String(error)
-          if (!/503|UNAVAILABLE|high demand|temporar|rate limit|429/i.test(message)) throw error
           resultText = buildEvidenceFallback(finalMetrics, `${startDate} to ${endDate}`, reportType === "Single" ? "single-patch MRV report" : "comparative MRV report")
         }
       }
