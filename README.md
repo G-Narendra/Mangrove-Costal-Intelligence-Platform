@@ -1,8 +1,12 @@
 <p align="center">
+  <img src="mrv/public/logo.png" alt="MCIP Logo" width="180" />
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/MSc_Thesis-CST4090-purple?style=for-the-badge" alt="MSc Thesis" />
   <img src="https://img.shields.io/badge/Middlesex_University-Dubai-red?style=for-the-badge" alt="MDX Dubai" />
   <img src="https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.12" />
-  <img src="https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js 15" />
+  <img src="https://img.shields.io/badge/Next.js-16.x-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js 16" />
   <img src="https://img.shields.io/badge/FastAPI-0.111-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
   <img src="https://img.shields.io/badge/TensorFlow-2.16-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
   <img src="https://img.shields.io/badge/Verra_VM0033-Compliant-emerald?style=for-the-badge" alt="Verra VM0033" />
