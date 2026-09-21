@@ -202,5 +202,5 @@ def scheduler_entry(continuous: bool = False):
 
 
 if __name__ == "__main__":
-    is_continuous = "--continuous" in sys.argv
+    is_continuous = "--continuous" in sys.argv or "--daemon" in sys.argv
     scheduler_entry(is_continuous)

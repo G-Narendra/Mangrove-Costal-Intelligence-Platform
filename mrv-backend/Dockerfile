@@ -15,5 +15,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-# Default execution: run the autonomous MRV pipeline scheduler in daemon mode
-CMD ["python", "scheduler.py", "--daemon"]
+EXPOSE 10000
+
+# Run FastAPI with Uvicorn, dynamically binding to Render's injected PORT
+CMD ["sh", "-c", "uvicorn server:app --host 0.0.0.0 --port ${PORT:-10000}"]
