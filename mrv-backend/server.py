@@ -100,8 +100,24 @@ def trigger_pipeline(background_tasks: BackgroundTasks, month: Optional[str] = N
         "status": "processing"
     }
 
+@app.post("/api/alerts/trigger-daily")
+def trigger_daily_alerts(background_tasks: BackgroundTasks):
+    def alert_worker():
+        try:
+            logger.info("Executing daily featured alerts and weather/news threat analysis...")
+            from daily_cron import run_daily_check
+            run_daily_check()
+        except Exception as e:
+            logger.exception(f"Daily alert generation failed: {e}")
+
+    background_tasks.add_task(alert_worker)
+    return {
+        "message": "Daily predictive threat analysis and featured alerts generation queued",
+        "status": "processing"
+    }
+
 def _start_background_scheduler():
-    enable_sched = os.getenv("ENABLE_BACKGROUND_SCHEDULER", "false").lower() in ("true", "1", "yes")
+    enable_sched = os.getenv("ENABLE_BACKGROUND_SCHEDULER", "true").lower() in ("true", "1", "yes")
     if enable_sched:
         def worker():
             try:

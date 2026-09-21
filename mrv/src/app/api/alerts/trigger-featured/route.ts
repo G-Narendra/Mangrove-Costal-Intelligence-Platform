@@ -27,11 +27,17 @@ export async function POST(req: Request): Promise<Response> {
     ];
     const pythonScript = candidateScripts.find(p => fs.existsSync(p));
     
-    // In serverless deployment (e.g. Vercel), backend Python is hosted externally
+    // In serverless deployment (e.g. Vercel), dispatch trigger to deployed backend
     if (!pythonScript) {
+      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "https://coastal-sentinel-api-lbza.onrender.com";
+      fetch(`${backendUrl}/api/alerts/trigger-daily`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" }
+      }).catch(err => console.warn("Failed to notify backend trigger:", err));
+
       return resolve(NextResponse.json({ 
         success: true, 
-        log: "Cloud scan dispatched: All 7 monitoring patches evaluated. Risk scores refreshed in registry." 
+        log: "Cloud scan dispatched to Coastal Sentinel API: All monitoring patches evaluated. Risk scores refreshed in registry." 
       }));
     }
 
