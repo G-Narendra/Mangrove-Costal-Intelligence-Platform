@@ -29,6 +29,45 @@ service cloud.firestore {
 
     // --- COLLECTION RULES ---
 
+    // 1. Internal Patch Repositories & Sensor Time-Series:
+    // STRICTLY READ-ONLY for all clients and AI. No push, put, update, or delete permitted.
+    match /MCIP_Patches/{patchId} {
+      allow read: if true;
+      allow create, update, delete: if false;
+
+      match /TimeSeries/{month} {
+        allow read: if true;
+        allow create, update, delete: if false;
+      }
+    }
+
+    // 2. Historical MRV Registry Records:
+    // Immutable audit trail. Only authorized admin can create/update. Deletions are forbidden.
+    match /MCIP_Registry_Records/{id} {
+      allow read: if true;
+      allow create, update: if isAdmin();
+      allow delete: if false;
+    }
+
+    // 3. Computed Health Scores & Anomaly Signals:
+    // Computed exclusively by backend ingestion pipeline. Strictly immutable for clients/AI.
+    match /MCIP_Health_Scores/{id} {
+      allow read: if true;
+      allow create, update, delete: if false;
+    }
+
+    // 4. External Coastal Context:
+    match /MCIP_External_Context/{id} {
+      allow read: if true;
+      allow create, update, delete: if false;
+    }
+
+    // 5. Featured Anomaly Alerts:
+    match /MCIP_Featured_Alerts/{id} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+
     match /roles_admin/{userId} {
       allow get: if isSignedIn();
       allow list: if false;
@@ -47,7 +86,7 @@ service cloud.firestore {
       allow read, write: if true;
     }
 
-    // Default fallback
+    // Default fallback: read allowed, write restricted to admin only
     match /{path=**} {
       allow read: if true;
       allow write: if isAdmin();

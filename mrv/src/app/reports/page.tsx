@@ -196,6 +196,42 @@ export default function ReportsPage() {
       format: "a4",
     })
 
+    // Universal ASCII/WinAnsi sanitizer to eliminate jsPDF 2-byte font spacing distortions
+    const cleanPdfText = (text: string): string => {
+      if (!text) return ""
+      return String(text)
+        .replace(/tCO₂e\/ha/gi, "tCO2e/ha")
+        .replace(/tCO₂e/gi, "tCO2e")
+        .replace(/tCO2e\/ha/gi, "tCO2e/ha")
+        .replace(/CO₂/gi, "CO2")
+        .replace(/₂/g, "2")
+        .replace(/Δ/g, "Delta")
+        .replace(/[→➔➜]/g, ">")
+        .replace(/[–—]/g, "-")
+        .replace(/[•·]/g, "-")
+        .replace(/[\u2018\u2019]/g, "'")
+        .replace(/[\u201C\u201D]/g, '"')
+        .replace(/…/g, "...")
+        .replace(/[^\x20-\x7E\xA0-\xFF\n\r\t]/g, "")
+    }
+
+    // Intercept and sanitize every string passed to jsPDF
+    const origText = doc.text.bind(doc)
+    doc.text = function(text: any, x: any, y: any, options?: any) {
+      if (typeof text === "string") {
+        return origText(cleanPdfText(text), x, y, options)
+      }
+      if (Array.isArray(text)) {
+        return origText(text.map(t => typeof t === "string" ? cleanPdfText(t) : t), x, y, options)
+      }
+      return origText(text, x, y, options)
+    } as any
+
+    const origSplit = doc.splitTextToSize.bind(doc)
+    doc.splitTextToSize = function(text: string, maxW: number, options?: any) {
+      return origSplit(cleanPdfText(text), maxW, options)
+    } as any
+
     const pageWidth = doc.internal.pageSize.getWidth()   // 210mm
     const pageHeight = doc.internal.pageSize.getHeight() // 297mm
     const margin = 18
@@ -232,7 +268,7 @@ export default function ReportsPage() {
       doc.setFont("helvetica", "normal")
       doc.setFontSize(7.5)
       doc.setTextColor(110, 120, 115)
-      doc.text(`VERRA VM0033 EVIDENCE DOSSIER • ${scopeLabel.toUpperCase()} • ${period}`, margin + 22, 21)
+      doc.text(`VERRA VM0033 EVIDENCE DOSSIER | ${scopeLabel.toUpperCase()} | ${period}`, margin + 22, 21)
 
       doc.setDrawColor(16, 185, 129)
       doc.setLineWidth(0.6)
@@ -264,7 +300,7 @@ export default function ReportsPage() {
     doc.setFont("helvetica", "normal")
     doc.setFontSize(7.5)
     doc.setTextColor(100, 115, 110)
-    doc.text("METHODOLOGY: VERRA VM0033 v2.1 • TIDAL WETLAND RESTORATION & CONSERVATION", margin + 30, 29)
+    doc.text("METHODOLOGY: VERRA VM0033 v2.1 | TIDAL WETLAND RESTORATION & CONSERVATION", margin + 30, 29)
     doc.text("SATELLITE SENTINEL MULTI-TEMPORAL SAR, OPTICAL & SPACEBORNE LiDAR REPOSITORY", margin + 30, 33)
 
     doc.setDrawColor(16, 185, 129)
@@ -309,7 +345,7 @@ export default function ReportsPage() {
       ["Observation Window:", period],
       ["Audit Scope:", `${scopeLabel} (${patchCount || metrics.length} Nodes)`],
       ["Spatial Jurisdiction:", "Abu Dhabi Marine Protected Areas, UAE"],
-      ["Optical Sensor:", "Sentinel-2 MSI (B1–B12 Surface Reflectance)"],
+      ["Optical Sensor:", "Sentinel-2 MSI (B1-B12 Surface Reflectance)"],
       ["SAR Radar Sensor:", "Sentinel-1 C-Band Dual-Pol (VV/VH Backscatter)"],
       ["Canopy Height Metric:", "NASA GEDI Full-Waveform LiDAR (rh100)"],
     ]
@@ -349,8 +385,8 @@ export default function ReportsPage() {
     const kpis = [
       { label: "MONITORED UNITS", val: `${patchCount || metrics.length} Patches`, sub: "Boundary Polygons", col: [18, 70, 58] },
       { label: "EVIDENCE PIXELS", val: `${totalPixels.toLocaleString()}`, sub: "Sentinel Grid Cells", col: [14, 116, 144] },
-      { label: "NET CARBON Δ", val: `${totalCarbonChange >= 0 ? "+" : ""}${totalCarbonChange.toFixed(2)}`, sub: "tCO₂e/ha Storage", col: totalCarbonChange >= 0 ? [16, 185, 129] : [220, 38, 38] },
-      { label: "MEAN VITALITY Δ", val: `${totalNdviChange >= 0 ? "+" : ""}${totalNdviChange.toFixed(3)}`, sub: "NDVI Greenness Shift", col: [14, 116, 144] },
+      { label: "NET CARBON CHANGE", val: `${totalCarbonChange >= 0 ? "+" : ""}${totalCarbonChange.toFixed(2)}`, sub: "tCO2e/ha Storage", col: totalCarbonChange >= 0 ? [16, 185, 129] : [220, 38, 38] },
+      { label: "MEAN VITALITY CHANGE", val: `${totalNdviChange >= 0 ? "+" : ""}${totalNdviChange.toFixed(3)}`, sub: "NDVI Greenness Shift", col: [14, 116, 144] },
     ]
 
     kpis.forEach((kpi, idx) => {
@@ -391,7 +427,7 @@ export default function ReportsPage() {
 
     const noticeText = [
       "This technical dossier organizes observational evidence generated from calibrated multispectral (Sentinel-2), dual-polarization SAR (Sentinel-1), and spaceborne full-waveform LiDAR (NASA GEDI) sensors under the UAE National Blue Carbon Monitoring, Reporting, and Verification (MRV) framework.",
-      "In accordance with Verra VM0033 (Methodology for Tidal Wetland and Seagrass Restoration, v2.1) and IPCC 2013 Wetlands Supplement requirements, carbon density is measured as metric tonnes of carbon dioxide equivalent per hectare (tCO₂e/ha), incorporating both aboveground biomass and soil organic carbon (SOC) proxy layers.",
+      "In accordance with Verra VM0033 (Methodology for Tidal Wetland and Seagrass Restoration, v2.1) and IPCC 2013 Wetlands Supplement requirements, carbon density is measured as metric tonnes of carbon dioxide equivalent per hectare (tCO2e/ha), incorporating both aboveground biomass and soil organic carbon (SOC) proxy layers.",
       "This document serves as an empirical foundation for Project Proponent validation and third-party Validation/Verification Body (VVB) audit proceedings. Official carbon credit issuance remains subject to baseline additionality verification, permanence risk assessment, and registry approval.",
     ]
 
@@ -424,11 +460,11 @@ export default function ReportsPage() {
     doc.text("Technical Framework:", margin, signY + 11)
     doc.setFont("helvetica", "normal")
     doc.setTextColor(70, 80, 75)
-    doc.text("National Digital MRV Architecture • Cloud Automated Sentinel Imputation Pipeline", margin + 31, signY + 11)
+    doc.text("National Digital MRV Architecture | Cloud Automated Sentinel Imputation Pipeline", margin + 31, signY + 11)
 
     doc.setFontSize(6.5)
     doc.setTextColor(130, 140, 135)
-    doc.text("CONFIDENTIAL • OFFICIAL GOVERNMENT OF THE UNITED ARAB EMIRATES BLUE CARBON MRV RECORD", pageWidth / 2, signY + 22, { align: "center" })
+    doc.text("CONFIDENTIAL | OFFICIAL GOVERNMENT OF THE UNITED ARAB EMIRATES BLUE CARBON MRV RECORD", pageWidth / 2, signY + 22, { align: "center" })
 
     // =========================================================================
     // PAGE 2: EXECUTIVE SUMMARY & CARBON TRAJECTORY (NEVER SPLIT ACROSS PAGES)
@@ -443,7 +479,7 @@ export default function ReportsPage() {
     const summaryText = [
       `This ${scopeLabel.toLowerCase()} evaluates ${patchCount || metrics.length} coastal mangrove monitoring unit${(patchCount || metrics.length) === 1 ? "" : "s"} over the active observation window ${period}.`,
       `The empirical dataset comprises ${totalPixels.toLocaleString()} pixel-month observations synthesized across ${totalMonths} patch-month records, establishing a continuous high-resolution audit footprint.`,
-      `Cumulative blue carbon stock change across the monitored units is recorded at ${totalCarbonChange >= 0 ? "+" : ""}${totalCarbonChange.toFixed(2)} tCO₂e/ha (mean current stock: ${meanCarbon.toFixed(2)} tCO₂e/ha). The corresponding aggregated NDVI vitality shift is ${totalNdviChange >= 0 ? "+" : ""}${totalNdviChange.toFixed(3)} (mean current NDVI: ${meanNdvi.toFixed(3)}).`,
+      `Cumulative blue carbon stock change across the monitored units is recorded at ${totalCarbonChange >= 0 ? "+" : ""}${totalCarbonChange.toFixed(2)} tCO2e/ha (mean current stock: ${meanCarbon.toFixed(2)} tCO2e/ha). The corresponding aggregated NDVI vitality shift is ${totalNdviChange >= 0 ? "+" : ""}${totalNdviChange.toFixed(3)} (mean current NDVI: ${meanNdvi.toFixed(3)}).`,
     ]
 
     doc.setFont("helvetica", "normal")
@@ -472,14 +508,14 @@ export default function ReportsPage() {
     doc.setFontSize(7.5)
     doc.setTextColor(50, 65, 58)
     const takeaway = totalCarbonChange >= 0 
-      ? `Net positive sequestration confirmed (+${totalCarbonChange.toFixed(2)} tCO₂e/ha). Canopy structure demonstrates stability across monitored nodes, confirming biomass permanence under VM0033 standards.`
-      : `Localized carbon decline observed (${totalCarbonChange.toFixed(2)} tCO₂e/ha). Targeted ground inspection is mandated to evaluate hydrological flushing and substrate hypersalinity.`
+      ? `Net positive sequestration confirmed (+${totalCarbonChange.toFixed(2)} tCO2e/ha). Canopy structure demonstrates stability across monitored nodes, confirming biomass permanence under VM0033 standards.`
+      : `Localized carbon decline observed (${totalCarbonChange.toFixed(2)} tCO2e/ha). Targeted ground inspection is mandated to evaluate hydrological flushing and substrate hypersalinity.`
     doc.text(doc.splitTextToSize(takeaway, contentWidth - 10), margin + 5, y + 10.5)
 
     y += 26
 
     // Section 2: Carbon Trajectory Trend Chart
-    addSectionTitle("2. Carbon Stock & Sequestration Trajectory (tCO₂e/ha)", y)
+    addSectionTitle("2. Carbon Stock & Sequestration Trajectory (tCO2e/ha)", y)
     y += 7
 
     const hasMonthlySeries = metrics.some(m => (m.history?.length || 0) > 1)
@@ -556,7 +592,7 @@ export default function ReportsPage() {
       doc.setFont("helvetica", "normal")
       doc.setFontSize(6.5)
       doc.setTextColor(120, 130, 125)
-      doc.text("Figure 1: Mean aboveground and belowground blue carbon density (tCO₂e/ha) synthesized across Sentinel observations.", margin, chartY + chartHeight + 20)
+      doc.text("Figure 1: Mean aboveground and belowground blue carbon density (tCO2e/ha) synthesized across Sentinel observations.", margin, chartY + chartHeight + 20)
     } else {
       // Bar Chart for Carbon Change
       const maxVal = Math.max(...metrics.map(m => Math.abs(m.carbonChange)), 1)
@@ -725,9 +761,16 @@ export default function ReportsPage() {
 
     autoTable(doc, {
       startY: y4,
-      head: [["Patch ID", "Months", "Pixels", "C Start (tCO₂e)", "C End (tCO₂e)", "Net Δ Carbon", "Net Δ NDVI", "Audit Signal"]],
+      head: [["Patch ID", "Months", "Pixels", "C Start (tCO2e)", "C End (tCO2e)", "Net Delta Carbon", "Net Delta NDVI", "Audit Signal"]],
       body: tableRows,
       theme: "striped",
+      didParseCell: (data: any) => {
+        if (typeof data.cell.text === "string") {
+          data.cell.text = cleanPdfText(data.cell.text)
+        } else if (Array.isArray(data.cell.text)) {
+          data.cell.text = data.cell.text.map(cleanPdfText)
+        }
+      },
       headStyles: {
         fillColor: [18, 70, 58],
         textColor: [255, 255, 255],
@@ -769,7 +812,7 @@ export default function ReportsPage() {
 
     const matrixRows = [
       ["Monitoring Period & Spatial Boundary", `${period} across ${patchCount || metrics.length} geographic boundary polygons`, "Documented & Mapped"],
-      ["Multi-Spectral Optical Time-Series", "Sentinel-2 MSI surface reflectance (B1–B12, NDVI, NDWI)", "Calibrated & Documented"],
+      ["Multi-Spectral Optical Time-Series", "Sentinel-2 MSI surface reflectance (B1-B12, NDVI, NDWI)", "Calibrated & Documented"],
       ["Synthetic Aperture Radar (SAR)", "Sentinel-1 dual-pol backscatter (VV/VH) & coherence matrices", "Calibrated & Documented"],
       ["Spaceborne LiDAR Canopy Structure", "NASA GEDI full-waveform metrics (rh100, rh98, rh92, FCOVER)", "Empirical LiDAR Recorded"],
       ["Carbon Sequestration & Stock Allometry", "Allometric biomass equations & ML temporal imputation", "Methodology Equations Attached"],
@@ -784,6 +827,13 @@ export default function ReportsPage() {
       head: [["Methodological Domain", "Empirical Evidence in Dossier", "VVB Compliance Status"]],
       body: matrixRows,
       theme: "striped",
+      didParseCell: (data: any) => {
+        if (typeof data.cell.text === "string") {
+          data.cell.text = cleanPdfText(data.cell.text)
+        } else if (Array.isArray(data.cell.text)) {
+          data.cell.text = data.cell.text.map(cleanPdfText)
+        }
+      },
       headStyles: {
         fillColor: [14, 116, 144],
         textColor: [255, 255, 255],
@@ -876,7 +926,7 @@ export default function ReportsPage() {
           doc.setFont("helvetica", "bold")
           doc.setFontSize(8)
           doc.setTextColor(isArrow ? 14 : 18, isArrow ? 116 : 70, isArrow ? 144 : 58)
-          doc.text(isArrow ? "→" : "•", margin + 1, currentY)
+          doc.text(isArrow ? ">" : "-", margin + 1, currentY)
 
           doc.setFont("helvetica", "normal")
           doc.setTextColor(45, 55, 50)
@@ -912,7 +962,7 @@ export default function ReportsPage() {
       doc.setFontSize(7.5)
       doc.setTextColor(115, 125, 120)
       doc.text(
-        `Confidential • UAE Blue Carbon MRV Dossier • Page ${p} of ${totalPages}`,
+        `Confidential | UAE Blue Carbon MRV Dossier | Page ${p} of ${totalPages}`,
         pageWidth / 2,
         pageHeight - 9,
         { align: "center" }
