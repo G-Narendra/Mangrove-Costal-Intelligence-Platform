@@ -17,7 +17,7 @@ import { ConnectionLayer } from "@/components/map/connection-layer"
 import { parseCentroidArray, Point } from "@/lib/geometry"
 import { AreaChart, Area, XAxis, YAxis, ResponsiveContainer } from "recharts"
 
-const MAPS_API_KEY = "AIzaSyC-wvVnsWcIg8c83v9dzU3Dp918Kx61otE"
+const MAPS_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || "AIzaSyC-wvVnsWcIg8c83v9dzU3Dp918Kx61otE"
 
 export default function MapPage() {
   const firestore = useFirestore()

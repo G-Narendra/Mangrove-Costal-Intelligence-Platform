@@ -20,6 +20,19 @@ export function getAdminFirestore(): admin.firestore.Firestore {
         console.error("Failed to parse FIREBASE_SERVICE_ACCOUNT_KEY:", err)
         admin.initializeApp()
       }
+    } else if (process.env.FIREBASE_ADMIN_PRIVATE_KEY && process.env.FIREBASE_ADMIN_CLIENT_EMAIL) {
+      try {
+        admin.initializeApp({
+          credential: admin.credential.cert({
+            projectId: process.env.FIREBASE_ADMIN_PROJECT_ID || "mangroove-startup-96309",
+            clientEmail: process.env.FIREBASE_ADMIN_CLIENT_EMAIL,
+            privateKey: process.env.FIREBASE_ADMIN_PRIVATE_KEY.replace(/\\n/g, "\n"),
+          }),
+        })
+      } catch (err) {
+        console.error("Failed to initialize Firebase Admin from discrete env vars:", err)
+        admin.initializeApp()
+      }
     } else {
       const keyCandidates = [
         path.resolve(process.cwd(), "mangroove-startup-96309-firebase-adminsdk-fbsvc-44d45acec2_projectmail.json"),
