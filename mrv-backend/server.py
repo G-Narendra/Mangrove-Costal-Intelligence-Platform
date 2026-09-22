@@ -82,7 +82,7 @@ def get_status():
             "error": str(e)
         }
 
-@app.post("/api/pipeline/run")
+@app.api_route("/api/pipeline/run", methods=["GET", "POST"])
 def trigger_pipeline(background_tasks: BackgroundTasks, month: Optional[str] = None):
     target_month = month or os.getenv("TARGET_START_MONTH", "2026-05")
     
@@ -100,7 +100,7 @@ def trigger_pipeline(background_tasks: BackgroundTasks, month: Optional[str] = N
         "status": "processing"
     }
 
-@app.post("/api/alerts/trigger-daily")
+@app.api_route("/api/alerts/trigger-daily", methods=["GET", "POST"])
 def trigger_daily_alerts(background_tasks: BackgroundTasks):
     def alert_worker():
         try:
