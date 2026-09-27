@@ -95,8 +95,8 @@ export const MOCK_ALERTS: Alert[] = [
 ];
 
 export const KPI_TOTALS = {
-  totalBlueCarbon: 48200,
-  totalMangroveArea: 1840,
-  totalSeagrassArea: 180,
+  totalBlueCarbon: 48989,
+  totalMangroveArea: 7030,
+  meanSequestrationFlux: 1.98,
   avgEcosystemHealth: 39.1,
 };
