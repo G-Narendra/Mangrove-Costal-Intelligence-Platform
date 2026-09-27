@@ -26,24 +26,25 @@ export default function Dashboard() {
     totalCarbon: number;
     totalArea: number;
     avgHealth: number;
-  }>(() => {
-    if (typeof window !== "undefined") {
-      try {
-        const cached = localStorage.getItem("mcip_dashboard_kpis")
-        if (cached) {
-          const parsed = JSON.parse(cached)
-          if (parsed.totalCarbon > 0 && parsed.totalArea > 0) return parsed
-        }
-      } catch (e) {}
-    }
-    // UAE Coastal MRV verified baseline so KPIs show up in 0ms on initial paint
-    return {
-      totalCarbon: 48200,
-      totalArea: 1840,
-      avgHealth: 88.5
-    }
+  }>({
+    totalCarbon: 48200,
+    totalArea: 1840,
+    avgHealth: 88.5
   })
   const [isAggregating, setIsAggregating] = React.useState(false)
+
+  // Hydrate from localStorage once on mount to avoid SSR hydration mismatch
+  React.useEffect(() => {
+    try {
+      const cached = localStorage.getItem("mcip_dashboard_kpis")
+      if (cached) {
+        const parsed = JSON.parse(cached)
+        if (parsed.totalCarbon > 0 && parsed.totalArea > 0) {
+          setAggregates(parsed)
+        }
+      }
+    } catch (e) {}
+  }, [])
 
   // 1. Fetch registry carbon independently on mount
   React.useEffect(() => {
@@ -82,10 +83,12 @@ export default function Dashboard() {
     let healthCount = 0
 
     patches.forEach((patch: any) => {
-      totalArea += (patch.totalCarbon || 120)
-      const healthValue = (patch.healthScore !== undefined && patch.healthScore !== 0) 
+      totalArea += (patch.area_ha || patch.area || 18.4)
+      const healthValue = (patch.current_health_score !== undefined && patch.current_health_score !== 0)
+        ? patch.current_health_score
+        : (patch.healthScore !== undefined && patch.healthScore !== 0) 
         ? patch.healthScore 
-        : 88.5
+        : 62.4
       healthSum += healthValue
       healthCount++
     })
@@ -121,16 +124,16 @@ export default function Dashboard() {
     return () => unsub()
   }, [firestore])
 
-  const getPipelineStatusInfo = () => {
+  const pipelineStatusInfo = React.useMemo(() => {
     if (!pipelineState) return { label: 'Unknown', color: 'bg-muted text-muted-foreground', icon: Loader2 }
     const { last_updated_month, current_month, pipeline_status } = pipelineState
     if (pipeline_status === 'running') return { label: 'Processing...', color: 'bg-amber-500/10 text-amber-500 border-amber-500/20', icon: RefreshCw }
     if (pipeline_status === 'failed') return { label: 'Failed', color: 'bg-destructive/10 text-destructive border-destructive/20', icon: XCircle }
     if (last_updated_month >= current_month) return { label: 'Up to Date', color: 'bg-green-500/10 text-green-500 border-green-500/20', icon: CheckCircle2 }
     return { label: 'Behind', color: 'bg-red-500/10 text-red-500 border-red-500/20', icon: AlertTriangle }
-  }
+  }, [pipelineState])
 
-  const kpis = [
+  const kpis = React.useMemo(() => [
     {
       title: "Total Blue Carbon",
       value: `${(aggregates.totalCarbon / 1000).toFixed(1)}k tCO₂e`,
@@ -163,7 +166,7 @@ export default function Dashboard() {
       color: "text-accent",
       bg: "bg-accent",
     },
-  ]
+  ], [aggregates])
 
   return (
     <SidebarProvider>
@@ -186,7 +189,7 @@ export default function Dashboard() {
                   Landscape-scale coastal intelligence from Sentinel & GEDI lidar data.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl">
-                  Monitoring {patches?.length || 15} active coastal patches across the UAE. This dashboard synthesizes official Registry data and real-time node snapshots to provide a longitudinal audit of blue carbon sinks.
+                  Monitoring {patches?.length || 100} active coastal patches across the UAE. This dashboard synthesizes official Registry data and real-time node snapshots to provide a longitudinal audit of blue carbon sinks.
                 </p>
               </div>
               <div className="pt-4">
@@ -251,27 +254,26 @@ export default function Dashboard() {
             <section>
               <Card className="border-border/50 bg-card/30 backdrop-blur-sm overflow-hidden relative">
                 <div className={`absolute top-0 left-0 w-1 h-full ${
-                  getPipelineStatusInfo().label === 'Up to Date' ? 'bg-green-500' :
-                  getPipelineStatusInfo().label === 'Processing...' ? 'bg-amber-500' : 'bg-red-500'
+                  pipelineStatusInfo.label === 'Up to Date' ? 'bg-green-500' :
+                  pipelineStatusInfo.label === 'Processing...' ? 'bg-amber-500' : 'bg-red-500'
                 }`} />
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-4">
                       {(() => {
-                        const info = getPipelineStatusInfo()
-                        const Icon = info.icon
+                        const Icon = pipelineStatusInfo.icon
                         return (
                           <>
                             <div className="p-3 rounded-xl bg-muted/30 border border-border/30">
-                              <Icon className={`size-5 ${info.label === 'Processing...' ? 'animate-spin' : ''} ${
-                                info.label === 'Up to Date' ? 'text-green-500' :
-                                info.label === 'Processing...' ? 'text-amber-500' : 'text-red-500'
+                              <Icon className={`size-5 ${pipelineStatusInfo.label === 'Processing...' ? 'animate-spin' : ''} ${
+                                pipelineStatusInfo.label === 'Up to Date' ? 'text-green-500' :
+                                pipelineStatusInfo.label === 'Processing...' ? 'text-amber-500' : 'text-red-500'
                               }`} />
                             </div>
                             <div className="space-y-1">
                               <div className="flex items-center gap-3">
                                 <h3 className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Pipeline Status</h3>
-                                <Badge variant="outline" className={`text-[10px] uppercase font-bold ${info.color}`}>{info.label}</Badge>
+                                <Badge variant="outline" className={`text-[10px] uppercase font-bold ${pipelineStatusInfo.color}`}>{pipelineStatusInfo.label}</Badge>
                               </div>
                               <div className="flex items-center gap-6 text-sm">
                                 <span className="font-mono"><span className="text-muted-foreground">Last Updated:</span> <span className="font-bold text-primary">{pipelineState.last_updated_month}</span></span>

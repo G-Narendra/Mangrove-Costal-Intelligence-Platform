@@ -40,18 +40,22 @@ def upload_patch_timeseries(df: pd.DataFrame, target_month: str):
             total_monthly_absorption = 0.0
             total_forecast = 0.0
             
-            # Use sum() over the group directly for patch-level metrics
+            # Use mean() for true per-hectare monthly absorption rate
             if 'monthly_absorption_tCO2e_ha' in group.columns:
-                total_monthly_absorption = float(group['monthly_absorption_tCO2e_ha'].sum())
+                total_monthly_absorption = float(group['monthly_absorption_tCO2e_ha'].mean())
             if 'forecast_absorption_tCO2e_ha' in group.columns:
                 total_forecast = float(group['forecast_absorption_tCO2e_ha'].mean())
             
             # 1. Update the metadata document (Patch-level)
+            avg_height = float(group['GEDI_canopy_height_rh100'].mean()) if 'GEDI_canopy_height_rh100' in group.columns else 0.0
+            avg_biomass = float(group['GEDI_biomass_Mg_ha'].mean()) if 'GEDI_biomass_Mg_ha' in group.columns else (8.5 * (max(1.0, avg_height) ** 1.28) if avg_height > 0 else 0.0)
+
             doc_data = {
-                'total_absorption_tCO2e_ha': total_monthly_absorption,
-                'forecast_absorption_tCO2e_ha': total_forecast if pd.notna(total_forecast) else None,
+                'total_absorption_tCO2e_ha': max(0.0, total_monthly_absorption),
+                'forecast_absorption_tCO2e_ha': max(0.0, total_forecast) if pd.notna(total_forecast) else None,
                 'average_NDVI': float(group['NDVI'].mean()) if 'NDVI' in group.columns else 0.0,
-                'average_GEDI_canopy_height_rh100': float(group['GEDI_canopy_height_rh100'].mean()) if 'GEDI_canopy_height_rh100' in group.columns else 0.0,
+                'average_GEDI_canopy_height_rh100': avg_height,
+                'average_GEDI_biomass_Mg_ha': avg_biomass,
                 'updated_at': datetime.now(timezone.utc).isoformat()
             }
             doc_data = {k: v for k, v in doc_data.items() if v is not None}

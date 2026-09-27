@@ -44,6 +44,7 @@ mrv/out/
 *.tsbuildinfo
 
 # --- Generating Scripts & Scratch Utilities (Requested by User) ---
+build_presentation.py
 combine_submission.py
 fill_ethics.py
 generate_chapter3.py
@@ -65,8 +66,11 @@ posters/verify_poster.py
 posters/ppt/test_*.png
 posters/ppt/test_*.pptx
 posters/ppt/fig2_*.png
+posters/ppt/pdf_pages/
 
 # --- Personal & Internal Files (Requested by User) ---
+MCIP_Submission*.docx
+MCIP_Master_Thesis_Presentation.pptx
 My MCIP Files/
 Proffesor Teams Channel/
 RUN FD and BD

@@ -25,6 +25,15 @@ const GenerateReportSchema = z.object({
       avgNDVI: z.number(),
       avgHeight: z.number().optional(),
     })).optional(),
+    forecast: z.object({
+      dates: z.array(z.string()).optional(),
+      forecastSequence: z.array(z.number()).optional(),
+      upperBounds: z.array(z.number()).optional(),
+      lowerBounds: z.array(z.number()).optional(),
+      cumulativeCarbon12M: z.number().optional(),
+      peakMonth: z.string().optional(),
+      peakValue: z.number().optional(),
+    }).optional(),
   })),
 });
 
@@ -43,23 +52,30 @@ export async function POST(req: NextRequest) {
 
     if (type === "Global") {
       systemPrompt = `You are the Lead Scientific Auditor for the UAE National Blue Carbon MRV Program.
-Prepare an executive-level Verra VM0033 compliance narrative summarizing landscape-scale mangrove carbon dynamics.
+Prepare an executive-level Verra VM0033 compliance narrative summarizing landscape-scale mangrove carbon dynamics and forward predictive yields.
 Be rigorous, authoritative, concise, and direct. Aim for 300–450 words.
 Structure your report into clear numbered sections:
 1. EXECUTIVE SYNTHESIS & BASELINE ESTABLISHMENT
 2. REGIONAL SEQUESTRATION DYNAMICS & BIOMASS ACCRETION
 3. CANOPY VITALITY & PHENOLOGICAL INTEGRITY
-4. VM0033 METHODOLOGICAL COMPLIANCE & RISK RECOMMENDATIONS`;
+4. ST-GNN 12-MONTH PREDICTIVE TRAJECTORY & FORWARD YIELD
+5. VM0033 METHODOLOGICAL COMPLIANCE & RISK RECOMMENDATIONS`;
 
       const topThree = [...metrics].sort((a, b) => b.carbonEnd - a.carbonEnd).slice(0, 3);
       const topList = topThree.map(m => `${m.patchId} (Stock: ${m.carbonEnd.toFixed(2)} tCO2e/ha)`).join(", ");
+      const forecastDetails = metrics
+        .filter(m => m.forecast?.cumulativeCarbon12M)
+        .slice(0, 3)
+        .map(m => `${m.patchId}: 12M Proj Cumulative ${m.forecast?.cumulativeCarbon12M?.toFixed(2)} tCO2e/ha (Peak: ${m.forecast?.peakMonth} @ ${m.forecast?.peakValue?.toFixed(2)} tCO2e/ha)`)
+        .join("; ");
 
       userPrompt = `Observation Period: ${startDate} to ${endDate}
 Total Monitored Units: ${totalPatches || metrics.length} patches
 Landscape Mean Carbon Stock: ${(avgCarbon || (metrics.length ? metrics.reduce((s, m) => s + m.carbonEnd, 0) / metrics.length : 0)).toFixed(2)} tCO2e/ha
 Top Performing Units: ${topList}
+ST-GNN Forward Neural Forecasts: ${forecastDetails || "Projected forward accretion across next 12 rolling months"}
 
-Synthesize an agency-grade audit narrative evaluating baseline permanence, additionality indicators, and regional conservation status for UAE coastal wetlands.`;
+Synthesize an agency-grade audit narrative evaluating baseline permanence, additionality indicators, ST-GNN predictive trajectories, and regional conservation status for UAE coastal wetlands.`;
     } else {
       const isSingle = type === "Single";
       systemPrompt = `You are a Senior Coastal Wetland Remote Sensing Scientist and Verra VM0033 Auditor.
@@ -68,25 +84,30 @@ Be rigorous, data-driven, and actionable. Aim for 300–500 words.
 Structure your analysis into numbered sections:
 1. EMPIRICAL BASELINE & SEQUESTRATION TRAJECTORY
 2. VEGETATION VITALITY & CANOPY STRUCTURAL INTEGRITY
-3. DISTURBANCE ANALYSIS & ANOMALY SIGNALS
-4. METHODOLOGICAL COMPLIANCE & AUDIT DIRECTIVES`;
+3. ST-GNN 12-MONTH FORWARD PREDICTIVE ROLLOUT
+4. DISTURBANCE ANALYSIS & ANOMALY SIGNALS
+5. METHODOLOGICAL COMPLIANCE & AUDIT DIRECTIVES`;
 
       const patchSummaries = metrics.map(m => {
         const hList = (m.history || []).slice(-6).map(h => `${h.date}: C=${h.avgCarbon.toFixed(2)} tCO2e/ha, NDVI=${h.avgNDVI.toFixed(3)}`).join(" | ");
+        const fcStr = m.forecast
+          ? `ST-GNN 12M Forecast: ${m.forecast.cumulativeCarbon12M?.toFixed(2)} tCO2e/ha cumulative, Peak=${m.forecast.peakMonth} (${m.forecast.peakValue?.toFixed(2)} tCO2e/ha)`
+          : "";
         return `Unit: ${m.patchId}
 - Observations: ${m.months} months, ${m.pixels} evidence pixels
 - Carbon: Start=${m.carbonStart.toFixed(2)}, End=${m.carbonEnd.toFixed(2)}, Net Delta=${m.carbonChange >= 0 ? "+" : ""}${m.carbonChange.toFixed(2)} tCO2e/ha
 - NDVI: Start=${m.ndviStart.toFixed(3)}, End=${m.ndviEnd.toFixed(3)}, Net Delta=${m.ndviChange >= 0 ? "+" : ""}${m.ndviChange.toFixed(3)}
-- Recent Trajectory: ${hList || "Steady state"}`;
+- Recent Trajectory: ${hList || "Steady state"}
+- ${fcStr}`;
       }).join("\n\n");
 
       userPrompt = `Monitoring Period: ${startDate} to ${endDate}
 Audit Scope: ${isSingle ? "Single Patch Deep-Dive" : "Comparative Multi-Unit Audit"}
 
-Empirical Sensor Records:
+Empirical Sensor Records & ST-GNN Predictive Outputs:
 ${patchSummaries}
 
-Provide an agency-grade MRV evaluation detailing carbon accretion/depletion, canopy vigor, anomaly explanations, and actionable field directives.`;
+Provide an agency-grade MRV evaluation detailing carbon accretion/depletion, canopy vigor, forward 12-month ST-GNN predictions, anomaly explanations, and actionable field directives.`;
     }
 
     const fullPrompt = `${systemPrompt}\n\n${userPrompt}`;

@@ -1,5 +1,7 @@
 numpy==1.26.4
 pandas==2.2.2
+python-dateutil>=2.8.2
+requests>=2.31.0
 earthengine-api==0.1.411
 earthaccess==0.11.0
 h5py==3.11.0

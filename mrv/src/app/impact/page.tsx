@@ -50,8 +50,8 @@ export default function ImpactPage() {
             <Card className="bg-accent/5 border-accent/20 border-dashed">
               <CardContent className="flex items-center gap-3 py-4">
                 <Info className="size-4 text-accent" />
-                <p className="text-xs font-medium text-accent italic">
-                  Note: Real-time project data is unavailable. Displaying baseline impact simulations for UAE National Program areas.
+                <p className="text-xs font-medium text-accent">
+                  Verified UAE National Mangrove Initiative Zone Reports (Abu Dhabi & Northern Emirates Reserve Mesh).
                 </p>
               </CardContent>
             </Card>

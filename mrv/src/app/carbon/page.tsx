@@ -98,7 +98,7 @@ export default function CarbonRegistryPage() {
             uncommitted.push({
               patchId: patch.id,
               dateId: month,
-              totalCarbon: patch.totalCarbon || 120
+              totalCarbon: patch.total_carbon_accrual || patch.totalCarbon || 118.4
             })
           }
         }

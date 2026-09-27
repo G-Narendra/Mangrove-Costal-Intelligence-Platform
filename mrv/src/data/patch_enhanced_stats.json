@@ -1,0 +1,1382 @@
+{
+  "Patch_0": {
+    "pixel_count": 2414,
+    "historical_per_ha_mean": 1.833,
+    "recent_per_ha_mean": 1.815,
+    "last_3_months_rates": [
+      1.776,
+      1.795,
+      1.875
+    ],
+    "latest_month_total": 4525.43,
+    "recent_total_mean": 2945.27,
+    "last_6_months_totals": [
+      4080.191,
+      3851.555,
+      1995.993,
+      2143.485,
+      2166.898,
+      4525.433
+    ]
+  },
+  "Patch_1": {
+    "pixel_count": 10,
+    "historical_per_ha_mean": 1.447,
+    "recent_per_ha_mean": 1.383,
+    "last_3_months_rates": [
+      1.394,
+      1.397,
+      1.358
+    ],
+    "latest_month_total": 13.58,
+    "recent_total_mean": 9.18,
+    "last_6_months_totals": [
+      12.956,
+      12.724,
+      6.827,
+      6.97,
+      6.986,
+      13.578
+    ]
+  },
+  "Patch_2": {
+    "pixel_count": 6,
+    "historical_per_ha_mean": 1.764,
+    "recent_per_ha_mean": 1.441,
+    "last_3_months_rates": [
+      1.444,
+      1.452,
+      1.427
+    ],
+    "latest_month_total": 8.56,
+    "recent_total_mean": 5.75,
+    "last_6_months_totals": [
+      7.283,
+      7.762,
+      4.06,
+      4.333,
+      4.357,
+      8.562
+    ]
+  },
+  "Patch_4": {
+    "pixel_count": 12,
+    "historical_per_ha_mean": 1.497,
+    "recent_per_ha_mean": 1.48,
+    "last_3_months_rates": [
+      1.409,
+      1.498,
+      1.533
+    ],
+    "latest_month_total": 18.39,
+    "recent_total_mean": 11.95,
+    "last_6_months_totals": [
+      17.031,
+      17.02,
+      9.594,
+      8.457,
+      8.99,
+      18.395
+    ]
+  },
+  "Patch_5": {
+    "pixel_count": 62,
+    "historical_per_ha_mean": 1.373,
+    "recent_per_ha_mean": 1.447,
+    "last_3_months_rates": [
+      1.351,
+      1.476,
+      1.513
+    ],
+    "latest_month_total": 93.78,
+    "recent_total_mean": 60.48,
+    "last_6_months_totals": [
+      75.097,
+      70.754,
+      39.68,
+      41.885,
+      45.758,
+      93.784
+    ]
+  },
+  "Patch_6": {
+    "pixel_count": 4,
+    "historical_per_ha_mean": 1.02,
+    "recent_per_ha_mean": 0.905,
+    "last_3_months_rates": [
+      0.723,
+      0.96,
+      1.033
+    ],
+    "latest_month_total": 4.13,
+    "recent_total_mean": 2.5,
+    "last_6_months_totals": [
+      2.8,
+      2.567,
+      1.504,
+      1.446,
+      1.919,
+      4.131
+    ]
+  },
+  "Patch_7": {
+    "pixel_count": 2,
+    "historical_per_ha_mean": 1.712,
+    "recent_per_ha_mean": 2.334,
+    "last_3_months_rates": [
+      2.34,
+      2.29,
+      2.373
+    ],
+    "latest_month_total": 4.75,
+    "recent_total_mean": 3.12,
+    "last_6_months_totals": [
+      3.42,
+      3.427,
+      1.611,
+      2.34,
+      2.29,
+      4.745
+    ]
+  },
+  "Patch_8": {
+    "pixel_count": 2,
+    "historical_per_ha_mean": 1.675,
+    "recent_per_ha_mean": 1.788,
+    "last_3_months_rates": [
+      1.673,
+      1.88,
+      1.812
+    ],
+    "latest_month_total": 3.62,
+    "recent_total_mean": 2.39,
+    "last_6_months_totals": [
+      3.902,
+      2.727,
+      1.821,
+      1.673,
+      1.88,
+      3.623
+    ]
+  },
+  "Patch_9": {
+    "pixel_count": 106,
+    "historical_per_ha_mean": 1.659,
+    "recent_per_ha_mean": 1.913,
+    "last_3_months_rates": [
+      2.056,
+      1.882,
+      1.801
+    ],
+    "latest_month_total": 190.94,
+    "recent_total_mean": 133.21,
+    "last_6_months_totals": [
+      183.763,
+      191.693,
+      98.838,
+      108.963,
+      99.74,
+      190.937
+    ]
+  },
+  "Patch_10": {
+    "pixel_count": 14,
+    "historical_per_ha_mean": 1.455,
+    "recent_per_ha_mean": 1.403,
+    "last_3_months_rates": [
+      1.368,
+      1.396,
+      1.446
+    ],
+    "latest_month_total": 20.24,
+    "recent_total_mean": 13.2,
+    "last_6_months_totals": [
+      19.277,
+      19.857,
+      10.118,
+      9.579,
+      9.769,
+      20.239
+    ]
+  },
+  "Patch_11": {
+    "pixel_count": 8,
+    "historical_per_ha_mean": 1.486,
+    "recent_per_ha_mean": 1.516,
+    "last_3_months_rates": [
+      1.475,
+      1.5,
+      1.574
+    ],
+    "latest_month_total": 12.59,
+    "recent_total_mean": 8.16,
+    "last_6_months_totals": [
+      12.014,
+      12.28,
+      6.102,
+      5.902,
+      5.998,
+      12.593
+    ]
+  },
+  "Patch_12": {
+    "pixel_count": 4,
+    "historical_per_ha_mean": 2.054,
+    "recent_per_ha_mean": 2.681,
+    "last_3_months_rates": [
+      2.976,
+      2.704,
+      2.362
+    ],
+    "latest_month_total": 9.45,
+    "recent_total_mean": 6.94,
+    "last_6_months_totals": [
+      10.756,
+      8.671,
+      5.024,
+      5.953,
+      5.407,
+      9.449
+    ]
+  },
+  "Patch_13": {
+    "pixel_count": 22,
+    "historical_per_ha_mean": 1.424,
+    "recent_per_ha_mean": 1.394,
+    "last_3_months_rates": [
+      1.332,
+      1.409,
+      1.44
+    ],
+    "latest_month_total": 31.69,
+    "recent_total_mean": 20.61,
+    "last_6_months_totals": [
+      27.605,
+      28.59,
+      15.191,
+      14.657,
+      15.5,
+      31.687
+    ]
+  },
+  "Patch_14": {
+    "pixel_count": 22,
+    "historical_per_ha_mean": 2.033,
+    "recent_per_ha_mean": 2.446,
+    "last_3_months_rates": [
+      2.536,
+      2.352,
+      2.451
+    ],
+    "latest_month_total": 53.92,
+    "recent_total_mean": 35.89,
+    "last_6_months_totals": [
+      45.352,
+      46.06,
+      25.486,
+      27.892,
+      25.867,
+      53.925
+    ]
+  },
+  "Patch_15": {
+    "pixel_count": 142,
+    "historical_per_ha_mean": 1.518,
+    "recent_per_ha_mean": 1.508,
+    "last_3_months_rates": [
+      1.508,
+      1.498,
+      1.518
+    ],
+    "latest_month_total": 215.54,
+    "recent_total_mean": 142.99,
+    "last_6_months_totals": [
+      202.839,
+      210.101,
+      108.032,
+      107.047,
+      106.381,
+      215.543
+    ]
+  },
+  "Patch_16": {
+    "pixel_count": 10,
+    "historical_per_ha_mean": 1.984,
+    "recent_per_ha_mean": 2.219,
+    "last_3_months_rates": [
+      2.219,
+      2.145,
+      2.293
+    ],
+    "latest_month_total": 22.93,
+    "recent_total_mean": 14.92,
+    "last_6_months_totals": [
+      21.301,
+      16.957,
+      9.542,
+      11.095,
+      10.726,
+      22.927
+    ]
+  },
+  "Patch_17": {
+    "pixel_count": 4,
+    "historical_per_ha_mean": 2.374,
+    "recent_per_ha_mean": 1.926,
+    "last_3_months_rates": [
+      2.146,
+      1.866,
+      1.765
+    ],
+    "latest_month_total": 7.06,
+    "recent_total_mean": 5.03,
+    "last_6_months_totals": [
+      7.317,
+      6.415,
+      3.101,
+      4.293,
+      3.732,
+      7.06
+    ]
+  },
+  "Patch_18": {
+    "pixel_count": 4,
+    "historical_per_ha_mean": 1.777,
+    "recent_per_ha_mean": 2.383,
+    "last_3_months_rates": [
+      2.848,
+      2.331,
+      1.969
+    ],
+    "latest_month_total": 7.88,
+    "recent_total_mean": 6.08,
+    "last_6_months_totals": [
+      7.278,
+      7.346,
+      4.125,
+      5.696,
+      4.662,
+      7.875
+    ]
+  },
+  "Patch_19": {
+    "pixel_count": 18,
+    "historical_per_ha_mean": 1.725,
+    "recent_per_ha_mean": 1.873,
+    "last_3_months_rates": [
+      2.052,
+      1.678,
+      1.888
+    ],
+    "latest_month_total": 33.99,
+    "recent_total_mean": 22.52,
+    "last_6_months_totals": [
+      27.42,
+      24.218,
+      13.922,
+      18.468,
+      15.099,
+      33.985
+    ]
+  },
+  "Patch_20": {
+    "pixel_count": 58,
+    "historical_per_ha_mean": 1.804,
+    "recent_per_ha_mean": 1.841,
+    "last_3_months_rates": [
+      1.827,
+      1.778,
+      1.917
+    ],
+    "latest_month_total": 111.21,
+    "recent_total_mean": 71.92,
+    "last_6_months_totals": [
+      88.308,
+      85.561,
+      48.689,
+      52.972,
+      51.568,
+      111.211
+    ]
+  },
+  "Patch_21": {
+    "pixel_count": 4,
+    "historical_per_ha_mean": 1.623,
+    "recent_per_ha_mean": 1.767,
+    "last_3_months_rates": [
+      1.799,
+      1.741,
+      1.762
+    ],
+    "latest_month_total": 7.05,
+    "recent_total_mean": 4.71,
+    "last_6_months_totals": [
+      6.481,
+      6.636,
+      3.611,
+      3.598,
+      3.482,
+      7.047
+    ]
+  },
+  "Patch_22": {
+    "pixel_count": 2,
+    "historical_per_ha_mean": 2.042,
+    "recent_per_ha_mean": 2.498,
+    "last_3_months_rates": [
+      2.94,
+      2.588,
+      1.967
+    ],
+    "latest_month_total": 3.93,
+    "recent_total_mean": 3.15,
+    "last_6_months_totals": [
+      4.398,
+      3.491,
+      1.818,
+      2.94,
+      2.588,
+      3.934
+    ]
+  },
+  "Patch_23": {
+    "pixel_count": 6,
+    "historical_per_ha_mean": 1.45,
+    "recent_per_ha_mean": 1.517,
+    "last_3_months_rates": [
+      1.454,
+      1.487,
+      1.61
+    ],
+    "latest_month_total": 9.66,
+    "recent_total_mean": 6.16,
+    "last_6_months_totals": [
+      8.289,
+      8.07,
+      4.046,
+      4.363,
+      4.46,
+      9.66
+    ]
+  },
+  "Patch_24": {
+    "pixel_count": 10,
+    "historical_per_ha_mean": 2.002,
+    "recent_per_ha_mean": 1.974,
+    "last_3_months_rates": [
+      1.988,
+      1.915,
+      2.019
+    ],
+    "latest_month_total": 20.19,
+    "recent_total_mean": 13.23,
+    "last_6_months_totals": [
+      15.525,
+      13.969,
+      7.961,
+      9.942,
+      9.573,
+      20.19
+    ]
+  },
+  "Patch_25": {
+    "pixel_count": 8,
+    "historical_per_ha_mean": 1.569,
+    "recent_per_ha_mean": 1.61,
+    "last_3_months_rates": [
+      1.675,
+      1.649,
+      1.506
+    ],
+    "latest_month_total": 12.05,
+    "recent_total_mean": 8.45,
+    "last_6_months_totals": [
+      11.271,
+      11.219,
+      5.825,
+      6.698,
+      6.596,
+      12.05
+    ]
+  },
+  "Patch_26": {
+    "pixel_count": 4,
+    "historical_per_ha_mean": 1.657,
+    "recent_per_ha_mean": 2.415,
+    "last_3_months_rates": [
+      2.03,
+      2.463,
+      2.751
+    ],
+    "latest_month_total": 11.01,
+    "recent_total_mean": 6.66,
+    "last_6_months_totals": [
+      6.097,
+      6.512,
+      3.192,
+      4.06,
+      4.927,
+      11.006
+    ]
+  },
+  "Patch_27": {
+    "pixel_count": 2,
+    "historical_per_ha_mean": 1.302,
+    "recent_per_ha_mean": 1.327,
+    "last_3_months_rates": [
+      1.25,
+      1.303,
+      1.428
+    ],
+    "latest_month_total": 2.86,
+    "recent_total_mean": 1.8,
+    "last_6_months_totals": [
+      2.471,
+      2.517,
+      1.254,
+      1.25,
+      1.303,
+      2.856
+    ]
+  },
+  "Patch_28": {
+    "pixel_count": 36,
+    "historical_per_ha_mean": 1.534,
+    "recent_per_ha_mean": 1.526,
+    "last_3_months_rates": [
+      1.507,
+      1.512,
+      1.558
+    ],
+    "latest_month_total": 56.09,
+    "recent_total_mean": 36.81,
+    "last_6_months_totals": [
+      53.821,
+      53.74,
+      27.46,
+      27.129,
+      27.217,
+      56.093
+    ]
+  },
+  "Patch_29": {
+    "pixel_count": 4,
+    "historical_per_ha_mean": 2.021,
+    "recent_per_ha_mean": 2.345,
+    "last_3_months_rates": [
+      2.46,
+      2.109,
+      2.466
+    ],
+    "latest_month_total": 9.86,
+    "recent_total_mean": 6.33,
+    "last_6_months_totals": [
+      6.146,
+      6.074,
+      3.598,
+      4.92,
+      4.218,
+      9.862
+    ]
+  },
+  "Patch_30": {
+    "pixel_count": 4,
+    "historical_per_ha_mean": 1.985,
+    "recent_per_ha_mean": 1.807,
+    "last_3_months_rates": [
+      1.531,
+      1.647,
+      2.244
+    ],
+    "latest_month_total": 8.97,
+    "recent_total_mean": 5.11,
+    "last_6_months_totals": [
+      5.376,
+      5.06,
+      2.769,
+      3.061,
+      3.293,
+      8.975
+    ]
+  },
+  "Patch_31": {
+    "pixel_count": 22,
+    "historical_per_ha_mean": 1.658,
+    "recent_per_ha_mean": 1.666,
+    "last_3_months_rates": [
+      1.575,
+      1.657,
+      1.765
+    ],
+    "latest_month_total": 38.82,
+    "recent_total_mean": 24.79,
+    "last_6_months_totals": [
+      32.202,
+      32.503,
+      16.758,
+      17.323,
+      18.222,
+      38.824
+    ]
+  },
+  "Patch_32": {
+    "pixel_count": 162,
+    "historical_per_ha_mean": 1.7,
+    "recent_per_ha_mean": 1.686,
+    "last_3_months_rates": [
+      1.516,
+      1.618,
+      1.924
+    ],
+    "latest_month_total": 311.64,
+    "recent_total_mean": 188.5,
+    "last_6_months_totals": [
+      215.235,
+      212.629,
+      114.418,
+      122.766,
+      131.08,
+      311.64
+    ]
+  },
+  "Patch_33": {
+    "pixel_count": 40,
+    "historical_per_ha_mean": 1.869,
+    "recent_per_ha_mean": 2.006,
+    "last_3_months_rates": [
+      1.89,
+      1.995,
+      2.134
+    ],
+    "latest_month_total": 85.35,
+    "recent_total_mean": 54.34,
+    "last_6_months_totals": [
+      59.095,
+      58.63,
+      30.495,
+      37.792,
+      39.894,
+      85.347
+    ]
+  },
+  "Patch_34": {
+    "pixel_count": 424,
+    "historical_per_ha_mean": 1.632,
+    "recent_per_ha_mean": 1.631,
+    "last_3_months_rates": [
+      1.521,
+      1.646,
+      1.726
+    ],
+    "latest_month_total": 731.77,
+    "recent_total_mean": 467.72,
+    "last_6_months_totals": [
+      611.444,
+      593.663,
+      306.197,
+      322.353,
+      349.035,
+      731.768
+    ]
+  },
+  "Patch_35": {
+    "pixel_count": 52,
+    "historical_per_ha_mean": 1.749,
+    "recent_per_ha_mean": 1.796,
+    "last_3_months_rates": [
+      1.625,
+      1.747,
+      2.015
+    ],
+    "latest_month_total": 104.79,
+    "recent_total_mean": 64.16,
+    "last_6_months_totals": [
+      74.85,
+      72.778,
+      37.108,
+      42.25,
+      45.422,
+      104.793
+    ]
+  },
+  "Patch_37": {
+    "pixel_count": 6,
+    "historical_per_ha_mean": 1.4,
+    "recent_per_ha_mean": 1.344,
+    "last_3_months_rates": [
+      1.272,
+      1.331,
+      1.43
+    ],
+    "latest_month_total": 8.58,
+    "recent_total_mean": 5.46,
+    "last_6_months_totals": [
+      7.331,
+      7.406,
+      3.774,
+      3.816,
+      3.993,
+      8.581
+    ]
+  },
+  "Patch_38": {
+    "pixel_count": 24,
+    "historical_per_ha_mean": 1.429,
+    "recent_per_ha_mean": 1.436,
+    "last_3_months_rates": [
+      1.356,
+      1.425,
+      1.528
+    ],
+    "latest_month_total": 36.68,
+    "recent_total_mean": 23.35,
+    "last_6_months_totals": [
+      30.834,
+      30.803,
+      15.89,
+      16.268,
+      17.098,
+      36.681
+    ]
+  },
+  "Patch_40": {
+    "pixel_count": 52,
+    "historical_per_ha_mean": 1.478,
+    "recent_per_ha_mean": 1.489,
+    "last_3_months_rates": [
+      1.447,
+      1.475,
+      1.546
+    ],
+    "latest_month_total": 80.4,
+    "recent_total_mean": 52.13,
+    "last_6_months_totals": [
+      74.178,
+      73.509,
+      37.575,
+      37.627,
+      38.352,
+      80.403
+    ]
+  },
+  "Patch_41": {
+    "pixel_count": 16,
+    "historical_per_ha_mean": 1.837,
+    "recent_per_ha_mean": 1.964,
+    "last_3_months_rates": [
+      1.722,
+      2.053,
+      2.118
+    ],
+    "latest_month_total": 33.89,
+    "recent_total_mean": 21.36,
+    "last_6_months_totals": [
+      26.109,
+      22.364,
+      11.727,
+      13.774,
+      16.422,
+      33.885
+    ]
+  },
+  "Patch_42": {
+    "pixel_count": 4,
+    "historical_per_ha_mean": 1.446,
+    "recent_per_ha_mean": 1.385,
+    "last_3_months_rates": [
+      1.37,
+      1.379,
+      1.405
+    ],
+    "latest_month_total": 5.62,
+    "recent_total_mean": 3.71,
+    "last_6_months_totals": [
+      5.566,
+      5.584,
+      2.791,
+      2.74,
+      2.757,
+      5.62
+    ]
+  },
+  "Patch_43": {
+    "pixel_count": 28,
+    "historical_per_ha_mean": 1.9,
+    "recent_per_ha_mean": 1.93,
+    "last_3_months_rates": [
+      1.865,
+      1.922,
+      2.002
+    ],
+    "latest_month_total": 56.04,
+    "recent_total_mean": 36.35,
+    "last_6_months_totals": [
+      50.331,
+      49.68,
+      24.968,
+      26.115,
+      26.904,
+      56.045
+    ]
+  },
+  "Patch_44": {
+    "pixel_count": 18,
+    "historical_per_ha_mean": 1.545,
+    "recent_per_ha_mean": 1.567,
+    "last_3_months_rates": [
+      1.483,
+      1.564,
+      1.654
+    ],
+    "latest_month_total": 29.77,
+    "recent_total_mean": 19.07,
+    "last_6_months_totals": [
+      25.237,
+      24.235,
+      12.477,
+      13.348,
+      14.08,
+      29.767
+    ]
+  },
+  "Patch_45": {
+    "pixel_count": 106,
+    "historical_per_ha_mean": 1.589,
+    "recent_per_ha_mean": 1.55,
+    "last_3_months_rates": [
+      1.467,
+      1.521,
+      1.662
+    ],
+    "latest_month_total": 176.18,
+    "recent_total_mean": 111.52,
+    "last_6_months_totals": [
+      145.154,
+      143.124,
+      74.527,
+      77.777,
+      80.612,
+      176.176
+    ]
+  },
+  "Patch_46": {
+    "pixel_count": 194,
+    "historical_per_ha_mean": 1.551,
+    "recent_per_ha_mean": 1.404,
+    "last_3_months_rates": [
+      1.364,
+      1.395,
+      1.454
+    ],
+    "latest_month_total": 282.07,
+    "recent_total_mean": 183.24,
+    "last_6_months_totals": [
+      251.958,
+      257.462,
+      131.765,
+      132.285,
+      135.356,
+      282.066
+    ]
+  },
+  "Patch_47": {
+    "pixel_count": 10,
+    "historical_per_ha_mean": 1.529,
+    "recent_per_ha_mean": 1.651,
+    "last_3_months_rates": [
+      1.481,
+      1.754,
+      1.717
+    ],
+    "latest_month_total": 17.17,
+    "recent_total_mean": 11.12,
+    "last_6_months_totals": [
+      14.558,
+      14.325,
+      7.199,
+      7.406,
+      8.769,
+      17.173
+    ]
+  },
+  "Patch_48": {
+    "pixel_count": 20,
+    "historical_per_ha_mean": 1.744,
+    "recent_per_ha_mean": 1.865,
+    "last_3_months_rates": [
+      1.779,
+      1.88,
+      1.936
+    ],
+    "latest_month_total": 38.71,
+    "recent_total_mean": 25.1,
+    "last_6_months_totals": [
+      32.478,
+      31.015,
+      15.818,
+      17.795,
+      18.803,
+      38.714
+    ]
+  },
+  "Patch_49": {
+    "pixel_count": 18,
+    "historical_per_ha_mean": 1.589,
+    "recent_per_ha_mean": 1.543,
+    "last_3_months_rates": [
+      1.491,
+      1.539,
+      1.598
+    ],
+    "latest_month_total": 28.77,
+    "recent_total_mean": 18.68,
+    "last_6_months_totals": [
+      23.698,
+      23.452,
+      12.181,
+      13.423,
+      13.847,
+      28.768
+    ]
+  },
+  "Patch_51": {
+    "pixel_count": 706,
+    "historical_per_ha_mean": 1.601,
+    "recent_per_ha_mean": 1.581,
+    "last_3_months_rates": [
+      1.497,
+      1.582,
+      1.664
+    ],
+    "latest_month_total": 1174.98,
+    "recent_total_mean": 754.03,
+    "last_6_months_totals": [
+      986.637,
+      969.708,
+      503.996,
+      528.612,
+      558.487,
+      1174.981
+    ]
+  },
+  "Patch_53": {
+    "pixel_count": 10,
+    "historical_per_ha_mean": 1.598,
+    "recent_per_ha_mean": 1.423,
+    "last_3_months_rates": [
+      1.357,
+      1.416,
+      1.496
+    ],
+    "latest_month_total": 14.96,
+    "recent_total_mean": 9.61,
+    "last_6_months_totals": [
+      12.446,
+      12.471,
+      6.528,
+      6.784,
+      7.081,
+      14.96
+    ]
+  },
+  "Patch_54": {
+    "pixel_count": 2,
+    "historical_per_ha_mean": 1.585,
+    "recent_per_ha_mean": 1.206,
+    "last_3_months_rates": [
+      1.137,
+      1.168,
+      1.314
+    ],
+    "latest_month_total": 2.63,
+    "recent_total_mean": 1.64,
+    "last_6_months_totals": [
+      1.91,
+      1.932,
+      1.011,
+      1.137,
+      1.168,
+      2.629
+    ]
+  },
+  "Patch_55": {
+    "pixel_count": 6,
+    "historical_per_ha_mean": 1.59,
+    "recent_per_ha_mean": 1.828,
+    "last_3_months_rates": [
+      1.559,
+      1.73,
+      2.194
+    ],
+    "latest_month_total": 13.16,
+    "recent_total_mean": 7.68,
+    "last_6_months_totals": [
+      7.31,
+      6.798,
+      4.044,
+      4.676,
+      5.191,
+      13.165
+    ]
+  },
+  "Patch_56": {
+    "pixel_count": 36,
+    "historical_per_ha_mean": 2.022,
+    "recent_per_ha_mean": 2.205,
+    "last_3_months_rates": [
+      2.142,
+      2.242,
+      2.231
+    ],
+    "latest_month_total": 80.32,
+    "recent_total_mean": 53.08,
+    "last_6_months_totals": [
+      64.721,
+      57.412,
+      30.902,
+      38.562,
+      40.362,
+      80.315
+    ]
+  },
+  "Patch_57": {
+    "pixel_count": 14,
+    "historical_per_ha_mean": 1.786,
+    "recent_per_ha_mean": 1.75,
+    "last_3_months_rates": [
+      1.696,
+      1.756,
+      1.799
+    ],
+    "latest_month_total": 25.18,
+    "recent_total_mean": 16.45,
+    "last_6_months_totals": [
+      18.516,
+      17.77,
+      9.632,
+      11.873,
+      12.289,
+      25.181
+    ]
+  },
+  "Patch_58": {
+    "pixel_count": 12,
+    "historical_per_ha_mean": 1.637,
+    "recent_per_ha_mean": 1.945,
+    "last_3_months_rates": [
+      1.912,
+      1.893,
+      2.03
+    ],
+    "latest_month_total": 24.36,
+    "recent_total_mean": 15.73,
+    "last_6_months_totals": [
+      18.883,
+      18.056,
+      9.286,
+      11.472,
+      11.356,
+      24.365
+    ]
+  },
+  "Patch_59": {
+    "pixel_count": 292,
+    "historical_per_ha_mean": 1.885,
+    "recent_per_ha_mean": 1.829,
+    "last_3_months_rates": [
+      1.725,
+      1.816,
+      1.945
+    ],
+    "latest_month_total": 567.97,
+    "recent_total_mean": 361.64,
+    "last_6_months_totals": [
+      439.118,
+      421.117,
+      225.456,
+      251.793,
+      265.167,
+      567.971
+    ]
+  },
+  "Patch_60": {
+    "pixel_count": 180,
+    "historical_per_ha_mean": 1.669,
+    "recent_per_ha_mean": 1.712,
+    "last_3_months_rates": [
+      1.6,
+      1.703,
+      1.833
+    ],
+    "latest_month_total": 329.85,
+    "recent_total_mean": 209.05,
+    "last_6_months_totals": [
+      245.716,
+      242.932,
+      128.07,
+      144.0,
+      153.301,
+      329.854
+    ]
+  },
+  "Patch_61": {
+    "pixel_count": 6,
+    "historical_per_ha_mean": 2.214,
+    "recent_per_ha_mean": 2.514,
+    "last_3_months_rates": [
+      2.488,
+      2.463,
+      2.59
+    ],
+    "latest_month_total": 15.54,
+    "recent_total_mean": 10.13,
+    "last_6_months_totals": [
+      8.535,
+      8.622,
+      5.039,
+      7.463,
+      7.39,
+      15.539
+    ]
+  },
+  "Patch_62": {
+    "pixel_count": 22,
+    "historical_per_ha_mean": 2.351,
+    "recent_per_ha_mean": 2.333,
+    "last_3_months_rates": [
+      2.19,
+      2.239,
+      2.57
+    ],
+    "latest_month_total": 56.53,
+    "recent_total_mean": 35.08,
+    "last_6_months_totals": [
+      42.898,
+      39.644,
+      21.248,
+      24.09,
+      24.628,
+      56.53
+    ]
+  },
+  "Patch_63": {
+    "pixel_count": 2,
+    "historical_per_ha_mean": 2.085,
+    "recent_per_ha_mean": 2.277,
+    "last_3_months_rates": [
+      2.147,
+      2.013,
+      2.671
+    ],
+    "latest_month_total": 5.34,
+    "recent_total_mean": 3.17,
+    "last_6_months_totals": [
+      2.777,
+      2.67,
+      1.547,
+      2.147,
+      2.013,
+      5.342
+    ]
+  },
+  "Patch_64": {
+    "pixel_count": 38,
+    "historical_per_ha_mean": 2.624,
+    "recent_per_ha_mean": 2.756,
+    "last_3_months_rates": [
+      2.759,
+      2.696,
+      2.812
+    ],
+    "latest_month_total": 106.87,
+    "recent_total_mean": 70.17,
+    "last_6_months_totals": [
+      72.234,
+      80.515,
+      47.386,
+      52.418,
+      51.228,
+      106.872
+    ]
+  },
+  "Patch_65": {
+    "pixel_count": 454,
+    "historical_per_ha_mean": 2.14,
+    "recent_per_ha_mean": 2.035,
+    "last_3_months_rates": [
+      1.962,
+      2.037,
+      2.107
+    ],
+    "latest_month_total": 956.58,
+    "recent_total_mean": 621.39,
+    "last_6_months_totals": [
+      837.704,
+      757.631,
+      443.217,
+      445.287,
+      462.311,
+      956.581
+    ]
+  },
+  "Patch_66": {
+    "pixel_count": 112,
+    "historical_per_ha_mean": 1.961,
+    "recent_per_ha_mean": 1.841,
+    "last_3_months_rates": [
+      1.835,
+      1.827,
+      1.861
+    ],
+    "latest_month_total": 208.4,
+    "recent_total_mean": 137.82,
+    "last_6_months_totals": [
+      184.291,
+      170.792,
+      97.461,
+      102.749,
+      102.327,
+      208.398
+    ]
+  },
+  "Patch_67": {
+    "pixel_count": 126,
+    "historical_per_ha_mean": 2.001,
+    "recent_per_ha_mean": 1.948,
+    "last_3_months_rates": [
+      1.874,
+      1.974,
+      1.995
+    ],
+    "latest_month_total": 251.33,
+    "recent_total_mean": 164.58,
+    "last_6_months_totals": [
+      219.155,
+      208.718,
+      118.13,
+      118.054,
+      124.348,
+      251.326
+    ]
+  },
+  "Patch_69": {
+    "pixel_count": 32,
+    "historical_per_ha_mean": 1.949,
+    "recent_per_ha_mean": 1.745,
+    "last_3_months_rates": [
+      1.698,
+      1.8,
+      1.736
+    ],
+    "latest_month_total": 55.56,
+    "recent_total_mean": 37.18,
+    "last_6_months_totals": [
+      53.685,
+      51.514,
+      27.501,
+      27.17,
+      28.794,
+      55.562
+    ]
+  },
+  "Patch_70": {
+    "pixel_count": 2,
+    "historical_per_ha_mean": 1.763,
+    "recent_per_ha_mean": 1.674,
+    "last_3_months_rates": [
+      1.485,
+      1.704,
+      1.832
+    ],
+    "latest_month_total": 3.66,
+    "recent_total_mean": 2.28,
+    "last_6_months_totals": [
+      2.764,
+      2.484,
+      1.474,
+      1.485,
+      1.704,
+      3.665
+    ]
+  },
+  "Patch_71": {
+    "pixel_count": 10,
+    "historical_per_ha_mean": 2.282,
+    "recent_per_ha_mean": 2.356,
+    "last_3_months_rates": [
+      2.131,
+      2.386,
+      2.55
+    ],
+    "latest_month_total": 25.5,
+    "recent_total_mean": 16.03,
+    "last_6_months_totals": [
+      18.102,
+      16.61,
+      9.27,
+      10.657,
+      11.93,
+      25.496
+    ]
+  },
+  "Patch_72": {
+    "pixel_count": 98,
+    "historical_per_ha_mean": 3.397,
+    "recent_per_ha_mean": 2.877,
+    "last_3_months_rates": [
+      2.783,
+      2.7,
+      3.147
+    ],
+    "latest_month_total": 308.44,
+    "recent_total_mean": 192.36,
+    "last_6_months_totals": [
+      227.184,
+      217.473,
+      120.264,
+      136.375,
+      132.277,
+      308.439
+    ]
+  },
+  "Patch_73": {
+    "pixel_count": 98,
+    "historical_per_ha_mean": 2.85,
+    "recent_per_ha_mean": 2.608,
+    "last_3_months_rates": [
+      2.511,
+      2.574,
+      2.74
+    ],
+    "latest_month_total": 268.51,
+    "recent_total_mean": 172.57,
+    "last_6_months_totals": [
+      237.18,
+      209.907,
+      108.6,
+      123.061,
+      126.147,
+      268.513
+    ]
+  },
+  "Patch_74": {
+    "pixel_count": 2,
+    "historical_per_ha_mean": 3.272,
+    "recent_per_ha_mean": 2.672,
+    "last_3_months_rates": [
+      2.547,
+      2.604,
+      2.865
+    ],
+    "latest_month_total": 5.73,
+    "recent_total_mean": 3.63,
+    "last_6_months_totals": [
+      4.703,
+      4.616,
+      2.525,
+      2.547,
+      2.604,
+      5.729
+    ]
+  }
+}

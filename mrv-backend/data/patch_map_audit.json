@@ -1,0 +1,6702 @@
+{
+  "Patch_0": {
+    "patchId": "Patch_0",
+    "current_absorption_per_ha": 1.8747,
+    "current_health_score": 22.9,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.698,
+        "health": 21.2
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.9633,
+        "health": 19.6
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.9383,
+        "health": 20.7
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.9798,
+        "health": 19.8
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.9091,
+        "health": 20.6
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.0359,
+        "health": 13.9
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.693,
+        "health": 23.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.5955,
+        "health": 24.6
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.6537,
+        "health": 24
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.7759,
+        "health": 27.2
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.7953,
+        "health": 24.8
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.8747,
+        "health": 22.9
+      }
+    ]
+  },
+  "Patch_1": {
+    "patchId": "Patch_1",
+    "current_absorption_per_ha": 1.3578,
+    "current_health_score": 14.2,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.2984,
+        "health": 14.4
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.4425,
+        "health": 14.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.3654,
+        "health": 14.2
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.4667,
+        "health": 15.6
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.4066,
+        "health": 15.5
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.4678,
+        "health": 15.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.2956,
+        "health": 14.1
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.2724,
+        "health": 14.5
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.3653,
+        "health": 14.7
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.394,
+        "health": 14.6
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.3972,
+        "health": 14.7
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.3578,
+        "health": 14.2
+      }
+    ]
+  },
+  "Patch_2": {
+    "patchId": "Patch_2",
+    "current_absorption_per_ha": 1.427,
+    "current_health_score": 14.6,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.1556,
+        "health": 12.2
+      },
+      {
+        "date": "2024-01",
+        "absorption": 3.7608,
+        "health": 11.8
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.2752,
+        "health": 13.9
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.6586,
+        "health": 16.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.4694,
+        "health": 15.6
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.4524,
+        "health": 14.6
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.2138,
+        "health": 13.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.2936,
+        "health": 13.9
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.3535,
+        "health": 15
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.4443,
+        "health": 14.9
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.4522,
+        "health": 15.1
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.427,
+        "health": 14.6
+      }
+    ]
+  },
+  "Patch_4": {
+    "patchId": "Patch_4",
+    "current_absorption_per_ha": 1.5329,
+    "current_health_score": 18.8,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.4226,
+        "health": 15.9
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.3263,
+        "health": 11.7
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.3782,
+        "health": 16.3
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.9252,
+        "health": 10
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.7838,
+        "health": 10.5
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.8988,
+        "health": 10
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.4193,
+        "health": 17.8
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.4184,
+        "health": 18.8
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.5989,
+        "health": 18
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.4094,
+        "health": 20.4
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.4983,
+        "health": 19.9
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.5329,
+        "health": 18.8
+      }
+    ]
+  },
+  "Patch_5": {
+    "patchId": "Patch_5",
+    "current_absorption_per_ha": 1.5126,
+    "current_health_score": 22.3,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.292,
+        "health": 15.7
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.5252,
+        "health": 11
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.4128,
+        "health": 17.5
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.4341,
+        "health": 16.2
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.3956,
+        "health": 17.2
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.7028,
+        "health": 10
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.2112,
+        "health": 16.5
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.1412,
+        "health": 15.9
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.28,
+        "health": 17.9
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.3511,
+        "health": 21.1
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.4761,
+        "health": 22.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.5126,
+        "health": 22.3
+      }
+    ]
+  },
+  "Patch_6": {
+    "patchId": "Patch_6",
+    "current_absorption_per_ha": 1.0328,
+    "current_health_score": 17.1,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 0.9783,
+        "health": 10
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.374,
+        "health": 10
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.1739,
+        "health": 11.2
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.3666,
+        "health": 10
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.2076,
+        "health": 11.8
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.5201,
+        "health": 10
+      },
+      {
+        "date": "2026-04",
+        "absorption": 0.7001,
+        "health": 13.4
+      },
+      {
+        "date": "2026-05",
+        "absorption": 0.6418,
+        "health": 13.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 0.7518,
+        "health": 13.8
+      },
+      {
+        "date": "2026-07",
+        "absorption": 0.7229,
+        "health": 13.9
+      },
+      {
+        "date": "2026-08",
+        "absorption": 0.9597,
+        "health": 15.7
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.0328,
+        "health": 17.1
+      }
+    ]
+  },
+  "Patch_7": {
+    "patchId": "Patch_7",
+    "current_absorption_per_ha": 2.3727,
+    "current_health_score": 32.9,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.9538,
+        "health": 30.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.5622,
+        "health": 25.8
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.7174,
+        "health": 33.2
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.6766,
+        "health": 23.2
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.6705,
+        "health": 22.1
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.7786,
+        "health": 10
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.7102,
+        "health": 21.8
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.7136,
+        "health": 19.5
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.6111,
+        "health": 24.4
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.34,
+        "health": 33.6
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.2897,
+        "health": 34.9
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.3727,
+        "health": 32.9
+      }
+    ]
+  },
+  "Patch_8": {
+    "patchId": "Patch_8",
+    "current_absorption_per_ha": 1.8115,
+    "current_health_score": 10,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.628,
+        "health": 10
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.6981,
+        "health": 10
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.8192,
+        "health": 10
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.2129,
+        "health": 10
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.9558,
+        "health": 10
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.1704,
+        "health": 13.6
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.951,
+        "health": 18.7
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.3634,
+        "health": 19.9
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.8209,
+        "health": 10
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.6731,
+        "health": 23
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.8798,
+        "health": 12.9
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.8115,
+        "health": 10
+      }
+    ]
+  },
+  "Patch_9": {
+    "patchId": "Patch_9",
+    "current_absorption_per_ha": 1.8013,
+    "current_health_score": 22.9,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.5432,
+        "health": 20.2
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.7519,
+        "health": 20
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.5844,
+        "health": 21
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.6397,
+        "health": 16.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.6616,
+        "health": 15.9
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.526,
+        "health": 19.5
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.7336,
+        "health": 18.9
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.8084,
+        "health": 17.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.8649,
+        "health": 18.7
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.0559,
+        "health": 22.1
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.8819,
+        "health": 24
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.8013,
+        "health": 22.9
+      }
+    ]
+  },
+  "Patch_10": {
+    "patchId": "Patch_10",
+    "current_absorption_per_ha": 1.4456,
+    "current_health_score": 23.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.4303,
+        "health": 17.5
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.6827,
+        "health": 18.1
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.3316,
+        "health": 19.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.4771,
+        "health": 22.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.5027,
+        "health": 21.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.4127,
+        "health": 23.7
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.3769,
+        "health": 25.2
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.4184,
+        "health": 22.8
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.4454,
+        "health": 20.6
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.3684,
+        "health": 24.2
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.3956,
+        "health": 24.7
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.4456,
+        "health": 23.7
+      }
+    ]
+  },
+  "Patch_11": {
+    "patchId": "Patch_11",
+    "current_absorption_per_ha": 1.5741,
+    "current_health_score": 25.4,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.4456,
+        "health": 25.1
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.5384,
+        "health": 23.7
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.5797,
+        "health": 26.4
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.5144,
+        "health": 24.7
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.5395,
+        "health": 24.1
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.5799,
+        "health": 22.9
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.5017,
+        "health": 24.4
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.5349,
+        "health": 21.7
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.5255,
+        "health": 22.2
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.4754,
+        "health": 25.2
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.4995,
+        "health": 23.3
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.5741,
+        "health": 25.4
+      }
+    ]
+  },
+  "Patch_12": {
+    "patchId": "Patch_12",
+    "current_absorption_per_ha": 2.3622,
+    "current_health_score": 48.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.6886,
+        "health": 51.6
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.5335,
+        "health": 55.1
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.0091,
+        "health": 54.5
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.0299,
+        "health": 55.9
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.2747,
+        "health": 56.4
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.1608,
+        "health": 51.7
+      },
+      {
+        "date": "2026-04",
+        "absorption": 2.6891,
+        "health": 70.2
+      },
+      {
+        "date": "2026-05",
+        "absorption": 2.1679,
+        "health": 55.6
+      },
+      {
+        "date": "2026-06",
+        "absorption": 2.512,
+        "health": 54.1
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.9763,
+        "health": 63.2
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.7037,
+        "health": 54.4
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.3622,
+        "health": 48.7
+      }
+    ]
+  },
+  "Patch_13": {
+    "patchId": "Patch_13",
+    "current_absorption_per_ha": 1.4403,
+    "current_health_score": 27.4,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.3748,
+        "health": 28.4
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.4065,
+        "health": 26.7
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.388,
+        "health": 26.2
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.4671,
+        "health": 26.3
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.4286,
+        "health": 26.6
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.8738,
+        "health": 17.6
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.2548,
+        "health": 28.1
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.2996,
+        "health": 26.5
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.381,
+        "health": 26.9
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.3324,
+        "health": 28.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.409,
+        "health": 27.8
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.4403,
+        "health": 27.4
+      }
+    ]
+  },
+  "Patch_14": {
+    "patchId": "Patch_14",
+    "current_absorption_per_ha": 2.4511,
+    "current_health_score": 31.4,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.4898,
+        "health": 30.4
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.92,
+        "health": 27.2
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.0079,
+        "health": 26.1
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.8964,
+        "health": 19.6
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.8151,
+        "health": 20.1
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.7335,
+        "health": 18.4
+      },
+      {
+        "date": "2026-04",
+        "absorption": 2.0615,
+        "health": 23.2
+      },
+      {
+        "date": "2026-05",
+        "absorption": 2.0937,
+        "health": 21.5
+      },
+      {
+        "date": "2026-06",
+        "absorption": 2.3169,
+        "health": 24.6
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.5356,
+        "health": 30.5
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.3515,
+        "health": 29.4
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.4511,
+        "health": 31.4
+      }
+    ]
+  },
+  "Patch_15": {
+    "patchId": "Patch_15",
+    "current_absorption_per_ha": 1.5179,
+    "current_health_score": 26.5,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.5009,
+        "health": 24.1
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.7245,
+        "health": 23.8
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.4472,
+        "health": 25.7
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.6937,
+        "health": 23.6
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.7025,
+        "health": 21.9
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.6781,
+        "health": 20.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.4284,
+        "health": 25.7
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.4796,
+        "health": 23.4
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.5216,
+        "health": 23.7
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.5077,
+        "health": 27.6
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.4983,
+        "health": 26.4
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.5179,
+        "health": 26.5
+      }
+    ]
+  },
+  "Patch_16": {
+    "patchId": "Patch_16",
+    "current_absorption_per_ha": 2.2927,
+    "current_health_score": 34,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.7147,
+        "health": 37
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.3551,
+        "health": 34
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.1255,
+        "health": 32
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.2273,
+        "health": 28.6
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.9426,
+        "health": 35.5
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.3136,
+        "health": 26.4
+      },
+      {
+        "date": "2026-04",
+        "absorption": 2.1301,
+        "health": 43
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.6957,
+        "health": 37.4
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.9084,
+        "health": 38.2
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.219,
+        "health": 41.7
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.1451,
+        "health": 38.7
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.2927,
+        "health": 34
+      }
+    ]
+  },
+  "Patch_17": {
+    "patchId": "Patch_17",
+    "current_absorption_per_ha": 1.7651,
+    "current_health_score": 55.1,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.0006,
+        "health": 50.9
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.1623,
+        "health": 53.8
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.6788,
+        "health": 52.1
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.7175,
+        "health": 56.6
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.3078,
+        "health": 52.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.6514,
+        "health": 58.1
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.8293,
+        "health": 52.5
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.6037,
+        "health": 51.6
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.5506,
+        "health": 51.4
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.1464,
+        "health": 56.1
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.8661,
+        "health": 54.4
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.7651,
+        "health": 55.1
+      }
+    ]
+  },
+  "Patch_18": {
+    "patchId": "Patch_18",
+    "current_absorption_per_ha": 1.9688,
+    "current_health_score": 23.2,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.6453,
+        "health": 26.6
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.1418,
+        "health": 27.4
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.6257,
+        "health": 24.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.5175,
+        "health": 22.3
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.4974,
+        "health": 19.8
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.4172,
+        "health": 18.7
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.8194,
+        "health": 20.3
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.8365,
+        "health": 19.7
+      },
+      {
+        "date": "2026-06",
+        "absorption": 2.0624,
+        "health": 24.6
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.8482,
+        "health": 39.9
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.3312,
+        "health": 28.9
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.9688,
+        "health": 23.2
+      }
+    ]
+  },
+  "Patch_19": {
+    "patchId": "Patch_19",
+    "current_absorption_per_ha": 1.8881,
+    "current_health_score": 37.9,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.5427,
+        "health": 34
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.4848,
+        "health": 34.6
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.8168,
+        "health": 37.9
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.9722,
+        "health": 42
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.8918,
+        "health": 41.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.1053,
+        "health": 43.1
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.5233,
+        "health": 42.9
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.3454,
+        "health": 38.6
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.5469,
+        "health": 38.1
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.052,
+        "health": 44.3
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.6777,
+        "health": 37.7
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.8881,
+        "health": 37.9
+      }
+    ]
+  },
+  "Patch_20": {
+    "patchId": "Patch_20",
+    "current_absorption_per_ha": 1.9174,
+    "current_health_score": 33,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.6658,
+        "health": 35.8
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.3324,
+        "health": 34.2
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.0863,
+        "health": 35.3
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.0598,
+        "health": 40.9
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.0897,
+        "health": 40.2
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.1454,
+        "health": 39.2
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.5226,
+        "health": 40.9
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.4752,
+        "health": 37.2
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.6789,
+        "health": 37.1
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.8266,
+        "health": 39.1
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.7782,
+        "health": 34
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.9174,
+        "health": 33
+      }
+    ]
+  },
+  "Patch_21": {
+    "patchId": "Patch_21",
+    "current_absorption_per_ha": 1.7617,
+    "current_health_score": 16.3,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.4843,
+        "health": 25.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.3899,
+        "health": 22
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.608,
+        "health": 18.7
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.623,
+        "health": 19.4
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.722,
+        "health": 18.3
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.8532,
+        "health": 15.7
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.6202,
+        "health": 21.7
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.6589,
+        "health": 19
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.8053,
+        "health": 16.7
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.7989,
+        "health": 18.1
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.7412,
+        "health": 16
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.7617,
+        "health": 16.3
+      }
+    ]
+  },
+  "Patch_22": {
+    "patchId": "Patch_22",
+    "current_absorption_per_ha": 1.9671,
+    "current_health_score": 47.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.6497,
+        "health": 51.2
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.6953,
+        "health": 51.4
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.9069,
+        "health": 55.2
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.8858,
+        "health": 54.6
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.9276,
+        "health": 52.2
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.1233,
+        "health": 51.6
+      },
+      {
+        "date": "2026-04",
+        "absorption": 2.1992,
+        "health": 70.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.7453,
+        "health": 52.7
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.8179,
+        "health": 55.1
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.94,
+        "health": 62.2
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.5877,
+        "health": 55.5
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.9671,
+        "health": 47.7
+      }
+    ]
+  },
+  "Patch_23": {
+    "patchId": "Patch_23",
+    "current_absorption_per_ha": 1.6099,
+    "current_health_score": 28.4,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.3478,
+        "health": 17.7
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.727,
+        "health": 18.6
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.2466,
+        "health": 22.7
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.6363,
+        "health": 20.2
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.5612,
+        "health": 20.4
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.9292,
+        "health": 10
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.3815,
+        "health": 20.7
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.345,
+        "health": 19.7
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.3487,
+        "health": 23
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.4544,
+        "health": 26
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.4868,
+        "health": 27.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.6099,
+        "health": 28.4
+      }
+    ]
+  },
+  "Patch_24": {
+    "patchId": "Patch_24",
+    "current_absorption_per_ha": 2.019,
+    "current_health_score": 46.4,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.5667,
+        "health": 46.1
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.0505,
+        "health": 44.4
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.014,
+        "health": 47.6
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.2172,
+        "health": 47.9
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.0017,
+        "health": 44.6
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.2157,
+        "health": 44.2
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.5525,
+        "health": 55.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.3969,
+        "health": 44.7
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.5922,
+        "health": 45.7
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.9883,
+        "health": 50.9
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.9147,
+        "health": 47.8
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.019,
+        "health": 46.4
+      }
+    ]
+  },
+  "Patch_25": {
+    "patchId": "Patch_25",
+    "current_absorption_per_ha": 1.5062,
+    "current_health_score": 27.3,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.4085,
+        "health": 17
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.4553,
+        "health": 14.9
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.4241,
+        "health": 18.7
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.6372,
+        "health": 12.7
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.6634,
+        "health": 13.9
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.7487,
+        "health": 10
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.4089,
+        "health": 18.1
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.4024,
+        "health": 17.2
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.4561,
+        "health": 21.2
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.6746,
+        "health": 25.5
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.6491,
+        "health": 26.6
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.5062,
+        "health": 27.3
+      }
+    ]
+  },
+  "Patch_26": {
+    "patchId": "Patch_26",
+    "current_absorption_per_ha": 2.7515,
+    "current_health_score": 47.3,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.2373,
+        "health": 21.6
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.3624,
+        "health": 25.2
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.4054,
+        "health": 35.5
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.4733,
+        "health": 25.8
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.4659,
+        "health": 25.8
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.4752,
+        "health": 24
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.5243,
+        "health": 26.1
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.628,
+        "health": 22.5
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.596,
+        "health": 27.1
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.0298,
+        "health": 39.9
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.4633,
+        "health": 44.1
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.7515,
+        "health": 47.3
+      }
+    ]
+  },
+  "Patch_27": {
+    "patchId": "Patch_27",
+    "current_absorption_per_ha": 1.4279,
+    "current_health_score": 23.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.1776,
+        "health": 15.5
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.1529,
+        "health": 17.7
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.2947,
+        "health": 20.6
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.4025,
+        "health": 22.1
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.4162,
+        "health": 21.3
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.9511,
+        "health": 10
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.2355,
+        "health": 20.5
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.2583,
+        "health": 20.2
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.2539,
+        "health": 21.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.2499,
+        "health": 22.5
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.3035,
+        "health": 23.4
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.4279,
+        "health": 23.7
+      }
+    ]
+  },
+  "Patch_28": {
+    "patchId": "Patch_28",
+    "current_absorption_per_ha": 1.5581,
+    "current_health_score": 28.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.6257,
+        "health": 28.6
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.3962,
+        "health": 27
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.4143,
+        "health": 28.3
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.6115,
+        "health": 27.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.6197,
+        "health": 26.2
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.7029,
+        "health": 22.7
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.495,
+        "health": 26.8
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.4928,
+        "health": 25.7
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.5255,
+        "health": 26.8
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.5072,
+        "health": 28.4
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.5121,
+        "health": 28.4
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.5581,
+        "health": 28.7
+      }
+    ]
+  },
+  "Patch_29": {
+    "patchId": "Patch_29",
+    "current_absorption_per_ha": 2.4655,
+    "current_health_score": 49.5,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.8108,
+        "health": 51.9
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.5388,
+        "health": 50.4
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.1194,
+        "health": 50.2
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.0889,
+        "health": 52.6
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.2027,
+        "health": 51.3
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.5196,
+        "health": 52.7
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.5364,
+        "health": 51.8
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.5186,
+        "health": 49.5
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.799,
+        "health": 49.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.4602,
+        "health": 55.9
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.109,
+        "health": 48.7
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.4655,
+        "health": 49.5
+      }
+    ]
+  },
+  "Patch_30": {
+    "patchId": "Patch_30",
+    "current_absorption_per_ha": 2.2436,
+    "current_health_score": 43,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.0515,
+        "health": 47.5
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.9401,
+        "health": 47.2
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.9038,
+        "health": 45.6
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.3019,
+        "health": 52.6
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.4091,
+        "health": 50.6
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.6315,
+        "health": 56.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.344,
+        "health": 52
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.265,
+        "health": 49.2
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.3844,
+        "health": 46.9
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.5306,
+        "health": 47.5
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.6465,
+        "health": 43.8
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.2436,
+        "health": 43
+      }
+    ]
+  },
+  "Patch_31": {
+    "patchId": "Patch_31",
+    "current_absorption_per_ha": 1.7647,
+    "current_health_score": 28.2,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.7486,
+        "health": 27.7
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.5278,
+        "health": 26.8
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.6418,
+        "health": 28
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.9687,
+        "health": 31.9
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.9272,
+        "health": 28.8
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.3623,
+        "health": 19
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.4637,
+        "health": 29.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.4774,
+        "health": 27.9
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.5234,
+        "health": 28.9
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.5748,
+        "health": 30.4
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.6565,
+        "health": 29.1
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.7647,
+        "health": 28.2
+      }
+    ]
+  },
+  "Patch_32": {
+    "patchId": "Patch_32",
+    "current_absorption_per_ha": 1.9237,
+    "current_health_score": 39.9,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.7178,
+        "health": 43.9
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.4755,
+        "health": 42.3
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.7252,
+        "health": 41.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.0464,
+        "health": 48.6
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.051,
+        "health": 46.5
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.2677,
+        "health": 47.9
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.3286,
+        "health": 45.9
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.3125,
+        "health": 44.3
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.4126,
+        "health": 43.5
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.5156,
+        "health": 42.5
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.6183,
+        "health": 40.1
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.9237,
+        "health": 39.9
+      }
+    ]
+  },
+  "Patch_33": {
+    "patchId": "Patch_33",
+    "current_absorption_per_ha": 2.1337,
+    "current_health_score": 36.6,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.0392,
+        "health": 37.7
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.0507,
+        "health": 34.2
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.8612,
+        "health": 38
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.2077,
+        "health": 39.7
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.0312,
+        "health": 36.8
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.4253,
+        "health": 35.2
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.4774,
+        "health": 34.8
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.4658,
+        "health": 34.4
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.5248,
+        "health": 34.1
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.8896,
+        "health": 39.2
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.9947,
+        "health": 37.4
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.1337,
+        "health": 36.6
+      }
+    ]
+  },
+  "Patch_34": {
+    "patchId": "Patch_34",
+    "current_absorption_per_ha": 1.7259,
+    "current_health_score": 32,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.553,
+        "health": 31.1
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.7437,
+        "health": 30.4
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.6061,
+        "health": 31.3
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.9028,
+        "health": 33.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.8343,
+        "health": 31.9
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.3586,
+        "health": 27.1
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.4421,
+        "health": 31.7
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.4001,
+        "health": 31.9
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.4443,
+        "health": 32.4
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.5205,
+        "health": 34.2
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.6464,
+        "health": 33
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.7259,
+        "health": 32
+      }
+    ]
+  },
+  "Patch_35": {
+    "patchId": "Patch_35",
+    "current_absorption_per_ha": 2.0152,
+    "current_health_score": 37.9,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.7295,
+        "health": 38.9
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.5798,
+        "health": 38.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.7952,
+        "health": 38.5
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.0357,
+        "health": 42.9
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.0578,
+        "health": 41.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.5057,
+        "health": 41.9
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.4394,
+        "health": 41.8
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.3996,
+        "health": 41.8
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.4272,
+        "health": 41.4
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.625,
+        "health": 42.1
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.747,
+        "health": 39
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.0152,
+        "health": 37.9
+      }
+    ]
+  },
+  "Patch_37": {
+    "patchId": "Patch_37",
+    "current_absorption_per_ha": 1.4302,
+    "current_health_score": 32.1,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.8895,
+        "health": 32.1
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.4665,
+        "health": 27.9
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.3434,
+        "health": 28.7
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.3593,
+        "health": 34.9
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.3403,
+        "health": 34.1
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.027,
+        "health": 30.2
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.2218,
+        "health": 31.9
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.2343,
+        "health": 32
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.258,
+        "health": 32.6
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.2719,
+        "health": 32.9
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.331,
+        "health": 32.3
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.4302,
+        "health": 32.1
+      }
+    ]
+  },
+  "Patch_38": {
+    "patchId": "Patch_38",
+    "current_absorption_per_ha": 1.5284,
+    "current_health_score": 33.6,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.3486,
+        "health": 29.4
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.4012,
+        "health": 26.4
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.3548,
+        "health": 29.6
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.4923,
+        "health": 33.1
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.5002,
+        "health": 34.4
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.1505,
+        "health": 24
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.2848,
+        "health": 32.3
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.2835,
+        "health": 32.5
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.3242,
+        "health": 33.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.3557,
+        "health": 35.4
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.4249,
+        "health": 34.1
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.5284,
+        "health": 33.6
+      }
+    ]
+  },
+  "Patch_40": {
+    "patchId": "Patch_40",
+    "current_absorption_per_ha": 1.5462,
+    "current_health_score": 27.9,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.4721,
+        "health": 24.4
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.3575,
+        "health": 22.1
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.3514,
+        "health": 25.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.5122,
+        "health": 26.7
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.5552,
+        "health": 26
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.9907,
+        "health": 15.1
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.4265,
+        "health": 26
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.4136,
+        "health": 26.9
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.4452,
+        "health": 27.1
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.4472,
+        "health": 29.7
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.4751,
+        "health": 29.3
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.5462,
+        "health": 27.9
+      }
+    ]
+  },
+  "Patch_41": {
+    "patchId": "Patch_41",
+    "current_absorption_per_ha": 2.1178,
+    "current_health_score": 40.9,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.787,
+        "health": 44.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.8248,
+        "health": 44.6
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.0231,
+        "health": 44
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.1792,
+        "health": 47
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.279,
+        "health": 45.5
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.6792,
+        "health": 46.3
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.6318,
+        "health": 45.8
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.3977,
+        "health": 45
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.4659,
+        "health": 45.6
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.7218,
+        "health": 46.7
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.0527,
+        "health": 42.9
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.1178,
+        "health": 40.9
+      }
+    ]
+  },
+  "Patch_42": {
+    "patchId": "Patch_42",
+    "current_absorption_per_ha": 1.4049,
+    "current_health_score": 32.3,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.5183,
+        "health": 27.2
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.3693,
+        "health": 25.3
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.2715,
+        "health": 29.6
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.3791,
+        "health": 32
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.4071,
+        "health": 31
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.0126,
+        "health": 11.7
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.3914,
+        "health": 26.9
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.3961,
+        "health": 28
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.3954,
+        "health": 27.9
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.3701,
+        "health": 30.9
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.3786,
+        "health": 31.7
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.4049,
+        "health": 32.3
+      }
+    ]
+  },
+  "Patch_43": {
+    "patchId": "Patch_43",
+    "current_absorption_per_ha": 2.0016,
+    "current_health_score": 18.9,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.6934,
+        "health": 27
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.4941,
+        "health": 24.7
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.7848,
+        "health": 25.4
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.0756,
+        "health": 25.6
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.161,
+        "health": 20.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.5787,
+        "health": 20.7
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.7975,
+        "health": 20.9
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.7743,
+        "health": 24.8
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.7835,
+        "health": 23.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.8654,
+        "health": 25.3
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.9217,
+        "health": 21.6
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.0016,
+        "health": 18.9
+      }
+    ]
+  },
+  "Patch_44": {
+    "patchId": "Patch_44",
+    "current_absorption_per_ha": 1.6537,
+    "current_health_score": 31.5,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.4371,
+        "health": 27.5
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.9551,
+        "health": 26.7
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.5138,
+        "health": 29.1
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.7612,
+        "health": 28.9
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.7345,
+        "health": 32.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.2991,
+        "health": 23.4
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.4021,
+        "health": 31.3
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.3464,
+        "health": 31.2
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.3864,
+        "health": 31.8
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.4831,
+        "health": 34.2
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.5645,
+        "health": 32.4
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.6537,
+        "health": 31.5
+      }
+    ]
+  },
+  "Patch_45": {
+    "patchId": "Patch_45",
+    "current_absorption_per_ha": 1.662,
+    "current_health_score": 33.5,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.5242,
+        "health": 34.7
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.4156,
+        "health": 33.3
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.5446,
+        "health": 34.7
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.7921,
+        "health": 36.6
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.7332,
+        "health": 34.6
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.2386,
+        "health": 29.2
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.3694,
+        "health": 33.4
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.3502,
+        "health": 33.5
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.4062,
+        "health": 33.9
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.4675,
+        "health": 35.3
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.521,
+        "health": 34.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.662,
+        "health": 33.5
+      }
+    ]
+  },
+  "Patch_46": {
+    "patchId": "Patch_46",
+    "current_absorption_per_ha": 1.4539,
+    "current_health_score": 31,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.4656,
+        "health": 28.2
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.3951,
+        "health": 27
+      },
+      {
+        "date": "2025-01",
+        "absorption": 3.1313,
+        "health": 29.6
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.5207,
+        "health": 31.8
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.4718,
+        "health": 30.3
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.0601,
+        "health": 19.1
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.2988,
+        "health": 28.7
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.3271,
+        "health": 29
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.3584,
+        "health": 29.6
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.3638,
+        "health": 31.1
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.3954,
+        "health": 31
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.4539,
+        "health": 31
+      }
+    ]
+  },
+  "Patch_47": {
+    "patchId": "Patch_47",
+    "current_absorption_per_ha": 1.7173,
+    "current_health_score": 31.3,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.4088,
+        "health": 25.4
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.8008,
+        "health": 23.8
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.5104,
+        "health": 29.2
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.5238,
+        "health": 26.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.4548,
+        "health": 27.1
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.0394,
+        "health": 10
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.4558,
+        "health": 25.4
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.4325,
+        "health": 26.5
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.4398,
+        "health": 28
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.4812,
+        "health": 30.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.7537,
+        "health": 31.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.7173,
+        "health": 31.3
+      }
+    ]
+  },
+  "Patch_48": {
+    "patchId": "Patch_48",
+    "current_absorption_per_ha": 1.9357,
+    "current_health_score": 32.3,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.6618,
+        "health": 29.6
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.8988,
+        "health": 28.1
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.7511,
+        "health": 30.2
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.0344,
+        "health": 30.9
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.8963,
+        "health": 27.8
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.4567,
+        "health": 21.6
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.6239,
+        "health": 29.3
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.5508,
+        "health": 31
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.5818,
+        "health": 31.5
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.7795,
+        "health": 36.2
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.8803,
+        "health": 34
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.9357,
+        "health": 32.3
+      }
+    ]
+  },
+  "Patch_49": {
+    "patchId": "Patch_49",
+    "current_absorption_per_ha": 1.5982,
+    "current_health_score": 36,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.6216,
+        "health": 35.1
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.4484,
+        "health": 33.9
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.5524,
+        "health": 36.1
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.8631,
+        "health": 37
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.709,
+        "health": 36.9
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.3588,
+        "health": 29.7
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.3165,
+        "health": 35.2
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.3029,
+        "health": 35
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.3535,
+        "health": 35.6
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.4915,
+        "health": 38.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.5385,
+        "health": 37.1
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.5982,
+        "health": 36
+      }
+    ]
+  },
+  "Patch_50": {
+    "patchId": "Patch_50",
+    "current_absorption_per_ha": 1.7824,
+    "current_health_score": 52.6,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.584,
+        "health": 48.2
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.621,
+        "health": 49.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.715,
+        "health": 51
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.812,
+        "health": 52.8
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.794,
+        "health": 53.1
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.145,
+        "health": 54
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.482,
+        "health": 51.9
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.451,
+        "health": 50.8
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.512,
+        "health": 51.4
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.684,
+        "health": 53.2
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.729,
+        "health": 52.9
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.7824,
+        "health": 52.6
+      }
+    ]
+  },
+  "Patch_51": {
+    "patchId": "Patch_51",
+    "current_absorption_per_ha": 1.6643,
+    "current_health_score": 33.2,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.48,
+        "health": 31.4
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.4268,
+        "health": 30.2
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.9242,
+        "health": 32.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.739,
+        "health": 34.6
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.7215,
+        "health": 33
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.2262,
+        "health": 27.9
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.3975,
+        "health": 32.7
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.3735,
+        "health": 32.4
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.4278,
+        "health": 33
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.4975,
+        "health": 35.2
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.5821,
+        "health": 34.1
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.6643,
+        "health": 33.2
+      }
+    ]
+  },
+  "Patch_53": {
+    "patchId": "Patch_53",
+    "current_absorption_per_ha": 1.496,
+    "current_health_score": 36.8,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.3548,
+        "health": 36.8
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.3375,
+        "health": 35.4
+      },
+      {
+        "date": "2025-01",
+        "absorption": 4.3467,
+        "health": 37.6
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.5517,
+        "health": 41.6
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.5328,
+        "health": 37.2
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.2762,
+        "health": 32.3
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.2446,
+        "health": 36.8
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.2471,
+        "health": 36.3
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.3057,
+        "health": 36.7
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.3567,
+        "health": 40.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.4163,
+        "health": 38
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.496,
+        "health": 36.8
+      }
+    ]
+  },
+  "Patch_54": {
+    "patchId": "Patch_54",
+    "current_absorption_per_ha": 1.3144,
+    "current_health_score": 46.3,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.3491,
+        "health": 46.8
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.5064,
+        "health": 46.8
+      },
+      {
+        "date": "2025-01",
+        "absorption": 4.5189,
+        "health": 48.4
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.7836,
+        "health": 54.2
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.4265,
+        "health": 50.4
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.4033,
+        "health": 51.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 0.9549,
+        "health": 49.4
+      },
+      {
+        "date": "2026-05",
+        "absorption": 0.9659,
+        "health": 48.9
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.0112,
+        "health": 49.8
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.1367,
+        "health": 54.3
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.1677,
+        "health": 49.7
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.3144,
+        "health": 46.3
+      }
+    ]
+  },
+  "Patch_55": {
+    "patchId": "Patch_55",
+    "current_absorption_per_ha": 2.1941,
+    "current_health_score": 45.4,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.4166,
+        "health": 43.9
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.3454,
+        "health": 44.2
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.7363,
+        "health": 48.3
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.9137,
+        "health": 51.6
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.9259,
+        "health": 49.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.4424,
+        "health": 50.9
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.2184,
+        "health": 49
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.133,
+        "health": 47.8
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.348,
+        "health": 48.1
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.5586,
+        "health": 51
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.7304,
+        "health": 46.8
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.1941,
+        "health": 45.4
+      }
+    ]
+  },
+  "Patch_56": {
+    "patchId": "Patch_56",
+    "current_absorption_per_ha": 2.231,
+    "current_health_score": 37.5,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.9817,
+        "health": 38.8
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.8834,
+        "health": 38.7
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.2216,
+        "health": 39.9
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.4179,
+        "health": 41.9
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.3847,
+        "health": 41
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.7497,
+        "health": 38
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.7978,
+        "health": 41
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.5948,
+        "health": 40.3
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.7168,
+        "health": 40.4
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.1423,
+        "health": 44.9
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.2423,
+        "health": 40
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.231,
+        "health": 37.5
+      }
+    ]
+  },
+  "Patch_57": {
+    "patchId": "Patch_57",
+    "current_absorption_per_ha": 1.7986,
+    "current_health_score": 37,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.7897,
+        "health": 31.7
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.3917,
+        "health": 31.1
+      },
+      {
+        "date": "2025-01",
+        "absorption": 4.4381,
+        "health": 34.6
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.0433,
+        "health": 35
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.8141,
+        "health": 32.8
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.3258,
+        "health": 15.2
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.3225,
+        "health": 36.5
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.2693,
+        "health": 36.8
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.3759,
+        "health": 37.9
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.6962,
+        "health": 41.9
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.7556,
+        "health": 38.7
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.7986,
+        "health": 37
+      }
+    ]
+  },
+  "Patch_58": {
+    "patchId": "Patch_58",
+    "current_absorption_per_ha": 2.0304,
+    "current_health_score": 22.6,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.6051,
+        "health": 12.7
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.4328,
+        "health": 10
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.7298,
+        "health": 11.1
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.9705,
+        "health": 10
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.9454,
+        "health": 16.6
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.2235,
+        "health": 10
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.5735,
+        "health": 23.3
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.5046,
+        "health": 26.3
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.5476,
+        "health": 26.6
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.912,
+        "health": 31.1
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.8926,
+        "health": 26
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.0304,
+        "health": 22.6
+      }
+    ]
+  },
+  "Patch_59": {
+    "patchId": "Patch_59",
+    "current_absorption_per_ha": 1.9451,
+    "current_health_score": 30.1,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.7149,
+        "health": 30.6
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.571,
+        "health": 28.6
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.5279,
+        "health": 30.9
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.1831,
+        "health": 33.8
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.0702,
+        "health": 32
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.5353,
+        "health": 28.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.5038,
+        "health": 33.5
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.4422,
+        "health": 33.6
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.5442,
+        "health": 34.4
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.7246,
+        "health": 37.4
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.8162,
+        "health": 33.9
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.9451,
+        "health": 30.1
+      }
+    ]
+  },
+  "Patch_60": {
+    "patchId": "Patch_60",
+    "current_absorption_per_ha": 1.8325,
+    "current_health_score": 35.9,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.5592,
+        "health": 37.6
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.3785,
+        "health": 36.4
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.9651,
+        "health": 38.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.8623,
+        "health": 41.9
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.794,
+        "health": 37.8
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.186,
+        "health": 36.3
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.3651,
+        "health": 37.5
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.3496,
+        "health": 37.7
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.423,
+        "health": 37.7
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.6,
+        "health": 40.4
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.7033,
+        "health": 36.9
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.8325,
+        "health": 35.9
+      }
+    ]
+  },
+  "Patch_61": {
+    "patchId": "Patch_61",
+    "current_absorption_per_ha": 2.5898,
+    "current_health_score": 46.6,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.7638,
+        "health": 42.8
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.6632,
+        "health": 39.7
+      },
+      {
+        "date": "2025-01",
+        "absorption": 5.1629,
+        "health": 46.4
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.5601,
+        "health": 48.3
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.358,
+        "health": 45.6
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.8867,
+        "health": 48.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.4225,
+        "health": 44.5
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.437,
+        "health": 44
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.6795,
+        "health": 44.6
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.4876,
+        "health": 53.3
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.4632,
+        "health": 47.5
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.5898,
+        "health": 46.6
+      }
+    ]
+  },
+  "Patch_62": {
+    "patchId": "Patch_62",
+    "current_absorption_per_ha": 2.5695,
+    "current_health_score": 25.3,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.0323,
+        "health": 34
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.7223,
+        "health": 32.9
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.188,
+        "health": 29.9
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.5591,
+        "health": 34.2
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.4581,
+        "health": 35
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.3308,
+        "health": 27.5
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.9499,
+        "health": 37.9
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.802,
+        "health": 37
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.9316,
+        "health": 34.5
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.19,
+        "health": 37.1
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.2389,
+        "health": 26.4
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.5695,
+        "health": 25.3
+      }
+    ]
+  },
+  "Patch_63": {
+    "patchId": "Patch_63",
+    "current_absorption_per_ha": 2.6711,
+    "current_health_score": 49.1,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.7228,
+        "health": 53.9
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.9856,
+        "health": 54.9
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.0762,
+        "health": 53.6
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.2742,
+        "health": 59.4
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.0541,
+        "health": 56.2
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.531,
+        "health": 55.6
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.3883,
+        "health": 59.2
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.3351,
+        "health": 53.5
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.5469,
+        "health": 52.8
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.1468,
+        "health": 55.7
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.0129,
+        "health": 46.6
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.6711,
+        "health": 49.1
+      }
+    ]
+  },
+  "Patch_64": {
+    "patchId": "Patch_64",
+    "current_absorption_per_ha": 2.8124,
+    "current_health_score": 50.1,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.193,
+        "health": 53.1
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.069,
+        "health": 51.8
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.6688,
+        "health": 55.2
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.6057,
+        "health": 57
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.2768,
+        "health": 54
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.7877,
+        "health": 54.7
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.9009,
+        "health": 54.3
+      },
+      {
+        "date": "2026-05",
+        "absorption": 2.1188,
+        "health": 51.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 2.494,
+        "health": 49.2
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.7588,
+        "health": 51.1
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.6962,
+        "health": 47.8
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.8124,
+        "health": 50.1
+      }
+    ]
+  },
+  "Patch_65": {
+    "patchId": "Patch_65",
+    "current_absorption_per_ha": 2.107,
+    "current_health_score": 29.3,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.6364,
+        "health": 32.6
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.7165,
+        "health": 30.3
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.1852,
+        "health": 28.3
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.0678,
+        "health": 35.8
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.0646,
+        "health": 36.3
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.3083,
+        "health": 31.4
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.8452,
+        "health": 34.4
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.6688,
+        "health": 39.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.9525,
+        "health": 35.1
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.9616,
+        "health": 35.9
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.0366,
+        "health": 30.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.107,
+        "health": 29.3
+      }
+    ]
+  },
+  "Patch_66": {
+    "patchId": "Patch_66",
+    "current_absorption_per_ha": 1.8607,
+    "current_health_score": 34.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.4909,
+        "health": 34.9
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.8718,
+        "health": 32.6
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.7509,
+        "health": 31.1
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.8898,
+        "health": 37.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.8879,
+        "health": 35.9
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.1865,
+        "health": 31.5
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.6455,
+        "health": 35.1
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.5249,
+        "health": 36.7
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.7404,
+        "health": 35.4
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.8348,
+        "health": 36.4
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.8273,
+        "health": 30.7
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.8607,
+        "health": 34.7
+      }
+    ]
+  },
+  "Patch_67": {
+    "patchId": "Patch_67",
+    "current_absorption_per_ha": 1.9947,
+    "current_health_score": 29.1,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.5585,
+        "health": 31.9
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.7232,
+        "health": 30.7
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.834,
+        "health": 28.2
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.9011,
+        "health": 35.2
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.9944,
+        "health": 34.8
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.2343,
+        "health": 31.9
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.7393,
+        "health": 34.4
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.6565,
+        "health": 38.4
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.8751,
+        "health": 34.8
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.8739,
+        "health": 36.2
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.9738,
+        "health": 29.8
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.9947,
+        "health": 29.1
+      }
+    ]
+  },
+  "Patch_69": {
+    "patchId": "Patch_69",
+    "current_absorption_per_ha": 1.7363,
+    "current_health_score": 13.9,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.471,
+        "health": 18.7
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.6948,
+        "health": 12.1
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.6493,
+        "health": 10
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.777,
+        "health": 18.9
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.7852,
+        "health": 17.6
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.9263,
+        "health": 10
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.6777,
+        "health": 22.8
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.6098,
+        "health": 24.8
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.7188,
+        "health": 20.7
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.6981,
+        "health": 24.6
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.7996,
+        "health": 10
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.7363,
+        "health": 13.9
+      }
+    ]
+  },
+  "Patch_70": {
+    "patchId": "Patch_70",
+    "current_absorption_per_ha": 1.8324,
+    "current_health_score": 49.3,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.3621,
+        "health": 51.4
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.694,
+        "health": 52
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.6709,
+        "health": 50.3
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.7922,
+        "health": 55.6
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.5986,
+        "health": 54
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.6758,
+        "health": 57.4
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.382,
+        "health": 53.4
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.2418,
+        "health": 52.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.4736,
+        "health": 51.1
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.4847,
+        "health": 50.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.7037,
+        "health": 46.6
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.8324,
+        "health": 49.3
+      }
+    ]
+  },
+  "Patch_71": {
+    "patchId": "Patch_71",
+    "current_absorption_per_ha": 2.5496,
+    "current_health_score": 29.8,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.717,
+        "health": 39
+      },
+      {
+        "date": "2024-01",
+        "absorption": 3.377,
+        "health": 40.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.3205,
+        "health": 33.1
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.1609,
+        "health": 45.7
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.3409,
+        "health": 41.9
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.179,
+        "health": 39.9
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.8102,
+        "health": 37.7
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.661,
+        "health": 39.5
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.8541,
+        "health": 39.7
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.1314,
+        "health": 40.3
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.3859,
+        "health": 34.8
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.5496,
+        "health": 29.8
+      }
+    ]
+  },
+  "Patch_72": {
+    "patchId": "Patch_72",
+    "current_absorption_per_ha": 3.1473,
+    "current_health_score": 46.3,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.5216,
+        "health": 45.5
+      },
+      {
+        "date": "2024-01",
+        "absorption": 5.7947,
+        "health": 59.4
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.4129,
+        "health": 46.2
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.6106,
+        "health": 50.3
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.5039,
+        "health": 47.3
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.6552,
+        "health": 52.3
+      },
+      {
+        "date": "2026-04",
+        "absorption": 2.3182,
+        "health": 48.4
+      },
+      {
+        "date": "2026-05",
+        "absorption": 2.2191,
+        "health": 48.2
+      },
+      {
+        "date": "2026-06",
+        "absorption": 2.4544,
+        "health": 45.2
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.7832,
+        "health": 46.7
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.6995,
+        "health": 44
+      },
+      {
+        "date": "2026-09",
+        "absorption": 3.1473,
+        "health": 46.3
+      }
+    ]
+  },
+  "Patch_73": {
+    "patchId": "Patch_73",
+    "current_absorption_per_ha": 2.7399,
+    "current_health_score": 26.4,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.0162,
+        "health": 35.1
+      },
+      {
+        "date": "2024-01",
+        "absorption": 4,
+        "health": 39.4
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.2841,
+        "health": 28
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.6812,
+        "health": 37.6
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.5631,
+        "health": 34.2
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.5009,
+        "health": 31.3
+      },
+      {
+        "date": "2026-04",
+        "absorption": 2.4202,
+        "health": 30.2
+      },
+      {
+        "date": "2026-05",
+        "absorption": 2.1419,
+        "health": 36.2
+      },
+      {
+        "date": "2026-06",
+        "absorption": 2.2163,
+        "health": 33.8
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.5115,
+        "health": 31.7
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.5744,
+        "health": 28.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.7399,
+        "health": 26.4
+      }
+    ]
+  },
+  "Patch_74": {
+    "patchId": "Patch_74",
+    "current_absorption_per_ha": 2.8645,
+    "current_health_score": 47.6,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.1815,
+        "health": 48.5
+      },
+      {
+        "date": "2024-01",
+        "absorption": 5.2848,
+        "health": 57.8
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.248,
+        "health": 46.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.7917,
+        "health": 52.8
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.7662,
+        "health": 55.2
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.564,
+        "health": 53.6
+      },
+      {
+        "date": "2026-04",
+        "absorption": 2.3513,
+        "health": 50.8
+      },
+      {
+        "date": "2026-05",
+        "absorption": 2.3082,
+        "health": 49.2
+      },
+      {
+        "date": "2026-06",
+        "absorption": 2.525,
+        "health": 47.7
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.5465,
+        "health": 49.9
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.6039,
+        "health": 46.6
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.8645,
+        "health": 47.6
+      }
+    ]
+  },
+  "Patch_3": {
+    "patchId": "Patch_3",
+    "current_absorption_per_ha": 2.297,
+    "current_health_score": 63.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.037,
+        "health": 62.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.0803,
+        "health": 62.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.1237,
+        "health": 62.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.2537,
+        "health": 63.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.297,
+        "health": 63.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.492,
+        "health": 64.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.907,
+        "health": 61.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.8203,
+        "health": 61.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.8636,
+        "health": 61.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.1237,
+        "health": 62.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.2103,
+        "health": 63.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.297,
+        "health": 63.7
+      }
+    ]
+  },
+  "Patch_36": {
+    "patchId": "Patch_36",
+    "current_absorption_per_ha": 1.7352,
+    "current_health_score": 42.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.5388,
+        "health": 41.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.5715,
+        "health": 41.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.6043,
+        "health": 41.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.7025,
+        "health": 42.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.7352,
+        "health": 42.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.8825,
+        "health": 43.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.4406,
+        "health": 40.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.3751,
+        "health": 40.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.4078,
+        "health": 40.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.6043,
+        "health": 41.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.6697,
+        "health": 42.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.7352,
+        "health": 42.7
+      }
+    ]
+  },
+  "Patch_39": {
+    "patchId": "Patch_39",
+    "current_absorption_per_ha": 1.3992,
+    "current_health_score": 63.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.2408,
+        "health": 62.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.2672,
+        "health": 62.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.2936,
+        "health": 62.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.3728,
+        "health": 63.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.3992,
+        "health": 63.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.518,
+        "health": 64.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.1616,
+        "health": 61.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.1088,
+        "health": 61.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.1352,
+        "health": 61.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.2936,
+        "health": 62.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.3464,
+        "health": 63.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.3992,
+        "health": 63.7
+      }
+    ]
+  },
+  "Patch_52": {
+    "patchId": "Patch_52",
+    "current_absorption_per_ha": 1.6229,
+    "current_health_score": 42.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.4391,
+        "health": 41.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.4698,
+        "health": 41.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.5004,
+        "health": 41.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.5922,
+        "health": 42.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.6229,
+        "health": 42.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.7606,
+        "health": 43.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.3473,
+        "health": 40.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.286,
+        "health": 40.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.3167,
+        "health": 40.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.5004,
+        "health": 41.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.5616,
+        "health": 42.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.6229,
+        "health": 42.7
+      }
+    ]
+  },
+  "Patch_68": {
+    "patchId": "Patch_68",
+    "current_absorption_per_ha": 2.19,
+    "current_health_score": 42.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.942,
+        "health": 41.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.9834,
+        "health": 41.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.0247,
+        "health": 41.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.1486,
+        "health": 42.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.19,
+        "health": 42.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.3759,
+        "health": 43.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.8181,
+        "health": 40.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.7354,
+        "health": 40.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.7768,
+        "health": 40.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.0247,
+        "health": 41.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.1073,
+        "health": 42.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.19,
+        "health": 42.7
+      }
+    ]
+  },
+  "Patch_75": {
+    "patchId": "Patch_75",
+    "current_absorption_per_ha": 2.5122,
+    "current_health_score": 63.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.2278,
+        "health": 62.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.2752,
+        "health": 62.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.3226,
+        "health": 62.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.4648,
+        "health": 63.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.5122,
+        "health": 63.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.7255,
+        "health": 64.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 2.0856,
+        "health": 61.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.9908,
+        "health": 61.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 2.0382,
+        "health": 61.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.3226,
+        "health": 62.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.4174,
+        "health": 63.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.5122,
+        "health": 63.7
+      }
+    ]
+  },
+  "Patch_76": {
+    "patchId": "Patch_76",
+    "current_absorption_per_ha": 2.597,
+    "current_health_score": 42.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.303,
+        "health": 41.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.352,
+        "health": 41.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.401,
+        "health": 41.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.548,
+        "health": 42.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.597,
+        "health": 42.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.8175,
+        "health": 43.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 2.156,
+        "health": 40.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 2.058,
+        "health": 40.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 2.107,
+        "health": 40.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.401,
+        "health": 41.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.499,
+        "health": 42.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.597,
+        "health": 42.7
+      }
+    ]
+  },
+  "Patch_77": {
+    "patchId": "Patch_77",
+    "current_absorption_per_ha": 1.749,
+    "current_health_score": 49.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.551,
+        "health": 48.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.584,
+        "health": 48.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.617,
+        "health": 48.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.716,
+        "health": 49.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.749,
+        "health": 49.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.8975,
+        "health": 50.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.452,
+        "health": 47.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.386,
+        "health": 47.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.419,
+        "health": 47.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.617,
+        "health": 48.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.683,
+        "health": 49.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.749,
+        "health": 49.7
+      }
+    ]
+  },
+  "Patch_78": {
+    "patchId": "Patch_78",
+    "current_absorption_per_ha": 1.8338,
+    "current_health_score": 56.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.6262,
+        "health": 55.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.6608,
+        "health": 55.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.6954,
+        "health": 55.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.7992,
+        "health": 56.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.8338,
+        "health": 56.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.9895,
+        "health": 57.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.5224,
+        "health": 54.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.4532,
+        "health": 54.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.4878,
+        "health": 54.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.6954,
+        "health": 55.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.7646,
+        "health": 56.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.8338,
+        "health": 56.7
+      }
+    ]
+  },
+  "Patch_79": {
+    "patchId": "Patch_79",
+    "current_absorption_per_ha": 1.9186,
+    "current_health_score": 63.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.7014,
+        "health": 62.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.7376,
+        "health": 62.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.7738,
+        "health": 62.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.8824,
+        "health": 63.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.9186,
+        "health": 63.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.0815,
+        "health": 64.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.5928,
+        "health": 61.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.5204,
+        "health": 61.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.5566,
+        "health": 61.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.7738,
+        "health": 62.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.8462,
+        "health": 63.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.9186,
+        "health": 63.7
+      }
+    ]
+  },
+  "Patch_80": {
+    "patchId": "Patch_80",
+    "current_absorption_per_ha": 2.0034,
+    "current_health_score": 42.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.7766,
+        "health": 41.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.8144,
+        "health": 41.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.8522,
+        "health": 41.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.9656,
+        "health": 42.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.0034,
+        "health": 42.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.1735,
+        "health": 43.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.6632,
+        "health": 40.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.5876,
+        "health": 40.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.6254,
+        "health": 40.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.8522,
+        "health": 41.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.9278,
+        "health": 42.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.0034,
+        "health": 42.7
+      }
+    ]
+  },
+  "Patch_81": {
+    "patchId": "Patch_81",
+    "current_absorption_per_ha": 2.0882,
+    "current_health_score": 49.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.8518,
+        "health": 48.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.8912,
+        "health": 48.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.9306,
+        "health": 48.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.0488,
+        "health": 49.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.0882,
+        "health": 49.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.2655,
+        "health": 50.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.7336,
+        "health": 47.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.6548,
+        "health": 47.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.6942,
+        "health": 47.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.9306,
+        "health": 48.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.0094,
+        "health": 49.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.0882,
+        "health": 49.7
+      }
+    ]
+  },
+  "Patch_82": {
+    "patchId": "Patch_82",
+    "current_absorption_per_ha": 2.173,
+    "current_health_score": 56.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.927,
+        "health": 55.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.968,
+        "health": 55.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.009,
+        "health": 55.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.132,
+        "health": 56.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.173,
+        "health": 56.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.3575,
+        "health": 57.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.804,
+        "health": 54.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.722,
+        "health": 54.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.763,
+        "health": 54.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.009,
+        "health": 55.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.091,
+        "health": 56.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.173,
+        "health": 56.7
+      }
+    ]
+  },
+  "Patch_83": {
+    "patchId": "Patch_83",
+    "current_absorption_per_ha": 2.2578,
+    "current_health_score": 63.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.0022,
+        "health": 62.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.0448,
+        "health": 62.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.0874,
+        "health": 62.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.2152,
+        "health": 63.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.2578,
+        "health": 63.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.4495,
+        "health": 64.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.8744,
+        "health": 61.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.7892,
+        "health": 61.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.8318,
+        "health": 61.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.0874,
+        "health": 62.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.1726,
+        "health": 63.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.2578,
+        "health": 63.7
+      }
+    ]
+  },
+  "Patch_84": {
+    "patchId": "Patch_84",
+    "current_absorption_per_ha": 2.3426,
+    "current_health_score": 42.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.0774,
+        "health": 41.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.1216,
+        "health": 41.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.1658,
+        "health": 41.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.2984,
+        "health": 42.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.3426,
+        "health": 42.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.5415,
+        "health": 43.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.9448,
+        "health": 40.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.8564,
+        "health": 40.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.9006,
+        "health": 40.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.1658,
+        "health": 41.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.2542,
+        "health": 42.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.3426,
+        "health": 42.7
+      }
+    ]
+  },
+  "Patch_85": {
+    "patchId": "Patch_85",
+    "current_absorption_per_ha": 2.4274,
+    "current_health_score": 49.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.1526,
+        "health": 48.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.1984,
+        "health": 48.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.2442,
+        "health": 48.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.3816,
+        "health": 49.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.4274,
+        "health": 49.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.6335,
+        "health": 50.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 2.0152,
+        "health": 47.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.9236,
+        "health": 47.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.9694,
+        "health": 47.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.2442,
+        "health": 48.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.3358,
+        "health": 49.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.4274,
+        "health": 49.7
+      }
+    ]
+  },
+  "Patch_86": {
+    "patchId": "Patch_86",
+    "current_absorption_per_ha": 2.5122,
+    "current_health_score": 56.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.2278,
+        "health": 55.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.2752,
+        "health": 55.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.3226,
+        "health": 55.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.4648,
+        "health": 56.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.5122,
+        "health": 56.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.7255,
+        "health": 57.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 2.0856,
+        "health": 54.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.9908,
+        "health": 54.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 2.0382,
+        "health": 54.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.3226,
+        "health": 55.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.4174,
+        "health": 56.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.5122,
+        "health": 56.7
+      }
+    ]
+  },
+  "Patch_87": {
+    "patchId": "Patch_87",
+    "current_absorption_per_ha": 2.597,
+    "current_health_score": 63.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.303,
+        "health": 62.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.352,
+        "health": 62.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.401,
+        "health": 62.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.548,
+        "health": 63.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.597,
+        "health": 63.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.8175,
+        "health": 64.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 2.156,
+        "health": 61.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 2.058,
+        "health": 61.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 2.107,
+        "health": 61.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.401,
+        "health": 62.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.499,
+        "health": 63.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.597,
+        "health": 63.7
+      }
+    ]
+  },
+  "Patch_88": {
+    "patchId": "Patch_88",
+    "current_absorption_per_ha": 1.749,
+    "current_health_score": 42.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.551,
+        "health": 41.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.584,
+        "health": 41.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.617,
+        "health": 41.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.716,
+        "health": 42.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.749,
+        "health": 42.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.8975,
+        "health": 43.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.452,
+        "health": 40.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.386,
+        "health": 40.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.419,
+        "health": 40.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.617,
+        "health": 41.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.683,
+        "health": 42.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.749,
+        "health": 42.7
+      }
+    ]
+  },
+  "Patch_89": {
+    "patchId": "Patch_89",
+    "current_absorption_per_ha": 1.8338,
+    "current_health_score": 49.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.6262,
+        "health": 48.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.6608,
+        "health": 48.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.6954,
+        "health": 48.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.7992,
+        "health": 49.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.8338,
+        "health": 49.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.9895,
+        "health": 50.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.5224,
+        "health": 47.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.4532,
+        "health": 47.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.4878,
+        "health": 47.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.6954,
+        "health": 48.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.7646,
+        "health": 49.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.8338,
+        "health": 49.7
+      }
+    ]
+  },
+  "Patch_90": {
+    "patchId": "Patch_90",
+    "current_absorption_per_ha": 1.9186,
+    "current_health_score": 56.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.7014,
+        "health": 55.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.7376,
+        "health": 55.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.7738,
+        "health": 55.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.8824,
+        "health": 56.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.9186,
+        "health": 56.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.0815,
+        "health": 57.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.5928,
+        "health": 54.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.5204,
+        "health": 54.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.5566,
+        "health": 54.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.7738,
+        "health": 55.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.8462,
+        "health": 56.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.9186,
+        "health": 56.7
+      }
+    ]
+  },
+  "Patch_91": {
+    "patchId": "Patch_91",
+    "current_absorption_per_ha": 2.0034,
+    "current_health_score": 63.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.7766,
+        "health": 62.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.8144,
+        "health": 62.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.8522,
+        "health": 62.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.9656,
+        "health": 63.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.0034,
+        "health": 63.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.1735,
+        "health": 64.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.6632,
+        "health": 61.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.5876,
+        "health": 61.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.6254,
+        "health": 61.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.8522,
+        "health": 62.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.9278,
+        "health": 63.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.0034,
+        "health": 63.7
+      }
+    ]
+  },
+  "Patch_92": {
+    "patchId": "Patch_92",
+    "current_absorption_per_ha": 2.0882,
+    "current_health_score": 42.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.8518,
+        "health": 41.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.8912,
+        "health": 41.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.9306,
+        "health": 41.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.0488,
+        "health": 42.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.0882,
+        "health": 42.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.2655,
+        "health": 43.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.7336,
+        "health": 40.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.6548,
+        "health": 40.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.6942,
+        "health": 40.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.9306,
+        "health": 41.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.0094,
+        "health": 42.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.0882,
+        "health": 42.7
+      }
+    ]
+  },
+  "Patch_93": {
+    "patchId": "Patch_93",
+    "current_absorption_per_ha": 2.173,
+    "current_health_score": 49.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.927,
+        "health": 48.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.968,
+        "health": 48.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.009,
+        "health": 48.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.132,
+        "health": 49.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.173,
+        "health": 49.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.3575,
+        "health": 50.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.804,
+        "health": 47.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.722,
+        "health": 47.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.763,
+        "health": 47.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.009,
+        "health": 48.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.091,
+        "health": 49.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.173,
+        "health": 49.7
+      }
+    ]
+  },
+  "Patch_94": {
+    "patchId": "Patch_94",
+    "current_absorption_per_ha": 2.2578,
+    "current_health_score": 56.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.0022,
+        "health": 55.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.0448,
+        "health": 55.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.0874,
+        "health": 55.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.2152,
+        "health": 56.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.2578,
+        "health": 56.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.4495,
+        "health": 57.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.8744,
+        "health": 54.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.7892,
+        "health": 54.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.8318,
+        "health": 54.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.0874,
+        "health": 55.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.1726,
+        "health": 56.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.2578,
+        "health": 56.7
+      }
+    ]
+  },
+  "Patch_95": {
+    "patchId": "Patch_95",
+    "current_absorption_per_ha": 2.3426,
+    "current_health_score": 63.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.0774,
+        "health": 62.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.1216,
+        "health": 62.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.1658,
+        "health": 62.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.2984,
+        "health": 63.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.3426,
+        "health": 63.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.5415,
+        "health": 64.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.9448,
+        "health": 61.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.8564,
+        "health": 61.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.9006,
+        "health": 61.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.1658,
+        "health": 62.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.2542,
+        "health": 63.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.3426,
+        "health": 63.7
+      }
+    ]
+  },
+  "Patch_96": {
+    "patchId": "Patch_96",
+    "current_absorption_per_ha": 2.4274,
+    "current_health_score": 42.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.1526,
+        "health": 41.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.1984,
+        "health": 41.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.2442,
+        "health": 41.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.3816,
+        "health": 42.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.4274,
+        "health": 42.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.6335,
+        "health": 43.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 2.0152,
+        "health": 40.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.9236,
+        "health": 40.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.9694,
+        "health": 40.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.2442,
+        "health": 41.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.3358,
+        "health": 42.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.4274,
+        "health": 42.7
+      }
+    ]
+  },
+  "Patch_97": {
+    "patchId": "Patch_97",
+    "current_absorption_per_ha": 2.5122,
+    "current_health_score": 49.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.2278,
+        "health": 48.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.2752,
+        "health": 48.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.3226,
+        "health": 48.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.4648,
+        "health": 49.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.5122,
+        "health": 49.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.7255,
+        "health": 50.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 2.0856,
+        "health": 47.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.9908,
+        "health": 47.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 2.0382,
+        "health": 47.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.3226,
+        "health": 48.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.4174,
+        "health": 49.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.5122,
+        "health": 49.7
+      }
+    ]
+  },
+  "Patch_98": {
+    "patchId": "Patch_98",
+    "current_absorption_per_ha": 2.597,
+    "current_health_score": 56.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 2.303,
+        "health": 55.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 2.352,
+        "health": 55.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 2.401,
+        "health": 55.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 2.548,
+        "health": 56.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 2.597,
+        "health": 56.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 2.8175,
+        "health": 57.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 2.156,
+        "health": 54.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 2.058,
+        "health": 54.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 2.107,
+        "health": 54.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 2.401,
+        "health": 55.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 2.499,
+        "health": 56.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 2.597,
+        "health": 56.7
+      }
+    ]
+  },
+  "Patch_99": {
+    "patchId": "Patch_99",
+    "current_absorption_per_ha": 1.749,
+    "current_health_score": 63.7,
+    "history_12m": [
+      {
+        "date": "2023-01",
+        "absorption": 1.551,
+        "health": 62.3
+      },
+      {
+        "date": "2024-01",
+        "absorption": 1.584,
+        "health": 62.5
+      },
+      {
+        "date": "2025-01",
+        "absorption": 1.617,
+        "health": 62.8
+      },
+      {
+        "date": "2026-01",
+        "absorption": 1.716,
+        "health": 63.5
+      },
+      {
+        "date": "2026-02",
+        "absorption": 1.749,
+        "health": 63.7
+      },
+      {
+        "date": "2026-03",
+        "absorption": 1.8975,
+        "health": 64.8
+      },
+      {
+        "date": "2026-04",
+        "absorption": 1.452,
+        "health": 61.6
+      },
+      {
+        "date": "2026-05",
+        "absorption": 1.386,
+        "health": 61.1
+      },
+      {
+        "date": "2026-06",
+        "absorption": 1.419,
+        "health": 61.3
+      },
+      {
+        "date": "2026-07",
+        "absorption": 1.617,
+        "health": 62.8
+      },
+      {
+        "date": "2026-08",
+        "absorption": 1.683,
+        "health": 63.2
+      },
+      {
+        "date": "2026-09",
+        "absorption": 1.749,
+        "health": 63.7
+      }
+    ]
+  }
+}

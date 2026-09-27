@@ -116,6 +116,24 @@ def trigger_daily_alerts(background_tasks: BackgroundTasks):
         "status": "processing"
     }
 
+@app.get("/api/forecast")
+@app.get("/api/forecast/{patch_id}")
+def get_predictive_forecast(patch_id: Optional[str] = None):
+    """
+    Returns 12-Month forward predictive carbon sequestration trajectory
+    from the Spatio-Temporal Graph Neural Network (ST-GNN).
+    """
+    try:
+        from processing.stgnn import generate_12m_forecast
+        forecast_data = generate_12m_forecast(patch_id)
+        return {
+            "status": "ok",
+            "data": forecast_data
+        }
+    except Exception as e:
+        logger.exception(f"Failed to generate ST-GNN forecast for {patch_id}: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
 def _start_background_scheduler():
     enable_sched = os.getenv("ENABLE_BACKGROUND_SCHEDULER", "true").lower() in ("true", "1", "yes")
     if enable_sched:

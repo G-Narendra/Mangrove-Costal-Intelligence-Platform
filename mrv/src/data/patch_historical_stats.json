@@ -1,0 +1,692 @@
+{
+  "Patch_0": {
+    "historical_mean": 1.833,
+    "historical_std": 0.231,
+    "last_3_months": [
+      1.776,
+      1.795,
+      1.875
+    ],
+    "recent_mean": 1.815
+  },
+  "Patch_1": {
+    "historical_mean": 1.447,
+    "historical_std": 0.3,
+    "last_3_months": [
+      1.394,
+      1.397,
+      1.358
+    ],
+    "recent_mean": 1.383
+  },
+  "Patch_2": {
+    "historical_mean": 1.764,
+    "historical_std": 1.043,
+    "last_3_months": [
+      1.444,
+      1.452,
+      1.427
+    ],
+    "recent_mean": 1.441
+  },
+  "Patch_4": {
+    "historical_mean": 1.497,
+    "historical_std": 0.239,
+    "last_3_months": [
+      1.409,
+      1.498,
+      1.533
+    ],
+    "recent_mean": 1.48
+  },
+  "Patch_5": {
+    "historical_mean": 1.373,
+    "historical_std": 0.242,
+    "last_3_months": [
+      1.351,
+      1.476,
+      1.513
+    ],
+    "recent_mean": 1.447
+  },
+  "Patch_6": {
+    "historical_mean": 1.02,
+    "historical_std": 0.276,
+    "last_3_months": [
+      0.723,
+      0.96,
+      1.033
+    ],
+    "recent_mean": 0.905
+  },
+  "Patch_7": {
+    "historical_mean": 1.712,
+    "historical_std": 0.479,
+    "last_3_months": [
+      2.34,
+      2.29,
+      2.373
+    ],
+    "recent_mean": 2.334
+  },
+  "Patch_8": {
+    "historical_mean": 1.675,
+    "historical_std": 0.458,
+    "last_3_months": [
+      1.673,
+      1.88,
+      1.812
+    ],
+    "recent_mean": 1.788
+  },
+  "Patch_9": {
+    "historical_mean": 1.659,
+    "historical_std": 0.281,
+    "last_3_months": [
+      2.056,
+      1.882,
+      1.801
+    ],
+    "recent_mean": 1.913
+  },
+  "Patch_10": {
+    "historical_mean": 1.455,
+    "historical_std": 0.135,
+    "last_3_months": [
+      1.368,
+      1.396,
+      1.446
+    ],
+    "recent_mean": 1.403
+  },
+  "Patch_11": {
+    "historical_mean": 1.486,
+    "historical_std": 0.174,
+    "last_3_months": [
+      1.475,
+      1.5,
+      1.574
+    ],
+    "recent_mean": 1.516
+  },
+  "Patch_12": {
+    "historical_mean": 2.054,
+    "historical_std": 0.651,
+    "last_3_months": [
+      2.976,
+      2.704,
+      2.362
+    ],
+    "recent_mean": 2.681
+  },
+  "Patch_13": {
+    "historical_mean": 1.424,
+    "historical_std": 0.328,
+    "last_3_months": [
+      1.332,
+      1.409,
+      1.44
+    ],
+    "recent_mean": 1.394
+  },
+  "Patch_14": {
+    "historical_mean": 2.033,
+    "historical_std": 0.438,
+    "last_3_months": [
+      2.536,
+      2.352,
+      2.451
+    ],
+    "recent_mean": 2.446
+  },
+  "Patch_15": {
+    "historical_mean": 1.518,
+    "historical_std": 0.213,
+    "last_3_months": [
+      1.508,
+      1.498,
+      1.518
+    ],
+    "recent_mean": 1.508
+  },
+  "Patch_16": {
+    "historical_mean": 1.984,
+    "historical_std": 0.306,
+    "last_3_months": [
+      2.219,
+      2.145,
+      2.293
+    ],
+    "recent_mean": 2.219
+  },
+  "Patch_17": {
+    "historical_mean": 2.374,
+    "historical_std": 0.806,
+    "last_3_months": [
+      2.146,
+      1.866,
+      1.765
+    ],
+    "recent_mean": 1.926
+  },
+  "Patch_18": {
+    "historical_mean": 1.777,
+    "historical_std": 0.509,
+    "last_3_months": [
+      2.848,
+      2.331,
+      1.969
+    ],
+    "recent_mean": 2.383
+  },
+  "Patch_19": {
+    "historical_mean": 1.725,
+    "historical_std": 0.25,
+    "last_3_months": [
+      2.052,
+      1.678,
+      1.888
+    ],
+    "recent_mean": 1.873
+  },
+  "Patch_20": {
+    "historical_mean": 1.804,
+    "historical_std": 0.31,
+    "last_3_months": [
+      1.827,
+      1.778,
+      1.917
+    ],
+    "recent_mean": 1.841
+  },
+  "Patch_21": {
+    "historical_mean": 1.623,
+    "historical_std": 0.204,
+    "last_3_months": [
+      1.799,
+      1.741,
+      1.762
+    ],
+    "recent_mean": 1.767
+  },
+  "Patch_22": {
+    "historical_mean": 2.042,
+    "historical_std": 0.419,
+    "last_3_months": [
+      2.94,
+      2.588,
+      1.967
+    ],
+    "recent_mean": 2.498
+  },
+  "Patch_23": {
+    "historical_mean": 1.45,
+    "historical_std": 0.329,
+    "last_3_months": [
+      1.454,
+      1.487,
+      1.61
+    ],
+    "recent_mean": 1.517
+  },
+  "Patch_24": {
+    "historical_mean": 2.002,
+    "historical_std": 1.181,
+    "last_3_months": [
+      1.988,
+      1.915,
+      2.019
+    ],
+    "recent_mean": 1.974
+  },
+  "Patch_25": {
+    "historical_mean": 1.569,
+    "historical_std": 0.156,
+    "last_3_months": [
+      1.675,
+      1.649,
+      1.506
+    ],
+    "recent_mean": 1.61
+  },
+  "Patch_26": {
+    "historical_mean": 1.657,
+    "historical_std": 0.448,
+    "last_3_months": [
+      2.03,
+      2.463,
+      2.751
+    ],
+    "recent_mean": 2.415
+  },
+  "Patch_27": {
+    "historical_mean": 1.302,
+    "historical_std": 0.222,
+    "last_3_months": [
+      1.25,
+      1.303,
+      1.428
+    ],
+    "recent_mean": 1.327
+  },
+  "Patch_28": {
+    "historical_mean": 1.534,
+    "historical_std": 0.229,
+    "last_3_months": [
+      1.507,
+      1.512,
+      1.558
+    ],
+    "recent_mean": 1.526
+  },
+  "Patch_29": {
+    "historical_mean": 2.021,
+    "historical_std": 0.583,
+    "last_3_months": [
+      2.46,
+      2.109,
+      2.466
+    ],
+    "recent_mean": 2.345
+  },
+  "Patch_30": {
+    "historical_mean": 1.985,
+    "historical_std": 0.487,
+    "last_3_months": [
+      1.531,
+      1.647,
+      2.244
+    ],
+    "recent_mean": 1.807
+  },
+  "Patch_31": {
+    "historical_mean": 1.658,
+    "historical_std": 0.305,
+    "last_3_months": [
+      1.575,
+      1.657,
+      1.765
+    ],
+    "recent_mean": 1.666
+  },
+  "Patch_32": {
+    "historical_mean": 1.7,
+    "historical_std": 0.301,
+    "last_3_months": [
+      1.516,
+      1.618,
+      1.924
+    ],
+    "recent_mean": 1.686
+  },
+  "Patch_33": {
+    "historical_mean": 1.869,
+    "historical_std": 0.352,
+    "last_3_months": [
+      1.89,
+      1.995,
+      2.134
+    ],
+    "recent_mean": 2.006
+  },
+  "Patch_34": {
+    "historical_mean": 1.632,
+    "historical_std": 0.316,
+    "last_3_months": [
+      1.521,
+      1.646,
+      1.726
+    ],
+    "recent_mean": 1.631
+  },
+  "Patch_35": {
+    "historical_mean": 1.749,
+    "historical_std": 0.37,
+    "last_3_months": [
+      1.625,
+      1.747,
+      2.015
+    ],
+    "recent_mean": 1.796
+  },
+  "Patch_37": {
+    "historical_mean": 1.4,
+    "historical_std": 0.308,
+    "last_3_months": [
+      1.272,
+      1.331,
+      1.43
+    ],
+    "recent_mean": 1.344
+  },
+  "Patch_38": {
+    "historical_mean": 1.429,
+    "historical_std": 0.28,
+    "last_3_months": [
+      1.356,
+      1.425,
+      1.528
+    ],
+    "recent_mean": 1.436
+  },
+  "Patch_40": {
+    "historical_mean": 1.478,
+    "historical_std": 0.2,
+    "last_3_months": [
+      1.447,
+      1.475,
+      1.546
+    ],
+    "recent_mean": 1.489
+  },
+  "Patch_41": {
+    "historical_mean": 1.837,
+    "historical_std": 0.475,
+    "last_3_months": [
+      1.722,
+      2.053,
+      2.118
+    ],
+    "recent_mean": 1.964
+  },
+  "Patch_42": {
+    "historical_mean": 1.446,
+    "historical_std": 0.301,
+    "last_3_months": [
+      1.37,
+      1.379,
+      1.405
+    ],
+    "recent_mean": 1.385
+  },
+  "Patch_43": {
+    "historical_mean": 1.9,
+    "historical_std": 0.279,
+    "last_3_months": [
+      1.865,
+      1.922,
+      2.002
+    ],
+    "recent_mean": 1.93
+  },
+  "Patch_44": {
+    "historical_mean": 1.545,
+    "historical_std": 0.333,
+    "last_3_months": [
+      1.483,
+      1.564,
+      1.654
+    ],
+    "recent_mean": 1.567
+  },
+  "Patch_45": {
+    "historical_mean": 1.589,
+    "historical_std": 0.362,
+    "last_3_months": [
+      1.467,
+      1.521,
+      1.662
+    ],
+    "recent_mean": 1.55
+  },
+  "Patch_46": {
+    "historical_mean": 1.551,
+    "historical_std": 0.509,
+    "last_3_months": [
+      1.364,
+      1.395,
+      1.454
+    ],
+    "recent_mean": 1.404
+  },
+  "Patch_47": {
+    "historical_mean": 1.529,
+    "historical_std": 0.244,
+    "last_3_months": [
+      1.481,
+      1.754,
+      1.717
+    ],
+    "recent_mean": 1.651
+  },
+  "Patch_48": {
+    "historical_mean": 1.744,
+    "historical_std": 0.359,
+    "last_3_months": [
+      1.779,
+      1.88,
+      1.936
+    ],
+    "recent_mean": 1.865
+  },
+  "Patch_49": {
+    "historical_mean": 1.589,
+    "historical_std": 0.404,
+    "last_3_months": [
+      1.491,
+      1.539,
+      1.598
+    ],
+    "recent_mean": 1.543
+  },
+  "Patch_51": {
+    "historical_mean": 1.601,
+    "historical_std": 0.245,
+    "last_3_months": [
+      1.497,
+      1.582,
+      1.664
+    ],
+    "recent_mean": 1.581
+  },
+  "Patch_53": {
+    "historical_mean": 1.598,
+    "historical_std": 0.855,
+    "last_3_months": [
+      1.357,
+      1.416,
+      1.496
+    ],
+    "recent_mean": 1.423
+  },
+  "Patch_54": {
+    "historical_mean": 1.585,
+    "historical_std": 0.937,
+    "last_3_months": [
+      1.137,
+      1.168,
+      1.314
+    ],
+    "recent_mean": 1.206
+  },
+  "Patch_55": {
+    "historical_mean": 1.59,
+    "historical_std": 0.42,
+    "last_3_months": [
+      1.559,
+      1.73,
+      2.194
+    ],
+    "recent_mean": 1.828
+  },
+  "Patch_56": {
+    "historical_mean": 2.022,
+    "historical_std": 0.394,
+    "last_3_months": [
+      2.142,
+      2.242,
+      2.231
+    ],
+    "recent_mean": 2.205
+  },
+  "Patch_57": {
+    "historical_mean": 1.786,
+    "historical_std": 0.857,
+    "last_3_months": [
+      1.696,
+      1.756,
+      1.799
+    ],
+    "recent_mean": 1.75
+  },
+  "Patch_58": {
+    "historical_mean": 1.637,
+    "historical_std": 0.441,
+    "last_3_months": [
+      1.912,
+      1.893,
+      2.03
+    ],
+    "recent_mean": 1.945
+  },
+  "Patch_59": {
+    "historical_mean": 1.885,
+    "historical_std": 0.494,
+    "last_3_months": [
+      1.725,
+      1.816,
+      1.945
+    ],
+    "recent_mean": 1.829
+  },
+  "Patch_60": {
+    "historical_mean": 1.669,
+    "historical_std": 0.372,
+    "last_3_months": [
+      1.6,
+      1.703,
+      1.833
+    ],
+    "recent_mean": 1.712
+  },
+  "Patch_61": {
+    "historical_mean": 2.214,
+    "historical_std": 1.106,
+    "last_3_months": [
+      2.488,
+      2.463,
+      2.59
+    ],
+    "recent_mean": 2.514
+  },
+  "Patch_62": {
+    "historical_mean": 2.351,
+    "historical_std": 0.647,
+    "last_3_months": [
+      2.19,
+      2.239,
+      2.57
+    ],
+    "recent_mean": 2.333
+  },
+  "Patch_63": {
+    "historical_mean": 2.085,
+    "historical_std": 0.892,
+    "last_3_months": [
+      2.147,
+      2.013,
+      2.671
+    ],
+    "recent_mean": 2.277
+  },
+  "Patch_64": {
+    "historical_mean": 2.624,
+    "historical_std": 0.745,
+    "last_3_months": [
+      2.759,
+      2.696,
+      2.812
+    ],
+    "recent_mean": 2.756
+  },
+  "Patch_65": {
+    "historical_mean": 2.14,
+    "historical_std": 0.584,
+    "last_3_months": [
+      1.962,
+      2.037,
+      2.107
+    ],
+    "recent_mean": 2.035
+  },
+  "Patch_66": {
+    "historical_mean": 1.961,
+    "historical_std": 0.652,
+    "last_3_months": [
+      1.835,
+      1.827,
+      1.861
+    ],
+    "recent_mean": 1.841
+  },
+  "Patch_67": {
+    "historical_mean": 2.001,
+    "historical_std": 0.388,
+    "last_3_months": [
+      1.874,
+      1.974,
+      1.995
+    ],
+    "recent_mean": 1.948
+  },
+  "Patch_69": {
+    "historical_mean": 1.949,
+    "historical_std": 0.648,
+    "last_3_months": [
+      1.698,
+      1.8,
+      1.736
+    ],
+    "recent_mean": 1.745
+  },
+  "Patch_70": {
+    "historical_mean": 1.763,
+    "historical_std": 0.846,
+    "last_3_months": [
+      1.485,
+      1.704,
+      1.832
+    ],
+    "recent_mean": 1.674
+  },
+  "Patch_71": {
+    "historical_mean": 2.282,
+    "historical_std": 0.65,
+    "last_3_months": [
+      2.131,
+      2.386,
+      2.55
+    ],
+    "recent_mean": 2.356
+  },
+  "Patch_72": {
+    "historical_mean": 3.397,
+    "historical_std": 1.676,
+    "last_3_months": [
+      2.783,
+      2.7,
+      3.147
+    ],
+    "recent_mean": 2.877
+  },
+  "Patch_73": {
+    "historical_mean": 2.85,
+    "historical_std": 1.263,
+    "last_3_months": [
+      2.511,
+      2.574,
+      2.74
+    ],
+    "recent_mean": 2.608
+  },
+  "Patch_74": {
+    "historical_mean": 3.272,
+    "historical_std": 1.82,
+    "last_3_months": [
+      2.547,
+      2.604,
+      2.865
+    ],
+    "recent_mean": 2.672
+  }
+}
