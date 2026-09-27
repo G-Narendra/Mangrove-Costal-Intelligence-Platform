@@ -57,7 +57,17 @@ def main():
     # ---------------- 1. IN-TEXT CITATIONS ----------------
     print("[1/5] Updating in-text citations and legal statutes...")
     
-    # P151: Alongi citation is already (Alongi, 2014, 2020)
+    # P151: Alongi, Taillardat, Schile
+    p151 = doc.paragraphs[151]
+    t151 = p151.text
+    t151 = t151.replace(
+        "Alongi, 2014, 2020; Donato et al., 2011; Murdiyarso et al., 2015",
+        "Alongi, 2014, 2020; Donato et al., 2011; Murdiyarso et al., 2015; Taillardat et al., 2018"
+    )
+    t151 = t151.replace("Atwood et al., 2017", "Atwood et al., 2017; Schile et al., 2017")
+    set_para_text(p151, t151, bold=False, italic=False, size=12)
+    p151.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+
     # P153: UAE Environmental Law
     p153 = doc.paragraphs[153]
     t153 = p153.text
@@ -78,12 +88,57 @@ def main():
     set_para_text(p221, t221, bold=False, italic=False, size=12)
     p221.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
 
+    # P231: Update 55 cited papers to 56 cited papers
+    p231 = doc.paragraphs[231]
+    t231 = p231.text
+    t231 = t231.replace("55 cited papers", "56 cited papers")
+    set_para_text(p231, t231, bold=False, italic=False, size=12)
+    p231.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+
     # P233: Replace Melo et al. (2022) with El-Ammawy et al. (2021) and Almahasheer (2018)
     p233 = doc.paragraphs[233]
     t233 = p233.text
     t233 = t233.replace("(Melo et al., 2022)", "(El-Ammawy et al., 2021; Almahasheer, 2018)")
     set_para_text(p233, t233, bold=False, italic=False, size=12)
     p233.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+
+    # P235: Simard et al. (2019) and Chave et al. (2014) in Section 2.4.2
+    p235 = doc.paragraphs[235]
+    t235 = p235.text
+    t235 = t235.replace(
+        "(Dubayah et al., 2020).",
+        "(Dubayah et al., 2020), which can be related to environmental conditions across global mangrove biomes (Simard et al., 2019)."
+    )
+    t235 = t235.replace(
+        "(Duncanson et al., 2022)",
+        "(Chave et al., 2014; Duncanson et al., 2022)"
+    )
+    set_para_text(p235, t235, bold=False, italic=False, size=12)
+    p235.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+
+    # P236: Zhang et al. (2018) and Fayad et al. (2018) in Section 2.4.2
+    p236 = doc.paragraphs[236]
+    t236 = p236.text
+    t236 = t236.replace(
+        "A possible solution to this gap in the physical telemetry layer is neural imputation.",
+        "A possible solution to this gap in the physical telemetry layer is neural imputation and missing data reconstruction in satellite rasters (Zhang et al., 2018)."
+    )
+    t236 = t236.replace(
+        "impute LiDAR-derived canopy height from multispectral Sentinel-2.",
+        "impute LiDAR-derived canopy height from airborne and multispectral Sentinel-2 observations (Fayad et al., 2018)."
+    )
+    set_para_text(p236, t236, bold=False, italic=False, size=12)
+    p236.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+
+    # P238: Zhu et al. (2017) and Rolf et al. (2021) in Section 2.4.3
+    p238 = doc.paragraphs[238]
+    t238 = p238.text
+    t238 = t238.replace(
+        "While CNNs can encode local context using kernel filters,",
+        "While deep learning frameworks for Earth observation (Zhu et al., 2017; Rolf et al., 2021) often utilize CNNs to encode local context using kernel filters,"
+    )
+    set_para_text(p238, t238, bold=False, italic=False, size=12)
+    p238.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
 
     # P241: UAE Environmental Law in Literature Review
     p241 = doc.paragraphs[241]
@@ -94,6 +149,13 @@ def main():
     )
     set_para_text(p241, t241, bold=False, italic=False, size=12)
     p241.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+
+    # P477: Chapter 7 Discussion - 53 to 74 patches
+    p477 = doc.paragraphs[477]
+    t477 = p477.text
+    t477 = t477.replace("all 53 patches", "all 74 patches")
+    set_para_text(p477, t477, bold=False, italic=False, size=12)
+    p477.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
 
     # P486: Chapter 6 Strategic Recommendations
     p486 = doc.paragraphs[486]
