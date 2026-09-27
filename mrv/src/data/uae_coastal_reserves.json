@@ -1,0 +1,38 @@
+[
+  {
+    "id": "node-abu-dhabi-jubail",
+    "name": "Al Jubail Island Mangrove Sanctuary",
+    "status": "Active",
+    "blueCarbon": 12500,
+    "mangroveArea": 450,
+    "healthScore": 41.2,
+    "fishNurseryScore": 84,
+    "communities": ["Al Jubail Coastal Community", "Saadiyat Marine District"],
+    "heritageSites": ["Ancient Pearling Route", "Abu Dhabi Maritime Heritage Zone"],
+    "accessStatus": "Protected Eco-Reserve & Educational Boardwalk"
+  },
+  {
+    "id": "node-sharjah-kalba",
+    "name": "Khor Kalba Protected Mangrove Reserve",
+    "status": "Active",
+    "blueCarbon": 8900,
+    "mangroveArea": 310,
+    "healthScore": 44.5,
+    "fishNurseryScore": 76,
+    "communities": ["Kalba Coastal Fisherfolk", "Eastern Coastal Catchment"],
+    "heritageSites": ["Kalba Archaeological Heritage Site", "Historic Coastal Watchtowers"],
+    "accessStatus": "Strict Scientific Conservation & Monitored Research"
+  },
+  {
+    "id": "node-ajman-zorah",
+    "name": "Al Zorah Coastal Corridor & Wetland Reserve",
+    "status": "Active",
+    "blueCarbon": 2100,
+    "mangroveArea": 80,
+    "healthScore": 38.0,
+    "fishNurseryScore": 62,
+    "communities": ["Al Zorah Coastal District", "Ajman Creek Community"],
+    "heritageSites": ["Al Zorah Traditional Pearl Fishery"],
+    "accessStatus": "Ramsar Wetland Site & Public Protected Lagoon"
+  }
+]

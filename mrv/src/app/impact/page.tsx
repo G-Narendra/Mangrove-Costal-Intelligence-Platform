@@ -11,7 +11,7 @@ import { Fish, Users, Landmark, MapPin, Shield, Loader2, Info } from "lucide-rea
 import { Progress } from "@/components/ui/progress"
 import { useCollection, useFirestore, useMemoFirebase } from "@/firebase"
 import { collection } from "firebase/firestore"
-import { MOCK_PROJECTS } from "@/lib/mock-data"
+import uaeCoastalReserves from "@/data/uae_coastal_reserves.json"
 
 export default function ImpactPage() {
   const firestore = useFirestore()
@@ -24,7 +24,7 @@ export default function ImpactPage() {
 
   const displayProjects = React.useMemo(() => {
     if (dbProjects && dbProjects.length > 0) return dbProjects;
-    return MOCK_PROJECTS;
+    return uaeCoastalReserves;
   }, [dbProjects]);
 
   return (

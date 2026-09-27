@@ -65,12 +65,13 @@ export async function POST(req: Request): Promise<Response> {
       { timeout: 120000 }, // 2 minute timeout
       (error, stdout, stderr) => {
         if (error) {
-          console.error("Predictive scan error (bypassed with fallback):", error);
+          console.error("Predictive scan execution error:", error);
           console.error("stderr:", stderr);
           return resolve(NextResponse.json({ 
-            success: true, 
-            log: "Simulated successful scan (Python environment fallback)" 
-          }));
+            success: false, 
+            error: "Backend scan engine execution failed.",
+            details: stderr || error.message
+          }, { status: 500 }));
         }
 
         resolve(NextResponse.json({ 
