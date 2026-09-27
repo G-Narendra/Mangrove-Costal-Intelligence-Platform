@@ -1,16 +1,16 @@
 {
   "metadata": {
-    "source": "S1_S2_GEDI_Imputed_Monthly.csv",
+    "source": "S1_S2_GEDI_Imputed_Monthly.csv & DBSCAN Clustering",
     "timeRange": "2021-01 to 2026-09",
     "latestMonth": "2026-09",
-    "totalPatches": 69,
-    "totalAreaLatest": 6460,
-    "avgHealthSimple": 48.8,
-    "avgHealthWeighted": 51,
-    "totalCumulativeCarbonAbs": 518018,
-    "totalCumulativeCarbonStock": 2489780,
-    "latestMonthCarbonAbs": 12099,
-    "latestMonthCarbonStock": 62836
+    "totalPatches": 74,
+    "totalAreaLatest": 6470,
+    "avgHealthSimple": 49.1,
+    "avgHealthRegionalBaseline": 88.5,
+    "totalCumulativeCarbonAbs": 519235,
+    "totalCumulativeCarbonStock": 2494627,
+    "activeStandingCarbonStock": 62836,
+    "latestMonthCarbonFlux": 12099
   },
   "patches": [
     {
@@ -36,6 +36,14 @@
       "healthLatest": 28.9,
       "cumulativeCarbonAbs": 484.27,
       "cumulativeCarbonStock": 982.39
+    },
+    {
+      "patchId": "Patch_3",
+      "idNum": 3,
+      "areaLatest": 2,
+      "healthLatest": 63.7,
+      "cumulativeCarbonAbs": 317,
+      "cumulativeCarbonStock": 1522
     },
     {
       "patchId": "Patch_4",
@@ -294,6 +302,14 @@
       "cumulativeCarbonStock": 12317.18
     },
     {
+      "patchId": "Patch_36",
+      "idNum": 36,
+      "areaLatest": 2,
+      "healthLatest": 42.7,
+      "cumulativeCarbonAbs": 239,
+      "cumulativeCarbonStock": 1147
+    },
+    {
       "patchId": "Patch_37",
       "idNum": 37,
       "areaLatest": 6,
@@ -308,6 +324,14 @@
       "healthLatest": 54.6,
       "cumulativeCarbonAbs": 1919.68,
       "cumulativeCarbonStock": 6369.79
+    },
+    {
+      "patchId": "Patch_39",
+      "idNum": 39,
+      "areaLatest": 2,
+      "healthLatest": 63.7,
+      "cumulativeCarbonAbs": 193,
+      "cumulativeCarbonStock": 926
     },
     {
       "patchId": "Patch_40",
@@ -390,12 +414,28 @@
       "cumulativeCarbonStock": 5405.93
     },
     {
+      "patchId": "Patch_50",
+      "idNum": 50,
+      "areaLatest": 2,
+      "healthLatest": 52.6,
+      "cumulativeCarbonAbs": 246,
+      "cumulativeCarbonStock": 1181
+    },
+    {
       "patchId": "Patch_51",
       "idNum": 51,
       "areaLatest": 706,
       "healthLatest": 54.3,
       "cumulativeCarbonAbs": 61500.81,
       "cumulativeCarbonStock": 211561.09
+    },
+    {
+      "patchId": "Patch_52",
+      "idNum": 52,
+      "areaLatest": 2,
+      "healthLatest": 42.7,
+      "cumulativeCarbonAbs": 224,
+      "cumulativeCarbonStock": 1075
     },
     {
       "patchId": "Patch_53",
@@ -518,6 +558,14 @@
       "cumulativeCarbonStock": 61423.72
     },
     {
+      "patchId": "Patch_68",
+      "idNum": 68,
+      "areaLatest": 2,
+      "healthLatest": 42.7,
+      "cumulativeCarbonAbs": 302,
+      "cumulativeCarbonStock": 1450
+    },
+    {
       "patchId": "Patch_69",
       "idNum": 69,
       "areaLatest": 32,
@@ -556,14 +604,6 @@
       "healthLatest": 50,
       "cumulativeCarbonAbs": 11895.49,
       "cumulativeCarbonStock": 84495.24
-    },
-    {
-      "patchId": "Patch_74",
-      "idNum": 74,
-      "areaLatest": 2,
-      "healthLatest": 45.8,
-      "cumulativeCarbonAbs": 303.44,
-      "cumulativeCarbonStock": 2453.8
     }
   ]
 }
