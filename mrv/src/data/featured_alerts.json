@@ -1,0 +1,555 @@
+[
+  {
+    "id": "FA_GEOPOLITICAL_CONFLICT_86aa0b61bf5f",
+    "category": "GEOPOLITICAL",
+    "threatType": "GEOPOLITICAL_CONFLICT",
+    "severity": "HIGH",
+    "title": "Threat Intelligence: Hadramaut: The Battle Saudi Arabia Won and the Trust It Lost",
+    "description": "Source intelligence indicates: Hadramaut: The Battle Saudi Arabia Won and the Trust It Lost. This may affect coastal mangrove ecosystems in the Abu Dhabi region.",
+    "predictedDate": "2026-09-24",
+    "affectedPatches": [
+      "Patch_8",
+      "Patch_6",
+      "Patch_27",
+      "Patch_21",
+      "Patch_2",
+      "Patch_18",
+      "Patch_7",
+      "Patch_42",
+      "Patch_54",
+      "Patch_1",
+      "Patch_23",
+      "Patch_37",
+      "Patch_69",
+      "Patch_22",
+      "Patch_70"
+    ],
+    "preventativeActions": [
+      {
+        "action": "Increase satellite monitoring frequency",
+        "priority": "HIGH",
+        "details": "Switch to daily Sentinel-1 SAR monitoring to detect potential shipping debris or pollutants."
+      },
+      {
+        "action": "Coordinate with coast guard for no-entry zones",
+        "priority": "MEDIUM",
+        "details": "Establish buffer zones around critical mangrove patches near shipping lanes."
+      }
+    ],
+    "source": "NewsAPI \u2014 Hadramaut: The Battle Saudi Arabia Won and the Trust It Lost",
+    "status": "Active",
+    "createdAt": "2026-09-27T06:41:39.107631+00:00",
+    "expiresAt": "2026-10-04T06:41:39.107631+00:00"
+  },
+  {
+    "id": "FA_SHIPPING_DISRUPTION_9f0b09b7f16c",
+    "category": "GEOPOLITICAL",
+    "threatType": "SHIPPING_DISRUPTION",
+    "severity": "MEDIUM",
+    "title": "Threat Intelligence: Economic Pressure Is Not a One-Way Road",
+    "description": "Source intelligence indicates: Economic Pressure Is Not a One-Way Road. This may affect coastal mangrove ecosystems in the Abu Dhabi region.",
+    "predictedDate": "2026-09-26",
+    "affectedPatches": [
+      "Patch_8",
+      "Patch_6",
+      "Patch_27",
+      "Patch_21",
+      "Patch_2",
+      "Patch_18",
+      "Patch_7",
+      "Patch_42",
+      "Patch_54",
+      "Patch_1",
+      "Patch_23",
+      "Patch_37",
+      "Patch_69",
+      "Patch_22",
+      "Patch_70"
+    ],
+    "preventativeActions": [
+      {
+        "action": "Monitor water quality at tidal inlets",
+        "priority": "MEDIUM",
+        "details": "Increased shipping reroutes may introduce new pollutant pathways near mangrove zones."
+      }
+    ],
+    "source": "NewsAPI \u2014 Economic Pressure Is Not a One-Way Road",
+    "status": "Active",
+    "createdAt": "2026-09-27T06:41:39.107631+00:00",
+    "expiresAt": "2026-10-04T06:41:39.107631+00:00"
+  },
+  {
+    "id": "FA_OIL_SPILL_ac1424a5c09a",
+    "category": "ENVIRONMENTAL",
+    "threatType": "OIL_SPILL",
+    "severity": "CRITICAL",
+    "title": "Threat Intelligence: Crude oil price dips as traders weigh US-Iran Hormuz talks, supply risks",
+    "description": "Source intelligence indicates: Crude oil price dips as traders weigh US-Iran Hormuz talks, supply risks. This may affect coastal mangrove ecosystems in the Abu Dhabi region.",
+    "predictedDate": "2026-09-26",
+    "affectedPatches": [
+      "Patch_8",
+      "Patch_6",
+      "Patch_27",
+      "Patch_21",
+      "Patch_2",
+      "Patch_18",
+      "Patch_7",
+      "Patch_42",
+      "Patch_54",
+      "Patch_1",
+      "Patch_23",
+      "Patch_37",
+      "Patch_69",
+      "Patch_22",
+      "Patch_70"
+    ],
+    "preventativeActions": [
+      {
+        "action": "Deploy containment booms around priority patches",
+        "priority": "CRITICAL",
+        "details": "Immediate deployment of oil containment booms at tidal inlets serving critical patches."
+      },
+      {
+        "action": "Activate spill response coordination with ADNOC",
+        "priority": "CRITICAL",
+        "details": "Notify industrial partners and activate joint coastal protection protocol."
+      }
+    ],
+    "source": "NewsAPI \u2014 Crude oil price dips as traders weigh US-Iran Hormuz talks, ",
+    "status": "Active",
+    "createdAt": "2026-09-27T06:41:39.107631+00:00",
+    "expiresAt": "2026-10-04T06:41:39.107631+00:00"
+  },
+  {
+    "id": "FA_SHIPPING_DISRUPTION_f6bb779614a6",
+    "category": "GEOPOLITICAL",
+    "threatType": "SHIPPING_DISRUPTION",
+    "severity": "MEDIUM",
+    "title": "Threat Intelligence: Report: Trump Rejects Iran 7-Day Hormuz Proposal, Expects to Renew Strikes After Midterms",
+    "description": "Source intelligence indicates: Report: Trump Rejects Iran 7-Day Hormuz Proposal, Expects to Renew Strikes After Midterms. This may affect coastal mangrove ecosystems in the Abu Dhabi region.",
+    "predictedDate": "2026-09-26",
+    "affectedPatches": [
+      "Patch_8",
+      "Patch_6",
+      "Patch_27",
+      "Patch_21",
+      "Patch_2",
+      "Patch_18",
+      "Patch_7",
+      "Patch_42",
+      "Patch_54",
+      "Patch_1",
+      "Patch_23",
+      "Patch_37",
+      "Patch_69",
+      "Patch_22",
+      "Patch_70"
+    ],
+    "preventativeActions": [
+      {
+        "action": "Monitor water quality at tidal inlets",
+        "priority": "MEDIUM",
+        "details": "Increased shipping reroutes may introduce new pollutant pathways near mangrove zones."
+      }
+    ],
+    "source": "NewsAPI \u2014 Report: Trump Rejects Iran 7-Day Hormuz Proposal, Expects to",
+    "status": "Active",
+    "createdAt": "2026-09-27T06:41:39.108628+00:00",
+    "expiresAt": "2026-10-04T06:41:39.108628+00:00"
+  },
+  {
+    "id": "FA_GEOPOLITICAL_CONFLICT_96f33f2efb70",
+    "category": "GEOPOLITICAL",
+    "threatType": "GEOPOLITICAL_CONFLICT",
+    "severity": "HIGH",
+    "title": "Threat Intelligence: Trump rejects Iran\u2019s 7-day ceasefire proposal, expects bombing to resume after US midterms: Report",
+    "description": "Source intelligence indicates: Trump rejects Iran\u2019s 7-day ceasefire proposal, expects bombing to resume after US midterms: Report. This may affect coastal mangrove ecosystems in the Abu Dhabi region.",
+    "predictedDate": "2026-09-26",
+    "affectedPatches": [
+      "Patch_8",
+      "Patch_6",
+      "Patch_27",
+      "Patch_21",
+      "Patch_2",
+      "Patch_18",
+      "Patch_7",
+      "Patch_42",
+      "Patch_54",
+      "Patch_1",
+      "Patch_23",
+      "Patch_37",
+      "Patch_69",
+      "Patch_22",
+      "Patch_70"
+    ],
+    "preventativeActions": [
+      {
+        "action": "Increase satellite monitoring frequency",
+        "priority": "HIGH",
+        "details": "Switch to daily Sentinel-1 SAR monitoring to detect potential shipping debris or pollutants."
+      },
+      {
+        "action": "Coordinate with coast guard for no-entry zones",
+        "priority": "MEDIUM",
+        "details": "Establish buffer zones around critical mangrove patches near shipping lanes."
+      }
+    ],
+    "source": "NewsAPI \u2014 Trump rejects Iran\u2019s 7-day ceasefire proposal, expects bombi",
+    "status": "Active",
+    "createdAt": "2026-09-27T06:41:39.108628+00:00",
+    "expiresAt": "2026-10-04T06:41:39.108628+00:00"
+  },
+  {
+    "id": "FA_GEOPOLITICAL_CONFLICT_5830fa32e2ba",
+    "category": "GEOPOLITICAL",
+    "threatType": "GEOPOLITICAL_CONFLICT",
+    "severity": "HIGH",
+    "title": "Threat Intelligence: Wars in Europe and the Middle East. An economy in intensive care. Masked mobs inciting violence and AI threatening our very survival. And what does Andy Burnham offer us? Fluff, hype and beers!: MICHAEL GOVE",
+    "description": "Source intelligence indicates: Wars in Europe and the Middle East. An economy in intensive care. Masked mobs inciting violence and AI threatening our very survival. And what does Andy Burnham offer us? Fluff, hype and beers!: MICHAEL GOVE. This may affect coastal mangrove ecosystems in the Abu Dhabi region.",
+    "predictedDate": "2026-09-25",
+    "affectedPatches": [
+      "Patch_8",
+      "Patch_6",
+      "Patch_27",
+      "Patch_21",
+      "Patch_2",
+      "Patch_18",
+      "Patch_7",
+      "Patch_42",
+      "Patch_54",
+      "Patch_1",
+      "Patch_23",
+      "Patch_37",
+      "Patch_69",
+      "Patch_22",
+      "Patch_70"
+    ],
+    "preventativeActions": [
+      {
+        "action": "Increase satellite monitoring frequency",
+        "priority": "HIGH",
+        "details": "Switch to daily Sentinel-1 SAR monitoring to detect potential shipping debris or pollutants."
+      },
+      {
+        "action": "Coordinate with coast guard for no-entry zones",
+        "priority": "MEDIUM",
+        "details": "Establish buffer zones around critical mangrove patches near shipping lanes."
+      }
+    ],
+    "source": "NewsAPI \u2014 Wars in Europe and the Middle East. An economy in intensive ",
+    "status": "Active",
+    "createdAt": "2026-09-27T06:41:39.108628+00:00",
+    "expiresAt": "2026-10-04T06:41:39.108628+00:00"
+  },
+  {
+    "id": "FA_GEOPOLITICAL_CONFLICT_d2ef17924f7d",
+    "category": "GEOPOLITICAL",
+    "threatType": "GEOPOLITICAL_CONFLICT",
+    "severity": "HIGH",
+    "title": "Threat Intelligence: Houthis strike Saudi capital in escalating campaign, threatening global oil markets",
+    "description": "Source intelligence indicates: Houthis strike Saudi capital in escalating campaign, threatening global oil markets. This may affect coastal mangrove ecosystems in the Abu Dhabi region.",
+    "predictedDate": "2026-09-26",
+    "affectedPatches": [
+      "Patch_8",
+      "Patch_6",
+      "Patch_27",
+      "Patch_21",
+      "Patch_2",
+      "Patch_18",
+      "Patch_7",
+      "Patch_42",
+      "Patch_54",
+      "Patch_1",
+      "Patch_23",
+      "Patch_37",
+      "Patch_69",
+      "Patch_22",
+      "Patch_70"
+    ],
+    "preventativeActions": [
+      {
+        "action": "Increase satellite monitoring frequency",
+        "priority": "HIGH",
+        "details": "Switch to daily Sentinel-1 SAR monitoring to detect potential shipping debris or pollutants."
+      },
+      {
+        "action": "Coordinate with coast guard for no-entry zones",
+        "priority": "MEDIUM",
+        "details": "Establish buffer zones around critical mangrove patches near shipping lanes."
+      }
+    ],
+    "source": "NewsAPI \u2014 Houthis strike Saudi capital in escalating campaign, threate",
+    "status": "Active",
+    "createdAt": "2026-09-27T06:41:39.108628+00:00",
+    "expiresAt": "2026-10-04T06:41:39.108628+00:00"
+  },
+  {
+    "id": "FA_GEOPOLITICAL_CONFLICT_5430653a1b98",
+    "category": "GEOPOLITICAL",
+    "threatType": "GEOPOLITICAL_CONFLICT",
+    "severity": "HIGH",
+    "title": "Threat Intelligence: Jaishankar meets Russia, Iran foreign ministers at UNGA days after Trump signs sanctions law",
+    "description": "Source intelligence indicates: Jaishankar meets Russia, Iran foreign ministers at UNGA days after Trump signs sanctions law. This may affect coastal mangrove ecosystems in the Abu Dhabi region.",
+    "predictedDate": "2026-09-26",
+    "affectedPatches": [
+      "Patch_8",
+      "Patch_6",
+      "Patch_27",
+      "Patch_21",
+      "Patch_2",
+      "Patch_18",
+      "Patch_7",
+      "Patch_42",
+      "Patch_54",
+      "Patch_1",
+      "Patch_23",
+      "Patch_37",
+      "Patch_69",
+      "Patch_22",
+      "Patch_70"
+    ],
+    "preventativeActions": [
+      {
+        "action": "Increase satellite monitoring frequency",
+        "priority": "HIGH",
+        "details": "Switch to daily Sentinel-1 SAR monitoring to detect potential shipping debris or pollutants."
+      },
+      {
+        "action": "Coordinate with coast guard for no-entry zones",
+        "priority": "MEDIUM",
+        "details": "Establish buffer zones around critical mangrove patches near shipping lanes."
+      }
+    ],
+    "source": "NewsAPI \u2014 Jaishankar meets Russia, Iran foreign ministers at UNGA days",
+    "status": "Active",
+    "createdAt": "2026-09-27T06:41:39.108628+00:00",
+    "expiresAt": "2026-10-04T06:41:39.108628+00:00"
+  },
+  {
+    "id": "FA_SHIPPING_DISRUPTION_2bb3bc19fd5a",
+    "category": "GEOPOLITICAL",
+    "threatType": "SHIPPING_DISRUPTION",
+    "severity": "MEDIUM",
+    "title": "Threat Intelligence: Iran awaits US response on Strait of Hormuz plan after Trump reportedly rejects deal",
+    "description": "Source intelligence indicates: Iran awaits US response on Strait of Hormuz plan after Trump reportedly rejects deal. This may affect coastal mangrove ecosystems in the Abu Dhabi region.",
+    "predictedDate": "2026-09-26",
+    "affectedPatches": [
+      "Patch_8",
+      "Patch_6",
+      "Patch_27",
+      "Patch_21",
+      "Patch_2",
+      "Patch_18",
+      "Patch_7",
+      "Patch_42",
+      "Patch_54",
+      "Patch_1",
+      "Patch_23",
+      "Patch_37",
+      "Patch_69",
+      "Patch_22",
+      "Patch_70"
+    ],
+    "preventativeActions": [
+      {
+        "action": "Monitor water quality at tidal inlets",
+        "priority": "MEDIUM",
+        "details": "Increased shipping reroutes may introduce new pollutant pathways near mangrove zones."
+      }
+    ],
+    "source": "NewsAPI \u2014 Iran awaits US response on Strait of Hormuz plan after Trump",
+    "status": "Active",
+    "createdAt": "2026-09-27T06:41:39.108628+00:00",
+    "expiresAt": "2026-10-04T06:41:39.108628+00:00"
+  },
+  {
+    "id": "FA_GEOPOLITICAL_CONFLICT_5830fa32e2ba",
+    "category": "GEOPOLITICAL",
+    "threatType": "GEOPOLITICAL_CONFLICT",
+    "severity": "HIGH",
+    "title": "Threat Intelligence: Wars in Europe and the Middle East. An economy in intensive care. Masked mobs inciting violence and AI threatening our very survival. And what does Andy Burnham offer us? Fluff, hype and beers!: MICHAEL GOVE",
+    "description": "Source intelligence indicates: Wars in Europe and the Middle East. An economy in intensive care. Masked mobs inciting violence and AI threatening our very survival. And what does Andy Burnham offer us? Fluff, hype and beers!: MICHAEL GOVE. This may affect coastal mangrove ecosystems in the Abu Dhabi region.",
+    "predictedDate": "2026-09-25",
+    "affectedPatches": [
+      "Patch_8",
+      "Patch_6",
+      "Patch_27",
+      "Patch_21",
+      "Patch_2",
+      "Patch_18",
+      "Patch_7",
+      "Patch_42",
+      "Patch_54",
+      "Patch_1",
+      "Patch_23",
+      "Patch_37",
+      "Patch_69",
+      "Patch_22",
+      "Patch_70"
+    ],
+    "preventativeActions": [
+      {
+        "action": "Increase satellite monitoring frequency",
+        "priority": "HIGH",
+        "details": "Switch to daily Sentinel-1 SAR monitoring to detect potential shipping debris or pollutants."
+      },
+      {
+        "action": "Coordinate with coast guard for no-entry zones",
+        "priority": "MEDIUM",
+        "details": "Establish buffer zones around critical mangrove patches near shipping lanes."
+      }
+    ],
+    "source": "NewsAPI \u2014 Wars in Europe and the Middle East. An economy in intensive ",
+    "status": "Active",
+    "createdAt": "2026-09-27T06:41:39.108628+00:00",
+    "expiresAt": "2026-10-04T06:41:39.108628+00:00"
+  },
+  {
+    "id": "FA_SHIPPING_DISRUPTION_6022fdc17499",
+    "category": "GEOPOLITICAL",
+    "threatType": "SHIPPING_DISRUPTION",
+    "severity": "MEDIUM",
+    "title": "Threat Intelligence: Iran offers US deal to reopen Strait of Hormuz in seven days",
+    "description": "Source intelligence indicates: Iran offers US deal to reopen Strait of Hormuz in seven days. This may affect coastal mangrove ecosystems in the Abu Dhabi region.",
+    "predictedDate": "2026-09-25",
+    "affectedPatches": [
+      "Patch_8",
+      "Patch_6",
+      "Patch_27",
+      "Patch_21",
+      "Patch_2",
+      "Patch_18",
+      "Patch_7",
+      "Patch_42",
+      "Patch_54",
+      "Patch_1",
+      "Patch_23",
+      "Patch_37",
+      "Patch_69",
+      "Patch_22",
+      "Patch_70"
+    ],
+    "preventativeActions": [
+      {
+        "action": "Monitor water quality at tidal inlets",
+        "priority": "MEDIUM",
+        "details": "Increased shipping reroutes may introduce new pollutant pathways near mangrove zones."
+      }
+    ],
+    "source": "NewsAPI \u2014 Iran offers US deal to reopen Strait of Hormuz in seven days",
+    "status": "Active",
+    "createdAt": "2026-09-27T06:41:39.108628+00:00",
+    "expiresAt": "2026-10-04T06:41:39.108628+00:00"
+  },
+  {
+    "id": "FA_SHIPPING_DISRUPTION_78fada678069",
+    "category": "GEOPOLITICAL",
+    "threatType": "SHIPPING_DISRUPTION",
+    "severity": "MEDIUM",
+    "title": "Threat Intelligence: Iran offers to reopen Strait of Hormuz in 7 days if US lifts blockade, waives sanctions",
+    "description": "Source intelligence indicates: Iran offers to reopen Strait of Hormuz in 7 days if US lifts blockade, waives sanctions. This may affect coastal mangrove ecosystems in the Abu Dhabi region.",
+    "predictedDate": "2026-09-25",
+    "affectedPatches": [
+      "Patch_8",
+      "Patch_6",
+      "Patch_27",
+      "Patch_21",
+      "Patch_2",
+      "Patch_18",
+      "Patch_7",
+      "Patch_42",
+      "Patch_54",
+      "Patch_1",
+      "Patch_23",
+      "Patch_37",
+      "Patch_69",
+      "Patch_22",
+      "Patch_70"
+    ],
+    "preventativeActions": [
+      {
+        "action": "Monitor water quality at tidal inlets",
+        "priority": "MEDIUM",
+        "details": "Increased shipping reroutes may introduce new pollutant pathways near mangrove zones."
+      }
+    ],
+    "source": "NewsAPI \u2014 Iran offers to reopen Strait of Hormuz in 7 days if US lifts",
+    "status": "Active",
+    "createdAt": "2026-09-27T06:41:39.108628+00:00",
+    "expiresAt": "2026-10-04T06:41:39.108628+00:00"
+  },
+  {
+    "id": "FA_SHIPPING_DISRUPTION_8bd1fa8da9cd",
+    "category": "GEOPOLITICAL",
+    "threatType": "SHIPPING_DISRUPTION",
+    "severity": "MEDIUM",
+    "title": "Threat Intelligence: Iran Proposes A Deal To Reopen Strait Of Hormuz In 7 Days If The U.S. Meets Its Conditions",
+    "description": "Source intelligence indicates: Iran Proposes A Deal To Reopen Strait Of Hormuz In 7 Days If The U.S. Meets Its Conditions. This may affect coastal mangrove ecosystems in the Abu Dhabi region.",
+    "predictedDate": "2026-09-25",
+    "affectedPatches": [
+      "Patch_8",
+      "Patch_6",
+      "Patch_27",
+      "Patch_21",
+      "Patch_2",
+      "Patch_18",
+      "Patch_7",
+      "Patch_42",
+      "Patch_54",
+      "Patch_1",
+      "Patch_23",
+      "Patch_37",
+      "Patch_69",
+      "Patch_22",
+      "Patch_70"
+    ],
+    "preventativeActions": [
+      {
+        "action": "Monitor water quality at tidal inlets",
+        "priority": "MEDIUM",
+        "details": "Increased shipping reroutes may introduce new pollutant pathways near mangrove zones."
+      }
+    ],
+    "source": "NewsAPI \u2014 Iran Proposes A Deal To Reopen Strait Of Hormuz In 7 Days If",
+    "status": "Active",
+    "createdAt": "2026-09-27T06:41:39.108628+00:00",
+    "expiresAt": "2026-10-04T06:41:39.108628+00:00"
+  },
+  {
+    "id": "FA_SHIPPING_DISRUPTION_1c946d9fc99c",
+    "category": "GEOPOLITICAL",
+    "threatType": "SHIPPING_DISRUPTION",
+    "severity": "MEDIUM",
+    "title": "Threat Intelligence: Iran Proposes a Deal to Reopen the Strait of Hormuz in 7 Days if the US Meets Its Conditions",
+    "description": "Source intelligence indicates: Iran Proposes a Deal to Reopen the Strait of Hormuz in 7 Days if the US Meets Its Conditions. This may affect coastal mangrove ecosystems in the Abu Dhabi region.",
+    "predictedDate": "2026-09-25",
+    "affectedPatches": [
+      "Patch_8",
+      "Patch_6",
+      "Patch_27",
+      "Patch_21",
+      "Patch_2",
+      "Patch_18",
+      "Patch_7",
+      "Patch_42",
+      "Patch_54",
+      "Patch_1",
+      "Patch_23",
+      "Patch_37",
+      "Patch_69",
+      "Patch_22",
+      "Patch_70"
+    ],
+    "preventativeActions": [
+      {
+        "action": "Monitor water quality at tidal inlets",
+        "priority": "MEDIUM",
+        "details": "Increased shipping reroutes may introduce new pollutant pathways near mangrove zones."
+      }
+    ],
+    "source": "NewsAPI \u2014 Iran Proposes a Deal to Reopen the Strait of Hormuz in 7 Day",
+    "status": "Active",
+    "createdAt": "2026-09-27T06:41:39.108628+00:00",
+    "expiresAt": "2026-10-04T06:41:39.108628+00:00"
+  }
+]

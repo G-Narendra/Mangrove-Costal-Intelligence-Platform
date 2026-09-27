@@ -3,6 +3,7 @@ import path from "path"
 import fs from "fs"
 
 let firestoreInstance: admin.firestore.Firestore | null = null
+let firestoreCircuitBreakerUntil = 0
 
 export function getAdminFirestore(): admin.firestore.Firestore {
   if (firestoreInstance) return firestoreInstance
@@ -56,4 +57,44 @@ export function getAdminFirestore(): admin.firestore.Firestore {
   }
   firestoreInstance = admin.firestore()
   return firestoreInstance
+}
+
+/**
+ * Resilient Firestore helper with strict timeout (default 1500ms) and automatic circuit breaker.
+ * Prevents requests from stalling for 30s when Firestore quota is exhausted (8 RESOURCE_EXHAUSTED).
+ */
+export async function withFirestoreTimeout<T>(
+  operation: (db: admin.firestore.Firestore) => Promise<T>,
+  timeoutMs = 1500
+): Promise<T | null> {
+  const now = Date.now()
+  if (now < firestoreCircuitBreakerUntil) {
+    // Circuit breaker is open — immediately fall back to local/in-memory store without waiting
+    return null
+  }
+
+  try {
+    const db = getAdminFirestore()
+    const opPromise = operation(db)
+    const timeoutPromise = new Promise<never>((_, reject) =>
+      setTimeout(() => reject(new Error("FIRESTORE_TIMEOUT")), timeoutMs)
+    )
+
+    return await Promise.race([opPromise, timeoutPromise])
+  } catch (err: any) {
+    const isQuota =
+      err?.code === 8 ||
+      err?.message?.includes("RESOURCE_EXHAUSTED") ||
+      err?.message?.includes("Quota exceeded")
+    const isTimeout = err?.message === "FIRESTORE_TIMEOUT"
+
+    if (isQuota || isTimeout) {
+      // Trip circuit breaker for 10 minutes
+      firestoreCircuitBreakerUntil = Date.now() + 10 * 60 * 1000
+      console.warn(
+        `[Firestore Circuit Breaker] ${isQuota ? "Quota exceeded" : "Operation timed out"}. Tripping circuit breaker for 10m to maintain instant sub-10ms response times.`
+      )
+    }
+    return null
+  }
 }

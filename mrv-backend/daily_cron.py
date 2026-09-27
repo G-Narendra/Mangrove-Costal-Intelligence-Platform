@@ -52,13 +52,14 @@ def run_daily_check():
 
         # Step 2: Generate featured alerts
         logger.info("Step 2: Generating predictive featured alerts...")
-        alerts = generate_featured_alerts(today)
+        alerts = generate_featured_alerts(today, context_data=context)
         logger.info(f"  -> Generated {len(alerts)} featured alerts")
 
         for alert in alerts:
             logger.info(f"    [{alert['severity']}] {alert['title']}")
 
         logger.info(f"=== Daily Cron: Complete for {today} ===")
+        print(f"Scan complete: {len(alerts)} predictive alerts evaluated across 74 patches.")
         return True
 
     except Exception as e:
