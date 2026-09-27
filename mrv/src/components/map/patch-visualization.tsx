@@ -18,7 +18,7 @@ coastalEdgesRaw.forEach(e => {
   connectionCounts[e.destination] = (connectionCounts[e.destination] || 0) + 1
 })
 
-function getFallbackHistory(patchId: string, baseAbsorption = 1.82, baseHealth = 54.0) {
+function getFallbackHistory(patchId: string, baseAbsorption = 1.82, baseHealth = 39.1) {
   const dates = [
     "2023-01", "2024-01", "2025-01", "2026-01", 
     "2026-02", "2026-03", "2026-04", "2026-05", 
@@ -65,7 +65,7 @@ export function PatchVisualization({
       return {
         carbon: auditData.current_absorption_per_ha ?? last.absorption,
         absorption: auditData.current_absorption_per_ha ?? last.absorption,
-        healthScore: auditData.current_health_score ?? last.health ?? 54.0,
+        healthScore: auditData.current_health_score ?? last.health ?? 39.1,
         history: hist
       };
     }

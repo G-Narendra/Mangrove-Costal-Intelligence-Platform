@@ -69,6 +69,7 @@ posters/ppt/fig2_*.png
 posters/ppt/pdf_pages/
 
 # --- Personal & Internal Files (Requested by User) ---
+~$*
 MCIP_Submission*.docx
 MCIP_Master_Thesis_Presentation.pptx
 My MCIP Files/
