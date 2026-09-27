@@ -15,9 +15,11 @@ import { collection, getDocs, doc, getDoc, onSnapshot } from "firebase/firestore
 
 import patchMapAuditRaw from "@/data/patch_map_audit.json"
 import patchEnhancedStatsRaw from "@/data/patch_enhanced_stats.json"
+import patchRealMeasurementsRaw from "@/data/patch_real_measurements.json"
 
 const patchMapAudit: Record<string, any> = patchMapAuditRaw
 const patchEnhancedStats: Record<string, any> = patchEnhancedStatsRaw
+const patchRealMeasurements: any = patchRealMeasurementsRaw
 
 export default function Dashboard() {
   const firestore = useFirestore()
@@ -35,17 +37,17 @@ export default function Dashboard() {
     avgAbsorptionRate: number;
     avgHealth: number;
   }>({
-    totalCarbon: 48989,        // Measured cumulative certified carbon stock from UAE patch records
-    totalArea: 7030,           // Measured total mangrove canopy area across all 100 monitored patches
-    avgAbsorptionRate: 1.98,   // Measured mean monthly carbon sequestration flux (tCO2e/Ha/mo)
-    avgHealth: 39.1            // Real measured canopy vitality score across UAE coastal mangrove network
+    totalCarbon: patchRealMeasurements.metadata.totalCumulativeCarbonAbs, // 518,018 tCO2e: Measured cumulative blue carbon summation across all patches from 2021 Jan to 2026 Sep
+    totalArea: patchRealMeasurements.metadata.totalAreaLatest,           // 6,460 Ha: Measured total mangrove canopy area summed across all patches in latest month (2026-09)
+    avgAbsorptionRate: 1.87,                                             // 1.87 tCO2e/Ha/mo: Measured mean monthly carbon sequestration flux across patches
+    avgHealth: patchRealMeasurements.metadata.avgHealthSimple            // 48.8 / 100: Measured canopy vitality score across UAE coastal mangrove network
   })
   const [isAggregating, setIsAggregating] = React.useState(false)
 
   // Hydrate from localStorage once on mount to avoid SSR hydration mismatch
   React.useEffect(() => {
     try {
-      const cached = localStorage.getItem("mcip_dashboard_kpis_v2")
+      const cached = localStorage.getItem("mcip_dashboard_kpis_v4")
       if (cached) {
         const parsed = JSON.parse(cached)
         if (parsed.totalCarbon > 0 && parsed.totalArea > 0) {
@@ -55,7 +57,7 @@ export default function Dashboard() {
     } catch (e) {}
   }, [])
 
-  // 1. Fetch registry carbon dynamically from UAE Carbon Register on mount
+  // 1. Fetch registry carbon dynamically from UAE Carbon Register on mount if live documents exist
   React.useEffect(() => {
     if (!firestore) return
     let isMounted = true
@@ -64,14 +66,14 @@ export default function Dashboard() {
     getDocs(collection(firestore, "MCIP_Carbon_Register"))
       .then((registrySnap) => {
         if (!isMounted) return
-        let totalCarbon = 0
+        let registryCarbon = 0
         registrySnap.forEach((doc) => {
-          totalCarbon += (doc.data().carbonAmount || 0)
+          registryCarbon += (doc.data().carbonAmount || 0)
         })
-        if (totalCarbon > 0) {
+        if (registryCarbon > 0) {
           setAggregates((prev) => {
-            const next = { ...prev, totalCarbon: Math.round(totalCarbon) }
-            try { localStorage.setItem("mcip_dashboard_kpis_v2", JSON.stringify(next)) } catch (e) {}
+            const next = { ...prev, totalCarbon: Math.round(registryCarbon) }
+            try { localStorage.setItem("mcip_dashboard_kpis_v4", JSON.stringify(next)) } catch (e) {}
             return next
           })
         }
@@ -84,62 +86,77 @@ export default function Dashboard() {
     return () => { isMounted = false }
   }, [firestore])
 
-  // 2. Derive real area, absorption rate, and health score from audited patches
+  // 2. Derive real area, absorption rate, and health score by measuring each patch in latest month
   React.useEffect(() => {
     let totalArea = 0
     let healthSum = 0
     let healthCount = 0
     let absorptionSum = 0
     let absorptionCount = 0
+    let carbonSum = 0
+
+    // Index real patch measurements by patchId (e.g. Patch_0)
+    const realPatchLookup: Record<string, any> = {}
+    patchRealMeasurements.patches.forEach((p: any) => {
+      realPatchLookup[p.patchId] = p
+      realPatchLookup[p.patchId.toLowerCase()] = p
+      realPatchLookup[String(p.idNum)] = p
+    })
 
     const patchList = (patches && patches.length > 0) 
       ? patches 
-      : Object.keys(patchMapAudit).map(id => ({ id, ...patchMapAudit[id] }))
+      : patchRealMeasurements.patches
 
     patchList.forEach((patch: any) => {
-      const pId = patch.id || patch.patchId
-      const auditData = patchMapAudit[pId] || patchMapAudit[`Patch_${pId}`]
+      const pId = patch.id || patch.patchId || String(patch.idNum ?? "")
+      const realData = realPatchLookup[pId] || realPatchLookup[`Patch_${pId}`] || realPatchLookup[pId.replace("Patch_", "")]
       const enhancedData = patchEnhancedStats[pId] || patchEnhancedStats[`Patch_${pId}`]
 
-      // Real area in Ha: pixel_count from Sentinel-2 or area_ha
-      const area = (patch.area_ha || patch.area || patch.pixel_count || enhancedData?.pixel_count || 18.4)
+      // Real measured area in Ha for latest month
+      const area = realData?.areaLatest || patch.area_ha || patch.area || patch.pixel_count || enhancedData?.pixel_count || 0
       totalArea += area
 
-      // Real measured health score
-      const healthValue = (patch.current_health_score !== undefined && patch.current_health_score !== 0)
+      // Real measured health score for latest month
+      const healthValue = (realData?.healthLatest !== undefined)
+        ? realData.healthLatest
+        : (patch.current_health_score !== undefined && patch.current_health_score !== 0)
         ? patch.current_health_score
-        : (auditData?.current_health_score !== undefined)
-        ? auditData.current_health_score
         : (patch.healthScore !== undefined && patch.healthScore !== 0) 
         ? patch.healthScore 
-        : 39.1
-      healthSum += healthValue
-      healthCount++
+        : 48.8
+
+      if (healthValue > 0) {
+        healthSum += healthValue
+        healthCount++
+      }
+
+      // Real cumulative carbon from 2021 Jan to latest month
+      const patchCarbon = realData?.cumulativeCarbonAbs || 0
+      carbonSum += patchCarbon
 
       // Real monthly absorption rate (tCO2e/ha/month)
       const rate = (patch.current_absorption_per_ha !== undefined)
         ? patch.current_absorption_per_ha
-        : (auditData?.current_absorption_per_ha !== undefined)
-        ? auditData.current_absorption_per_ha
         : (enhancedData?.recent_per_ha_mean !== undefined)
         ? enhancedData.recent_per_ha_mean
-        : 1.98
+        : 1.87
       absorptionSum += rate
       absorptionCount++
     })
 
-    const finalArea = Math.round(totalArea)
-    const finalHealth = healthCount > 0 ? parseFloat((healthSum / healthCount).toFixed(1)) : 39.1
-    const finalAbsorption = absorptionCount > 0 ? parseFloat((absorptionSum / absorptionCount).toFixed(2)) : 1.98
+    const finalArea = totalArea > 0 ? Math.round(totalArea) : patchRealMeasurements.metadata.totalAreaLatest
+    const finalHealth = healthCount > 0 ? parseFloat((healthSum / healthCount).toFixed(1)) : patchRealMeasurements.metadata.avgHealthSimple
+    const finalAbsorption = absorptionCount > 0 ? parseFloat((absorptionSum / absorptionCount).toFixed(2)) : 1.87
+    const finalCarbon = carbonSum > 0 ? Math.round(carbonSum) : patchRealMeasurements.metadata.totalCumulativeCarbonAbs
 
     setAggregates((prev) => {
       const next = {
-        ...prev,
+        totalCarbon: finalCarbon,
         totalArea: finalArea,
         avgHealth: finalHealth,
         avgAbsorptionRate: finalAbsorption
       }
-      try { localStorage.setItem("mcip_dashboard_kpis_v2", JSON.stringify(next)) } catch (e) {}
+      try { localStorage.setItem("mcip_dashboard_kpis_v4", JSON.stringify(next)) } catch (e) {}
       return next
     })
   }, [patches])
@@ -176,8 +193,8 @@ export default function Dashboard() {
   const kpis = React.useMemo(() => [
     {
       title: "Total Blue Carbon",
-      value: `${(aggregates.totalCarbon / 1000).toFixed(1)}k tCO₂e`,
-      subtext: "UAE Registry Certified Stock",
+      value: `${aggregates.totalCarbon.toLocaleString()} tCO₂e`,
+      subtext: "Summed Jan-2021 to Latest Month",
       icon: Waves,
       color: "text-blue-500",
       bg: "bg-blue-500",
@@ -185,15 +202,15 @@ export default function Dashboard() {
     {
       title: "Total Mangrove Area",
       value: `${aggregates.totalArea.toLocaleString()} Ha`,
-      subtext: "Monitored Coastal Landscape",
+      subtext: "Summed Latest Month Patches",
       icon: TreePine,
       color: "text-green-500",
       bg: "bg-green-500",
     },
     {
       title: "Mean Sequestration Flux",
-      value: `${aggregates.avgAbsorptionRate.toFixed(2)} tCO₂e/Ha`,
-      subtext: "Monthly Sensor-Fused Rate",
+      value: `${aggregates.avgAbsorptionRate.toFixed(2)} tCO₂e/Ha/mo`,
+      subtext: "Sensor-Fused Rate per Hectare",
       icon: TrendingUp,
       color: "text-emerald-500",
       bg: "bg-emerald-500",

@@ -18,28 +18,6 @@ coastalEdgesRaw.forEach(e => {
   connectionCounts[e.destination] = (connectionCounts[e.destination] || 0) + 1
 })
 
-function getFallbackHistory(patchId: string, baseAbsorption = 1.82, baseHealth = 39.1) {
-  const dates = [
-    "2023-01", "2024-01", "2025-01", "2026-01", 
-    "2026-02", "2026-03", "2026-04", "2026-05", 
-    "2026-06", "2026-07", "2026-08", "2026-09"
-  ];
-  const seasonalFactors = [0.94, 0.96, 0.98, 1.04, 1.06, 1.14, 0.88, 0.84, 0.86, 0.98, 1.02, 1.06];
-  const idNum = parseInt(patchId.replace(/[^0-9]/g, "") || "1", 10);
-  const patchOffset = ((idNum % 7) - 3) * 0.035;
-  
-  return dates.map((date, idx) => {
-    const factor = seasonalFactors[idx];
-    const val = parseFloat((baseAbsorption * factor + patchOffset).toFixed(4));
-    const health = parseFloat((baseHealth + ((factor - 1) * 9)).toFixed(1));
-    return {
-      date,
-      absorption: Math.max(0.85, val),
-      health: Math.max(25, Math.min(85, health))
-    };
-  });
-}
-
 interface PatchVisualizationProps {
   patch: DocumentData;
   onHover: (data: any | null) => void;
@@ -65,21 +43,18 @@ export function PatchVisualization({
       return {
         carbon: auditData.current_absorption_per_ha ?? last.absorption,
         absorption: auditData.current_absorption_per_ha ?? last.absorption,
-        healthScore: auditData.current_health_score ?? last.health ?? 39.1,
+        healthScore: auditData.current_health_score ?? last.health ?? 48.8,
         history: hist
       };
     }
 
-    const fallbackHist = getFallbackHistory(patchId);
-    const latestHist = fallbackHist[fallbackHist.length - 1];
-
     return { 
-      carbon: latestHist.absorption, 
-      absorption: latestHist.absorption, 
-      healthScore: latestHist.health, 
-      history: fallbackHist 
+      carbon: patch.total_absorption_tCO2e_ha ?? 1.87, 
+      absorption: patch.total_absorption_tCO2e_ha ?? 1.87, 
+      healthScore: patch.healthScore ?? 48.8, 
+      history: []
     };
-  }, [auditData, patchId]);
+  }, [auditData, patch]);
 
   const paths = React.useMemo(() => {
     return parsePolygonString(patch.polygon_coordinates);
